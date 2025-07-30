@@ -1,23 +1,9 @@
-import React, { Suspense } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls, useGLTF } from '@react-three/drei'
+import React from 'react';
+import { useGLTF } from '@react-three/drei';
 
-const Model = ({ url }) => {
-  const { scene } = useGLTF(url)
-  return <primitive object={scene} />
+
+
+export default function Model(props) {
+  const gltf = useGLTF('/model/scene.gltf');
+  return <primitive object={gltf.scene} {...props} />;
 }
-
-const ModelViewer = ({ modelUrl }) => {
-  return (
-    <Canvas camera={{ position: [2, 2, 2], fov: 45 }}>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[5, 5, 5]} />
-      <Suspense fallback={null}>
-        <Model url={modelUrl} />
-      </Suspense>
-      <OrbitControls />
-    </Canvas>
-  )
-}
-
-export default ModelViewer
