@@ -59,20 +59,13 @@ export default function App() {
 
   const cameraPositions = [
     { scroll: 0, position: [3, 1,  -100] },
-    { scroll: 10, position: [3, 1, -110] },
+    { scroll: 50, position: [30, 1, -110] },
     { scroll: 20, position: [3, 1, -120] },
     { scroll: 30, position: [3, 1, -130] },
     { scroll: 40, position: [3, 1, -140] },
     { scroll: 50, position: [3, 2, -140] },
-    { scroll: 60, position: [3, 3, -140] },
-    { scroll: 70, position: [3, 4, -140] },
-    { scroll: 80, position: [3, 5, -140] },
-    { scroll: 90, position: [3, 1, -140] },
-    { scroll: 100, position: [3, 1, -110] },
-    { scroll: 110, position: [3, 1, -110] },
-    { scroll: 120, position: [3, 1, -110] },
-    { scroll: 130, position: [3, 1, -110] },
-    { scroll: 140, position: [3, 1, -110] },
+    { scroll: 100, position: [3, 30, -140] },
+  
   ];
 
   return (
