@@ -94,7 +94,7 @@ function ScrollCamera({ cameraPositions }) {
 
       <div className="scroll-content relative">
         <section style={{ height: '400vh', padding: '0rem', color: 'white' }} >
-          <div  className='h-full w-full py-40'>
+          <div  className='h-[1200vh] w-full py-40'>
                 <div className='h-10  w-full  mb-10 flex items-center justify-center'>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" className='w-full h-full ' alt="" />
                 </div>
