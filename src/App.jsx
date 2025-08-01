@@ -98,8 +98,8 @@ function ScrollCamera({ cameraPositions }) {
                 <div className='h-10  w-full  mb-10 flex items-center justify-center'>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" className='w-full h-full ' alt="" />
                 </div>
-              <div className='bebas-neue-regular p-1 w-full text-[230px] flex items-center justify-center rounded-xl shadow-2xl  bg-[#EE232C] text-white  '>
-                  <h1 className=' px-4 leading-60  '>
+              <div className='bebas-neue-regular p-1 w-full text-[150px] flex items-center justify-center rounded-xl shadow-2xl  bg-[#EE232C] text-white  '>
+                  <h1 className='avenger px-4 leading-60  '>
                     Compufest 2K25
                 </h1>
               </div> 
