@@ -7,14 +7,16 @@
   import { useFrame, useThree } from '@react-three/fiber';
   import { useRef, useState } from 'react';
 
-  import * as THREE from 'three';
-  import Event from './components/Event';
+import * as THREE from 'three';
+import Event from './components/Event';
+import './App.css';
+import CoreCommittee from './components/CoreCommittee';
 
-  function ScrollCamera({ cameraPositions }) {
-    const { camera } = useThree();
-    const [scrollPercent, setScrollPercent] = useState(0);
-    const targetPosition = useRef(new THREE.Vector3());
-    const lerpSpeed = 0.05; // adjust for speed of smoothness
+function ScrollCamera({ cameraPositions }) {
+  const { camera } = useThree();
+  const [scrollPercent, setScrollPercent] = useState(0);
+  const targetPosition = useRef(new THREE.Vector3());
+  const lerpSpeed = 0.05;
 
     useEffect(() => {
       const handleScroll = () => {
@@ -90,31 +92,33 @@
           </Canvas>
         </div>
 
-        <div className="scroll-content relative">
-          <section style={{ height: '400vh', padding: '0rem', color: 'white' }} >
-            <div  className='h-full w-full py-40'>
-                  <div className='h-10  w-full  mb-10 flex items-center justify-center'>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" className='w-full h-full ' alt="" />
-                  </div>
-                <div className='bebas-neue-regular p-1 w-full text-[230px] flex items-center justify-center rounded-xl shadow-2xl  bg-[#EE232C] text-white  '>
-                    <h1 className=' px-4 leading-60  '>
-                      Compufest 2K25
-                  </h1>
-                </div> 
-
-            </div>
-                
-
-                  <div className='h-screen w-full  bg-white'>
-                      <Event/>
+      <div className="scroll-content relative">
+        <section style={{ height: '400vh', padding: '0rem', color: 'white' }} >
+          <div  className='h-full w-full py-40'>
+                <div className='h-10  w-full  mb-10 flex items-center justify-center'>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" className='w-full h-full ' alt="" />
                 </div>
-                 {/* <div className='h-screen w-full  '>
-                     
-                </div> */}
-          </section>
-        </div>
+              <div className='bebas-neue-regular p-1 w-full text-[150px] flex items-center justify-center rounded-xl shadow-2xl  bg-[#EE232C] text-white  '>
+                  <h1 className='avenger px-4 leading-60  '>
+                    Compufest 2K25
+                </h1>
+              </div> 
 
-      </>
+          </div>
+
+
+          <div className='h-max w-full'>
+            {/* <div className='h-screen w-full  bg-[#518cca]'> */}
+
+            <Event />
+          </div>
+          <div>
+            <CoreCommittee />
+          </div>
+        </section>
+      </div>
+
+    </>
 
 
     );
