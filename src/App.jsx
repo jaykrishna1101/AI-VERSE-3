@@ -126,6 +126,16 @@ export default function App() {
           <div>
             <OurSponsors />
           </div>
+             <div className='h-[200vh] w-full'>
+            
+          </div> 
+            <div>
+            <CoreCommittee/>
+          </div>
+
+            <div className='avenger tracking-widest h-80 w-full bg-red-500 opacity-90 flex items-center justify-center  '>
+            Footer
+          </div>
         </section>
       </div>
 
