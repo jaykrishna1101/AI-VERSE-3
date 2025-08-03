@@ -6,9 +6,9 @@ import Model from './components/model';
 import SetBackground from './components/BG'
 import { useFrame, useThree } from '@react-three/fiber';
 import { useRef, useState } from 'react';
-<<<<<<< HEAD
 import { Suspense } from 'react';
 import Loader from "./lib/utils/Loader"
+import OurSponsors from './components/OurSponsors';
 
 
 import * as THREE from 'three';
@@ -16,12 +16,6 @@ import Event from './components/Event';
 import './App.css';
 import CoreCommittee from './components/CoreCommittee';
 import { useLenis } from './lib/utils/lenis';
-=======
-import * as THREE from 'three';
-import Event from './components/Event';
-import './App.css';
-import OurSponsors from './components/OurSponsors';
->>>>>>> cea08c6cb26210355075682cf389ff21112fe284
 
 function ScrollCamera({ cameraPositions }) {
   const { camera } = useThree();
@@ -29,7 +23,6 @@ function ScrollCamera({ cameraPositions }) {
   const targetPosition = useRef(new THREE.Vector3());
   const lerpSpeed = 0.1;
 
-<<<<<<< HEAD
 
 
   useEffect(() => {
@@ -49,25 +42,6 @@ function ScrollCamera({ cameraPositions }) {
       const current = cameraPositions[i];
       const next = cameraPositions[i + 1];
 
-=======
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrolled = (scrollTop / docHeight) * 100;
-      setScrollPercent(scrolled);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useFrame(() => {
-    for (let i = 0; i < cameraPositions.length - 1; i++) {
-      const current = cameraPositions[i];
-      const next = cameraPositions[i + 1];
-
->>>>>>> cea08c6cb26210355075682cf389ff21112fe284
       if (scrollPercent >= current.scroll && scrollPercent <= next.scroll) {
         const t = (scrollPercent - current.scroll) / (next.scroll - current.scroll);
         const interpolated = new THREE.Vector3().fromArray(current.position).lerp(
