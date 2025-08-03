@@ -1,9 +1,29 @@
-import React from 'react';
-import { useGLTF } from '@react-three/drei';
+// components/Model.jsx
+import React, { forwardRef, useEffect, useMemo } from 'react';
+import { useGLTF, useProgress, Html } from '@react-three/drei';
+import { useThree } from '@react-three/fiber';
 
+const ResponsiveModel = forwardRef((props, ref) => {
+  const { scene } = useGLTF('/model/scene.gltf'); // path should be correct relative to `public`
+  const { viewport } = useThree();
 
+  // Dynamic scale based on viewport width
+  const scale = useMemo(() => {
+    if (viewport.width < 6) return 0.3;
+    if (viewport.width < 10) return 0.6;
+    return 1;
+  }, [viewport.width]);
 
-export default function Model(props) {
-  const gltf = useGLTF('/model/scene.gltf');
-  return <primitive object={gltf.scene} {...props} />;
-}
+  useEffect(() => {
+    scene.traverse((child) => {
+      if (child.isMesh) {
+        child.castShadow = true;
+        child.receiveShadow = true;
+      }
+    });
+  }, [scene]);
+
+  return <primitive ref={ref} object={scene} scale={scale} {...props} />;
+});
+
+export default ResponsiveModel;
