@@ -21,7 +21,7 @@ function ScrollCamera({ cameraPositions }) {
   const { camera } = useThree();
   const [scrollPercent, setScrollPercent] = useState(0);
   const targetPosition = useRef(new THREE.Vector3());
-  const lerpSpeed = 0.1;
+  const lerpSpeed = 1;
 
 
 
@@ -66,54 +66,57 @@ function ScrollCamera({ cameraPositions }) {
 export default function App() {
 
   useLenis()
+const [loadingDone, setLoadingDone] = useState(false);
 
   const cameraPositions = [
     { scroll: 0, position: [30, 100, -110] },
-    { scroll: 30, position: [30, 8, -100] },
-    { scroll: 40, position: [-60, 8, -100] },
-    { scroll: 50, position: [-80, 58, -50] },
-    { scroll: 70, position: [-100, 60, 100] },
+    { scroll: 20, position: [30, 8, -100] },
+    { scroll: 30, position: [-60, 8, -100] },
+    { scroll: 40, position: [-80, 58, -50] },
+    { scroll: 60, position: [-100, 60, 100] },
 
-    { scroll: 140, position: [140, 10, 130] },
-
-
-
-
-
+    { scroll: 150, position: [140, 10, 130] },
 
   ];
 
   return (
     <>
-      <div className=' fixed top-0 left-0 w-full h-screen'  >
+      <div className=' w-96 fixed top-0 left-0 md:w-full h-full  md:h-screen '  >
         <Canvas shadows dpr={[1, 2]}  camera={{ position: [3, 10, -100], fov: 70 }}>
           <ambientLight intensity={0.5} />
           <directionalLight position={[2, 2, 5]} intensity={1} />
-          <Suspense fallback={<Loader />}>
-            <Model />
-          </Suspense>
-          <SetBackground imageUrl="/bg.png" />
-          {/* <OrbitControls /> */}
-          <Environment
-            files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/kiara_1_dawn_1k.hdr"
-
-
-          />
+         <Suspense fallback={<Loader onFinish={() => setLoadingDone(true)} />}>
+  <Model />
+  <SetBackground imageUrl="/bg.png" />
+  <Environment
+    files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/kiara_1_dawn_1k.hdr"
+  />
+</Suspense>
           <ScrollCamera cameraPositions={cameraPositions} />
         </Canvas>
       </div>
 
-      <div className="scroll-content relative">
+
+      <div className="scroll-content relative overflow-hidden">
         <section style={{ minHeight: '400vh', padding: '0rem', color: 'white' }} >
-          <div className='h-[1900vh] w-full py-40'>
+          <div className='h-[1400vh] w-full py-40 z-10 relative'>
             <div className='h-10  w-full  mb-10 flex items-center justify-center'>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" className='w-full h-full ' alt="" />
                 </div>
-              <div className='bebas-neue-regular p-1 w-full text-6xl md:text-[150px] flex items-center justify-center rounded-xl shadow-2xl  bg-[#EE232C] text-white  '>
+              <div className='bebas-neue-regular p-1  z-10 w-full text-6xl md:text-[150px] flex items-center justify-center  shadow-2xl  bg-[#EE232C] text-white  '>
                   <h1 className='avenger px-4 md:leading-60 leading-40 whitespace-nowrap  '>
                     Compufest 2K25
                 </h1>
               </div> 
+
+              <div className='h-80 w-[30rem]  top-[40%] left-10 py-10 absolute  '>
+                  
+                        <h1 className=' text-8xl text-[#e8101b]  avenger  opacity-80 '> <span className='bg-[#E8101B] text-white px-10 py-2  rounded-l-xl rounded-r-xl '> What is</span>   <span className='whitespace-nowrap rounded-r-xl rounded-l-xl bg-[#E8101B] text-white px-10'> compufest ?</span>  </h1>
+              </div>
+
+                <div className='h-80 w-[30rem]  top-[43%] right-10 py-10 absolute   '>
+                        <h1 className=' text-4xl text-white  avenger leading-12 '> Compufest is the TechFest conducted by the C T - Department of YCCE where TECH and Culture Event Takes Place   </h1>
+              </div>
 
           </div>
 
@@ -126,10 +129,13 @@ export default function App() {
           <div>
             <OurSponsors />
           </div>
-             <div className='h-[200vh] w-full'>
+           
+           <div className='h-[200vh] w-full'>
             
-          </div> 
-            <div>
+          </div>
+
+
+          <div>
             <CoreCommittee/>
           </div>
 
