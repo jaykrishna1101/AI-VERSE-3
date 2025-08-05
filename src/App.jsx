@@ -138,7 +138,7 @@ const [loadingDone, setLoadingDone] = useState(false);
           <div>
             <CoreCommittee/>
           </div>
-            <div className='avenger tracking-widest h-80 w-full bg-red-500 opacity-90 flex items-center justify-center  '>
+            <div className='avenger tracking-widest h-80 w-full overflow-hidden flex items-center justify-center  '>
             <Footer/>
           </div>
         </section>

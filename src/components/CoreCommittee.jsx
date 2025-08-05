@@ -20,7 +20,7 @@ function CoreCommittee() {
     'Database Head: Ms. Paridhi Nawalkar',
     'Design Head: Ms. Navya Kashimkar',
     'Literary Head: Ms. Harshali Dahariya',
-    'Publicity Head: Mr. Pritam Chaudhary',,
+    'Publicity Head: Mr. Pritam Chaudhary', ,
     'Sponsorship Head: Mr. Raj Dhoble',
     'Optimum Head: Mr. Piyush Bhoyar',
     'Event Management & Hall Management Head: Mr. Prathamesh Ghormade',
@@ -70,6 +70,7 @@ function CoreCommittee() {
     'Optimum Co-Head: Mr. Sujal Jangde & Ms. Sanskruti Barnase',
     'Literary Co-Head: Ms. Gauri Joge',
     'Design Co-Head: Mr. Nandini Pawar',
+    'Sports Co-Head: Mr. Krishna Mishra & Mr. Aniket Mokalkar'
   ];
 
   return (
@@ -78,9 +79,9 @@ function CoreCommittee() {
         Compufest Committee
       </h1>
 
-      <div  ref={scrollRef} className="w-[65rem] h-[35rem] overflow-hidden  flex items-center -mt-3 justify-center relative">
+      <div ref={scrollRef} className="w-[65rem] h-[35rem] overflow-hidden  flex items-center -mt-3 justify-center relative">
         <motion.div
-          
+
           initial={{ y: "70%" }}
           animate={{ y: "-66%" }}
           transition={{
@@ -96,7 +97,7 @@ function CoreCommittee() {
               <span>Core</span> Avengers
             </h1>
             <div className=" absolute top-0 right-0 w-60 h-32 -rotate-3  overflow-hidden rounded-xl">
-                    <img src="/IMG_5092.JPG" alt="" className="h-full w-full object-cover" />
+              <img src="/IMG_5092.JPG" alt="" className="h-full w-full object-cover" />
             </div>
 
             <div className=" absolute top-80 left-0 w-60 h-32 rotate-3 overflow-hidden bg-red-200 rounded-xl">
@@ -139,36 +140,36 @@ function CoreCommittee() {
               <img src="/captain.png" alt="" />
             </div>
 
-             
-             {coreCommitteeMembers.map((val ,index)=>(
-               <p key={index} className="mb-2 inter">{val}</p>
-             ))}
 
-             <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+            {coreCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
+
+            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
               <span>Compufest</span> Avengers
             </h1>
 
-            {computfestCommitteeMembers.map((val ,index)=>(
-               <p key={index} className="mb-2 inter">{val}</p>
-             ))}
-            
+            {computfestCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
+
 
             <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
               <span>Semi Core</span> Avengers
             </h1>
 
-            {semiCoreCommitteeMembers.map((val ,index)=>(
-               <p key={index} className="mb-2 inter">{val}</p>
-             ))}
+            {semiCoreCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
 
 
-             <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
               <span>Compufest Semi Core</span> Avengers
             </h1>
 
-            {semiCoreCompufestCommitteeMembers.map((val ,index)=>(
-               <p key={index} className="mb-2 inter">{val}</p>
-             ))}
+            {semiCoreCompufestCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
 
             <h1 className="avenger mt-4 text-2xl">
               --- The END ---

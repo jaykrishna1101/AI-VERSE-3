@@ -1,8 +1,10 @@
+import { div } from "motion/react-client";
+
 function Footer() {
     return (
-        <footer className="text-white p-4 text-center">
-            Website made by Muchkundraje Thote, Gaurav Naik, and Kritish Bokde
-        </footer>
+        <div className='avenger tracking-widest h-80 w-full bg-red-500 opacity-90 flex items-center justify-center'>
+            
+        </div>
     );
 }
 
