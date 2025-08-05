@@ -9,8 +9,7 @@ import { useRef, useState } from 'react';
 import { Suspense } from 'react';
 import Loader from "./lib/utils/Loader"
 import OurSponsors from './components/OurSponsors';
-
-
+import Footer from './components/Footer';
 import * as THREE from 'three';
 import Event from './components/Event';
 import './App.css';
@@ -81,6 +80,7 @@ const [loadingDone, setLoadingDone] = useState(false);
 
   return (
     <>
+      {/* <ContinuousMusic /> */}
       <div className=' w-96 fixed top-0 left-0 md:w-full h-full  md:h-screen '  >
         <Canvas shadows dpr={[1, 2]}  camera={{ position: [3, 10, -100], fov: 70 }}>
           <ambientLight intensity={0.5} />
@@ -138,9 +138,8 @@ const [loadingDone, setLoadingDone] = useState(false);
           <div>
             <CoreCommittee/>
           </div>
-
             <div className='avenger tracking-widest h-80 w-full bg-red-500 opacity-90 flex items-center justify-center  '>
-            Footer
+            <Footer/>
           </div>
         </section>
       </div>
