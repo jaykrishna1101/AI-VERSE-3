@@ -95,19 +95,19 @@ function CoreCommittee() {
             <h1 className="avenger text-2xl font-extralight text-center mb-1 text-white">
               <span>Core</span> Avengers
             </h1>
-            <div className=" absolute top-0 right-0 w-60 h-32 -rotate-3 bg-red-200 rounded-xl">
-                    <img src="" alt="" className="h-full w-full object-cover" />
+            <div className=" absolute top-0 right-0 w-60 h-32 -rotate-3  overflow-hidden rounded-xl">
+                    <img src="/IMG_5092.JPG" alt="" className="h-full w-full object-cover" />
             </div>
 
-            <div className=" absolute top-80 left-0 w-60 h-32 rotate-3 bg-red-200 rounded-xl">
-
+            <div className=" absolute top-80 left-0 w-60 h-32 rotate-3 overflow-hidden bg-red-200 rounded-xl">
+              <img src="/IMG_5093.JPG" alt="" className="h-full w-full object-cover" />
             </div>
-            <div className=" absolute top-160 right-0 w-60 h-32 -rotate-3 bg-red-200 rounded-xl">
-
+            <div className=" absolute top-160 right-0 w-60 h-32 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
+              <img src="/IMG_5104.JPG" alt="" className="h-full w-full object-cover" />
             </div>
 
-            <div className=" absolute top-200 left-0 w-60 h-32 -rotate-3 bg-red-200 rounded-xl">
-
+            <div className=" absolute top-200 left-0 w-60 h-32 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
+              <img src="/IMG_5118.JPG" alt="" className="h-full w-full object-cover" />
             </div>
 
 
@@ -178,7 +178,6 @@ function CoreCommittee() {
               <div className=" w-50 h-50  mt-5 rounded-xl">
                 <img src="marvel-logo.png" alt="" />
               </div>
-
             </div>
           </div>
         </motion.div>
