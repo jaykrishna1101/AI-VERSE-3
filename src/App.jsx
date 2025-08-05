@@ -14,7 +14,11 @@ import * as THREE from 'three';
 import Event from './components/Event';
 import './App.css';
 import CoreCommittee from './components/CoreCommittee';
+
+
+import ReusableLaoder from './components/reusable-laoder';
 import { useLenis } from './lib/utils/lenis';
+import  { FloatingDockDemo } from './components/Nav';
 
 function ScrollCamera({ cameraPositions }) {
   const { camera } = useThree();
@@ -23,7 +27,8 @@ function ScrollCamera({ cameraPositions }) {
   const lerpSpeed = 1;
 
 
-
+  
+useLenis()
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -64,8 +69,9 @@ function ScrollCamera({ cameraPositions }) {
 
 export default function App() {
 
-  useLenis()
+
 const [loadingDone, setLoadingDone] = useState(false);
+const [progress, setProgress] = useState(0);
 
   const cameraPositions = [
     { scroll: 0, position: [30, 100, -110] },
@@ -85,20 +91,31 @@ const [loadingDone, setLoadingDone] = useState(false);
         <Canvas shadows dpr={[1, 2]}  camera={{ position: [3, 10, -100], fov: 70 }}>
           <ambientLight intensity={0.5} />
           <directionalLight position={[2, 2, 5]} intensity={1} />
-         <Suspense fallback={<Loader onFinish={() => setLoadingDone(true)} />}>
-  <Model />
-  <SetBackground imageUrl="/bg.png" />
-  <Environment
-    files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/kiara_1_dawn_1k.hdr"
-  />
-</Suspense>
+         <Suspense fallback={<Loader   onProgress={setProgress}/>}>
+          <Model />
+           <SetBackground imageUrl="/bg.png" />
+          <Environment
+        files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/kiara_1_dawn_1k.hdr"
+          />
+        </Suspense>
           <ScrollCamera cameraPositions={cameraPositions} />
         </Canvas>
       </div>
 
 
       <div className="scroll-content relative overflow-hidden">
+
+       
+    {/* {progress < 100 && (
+  <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center  bg-[#EE232C] z-50">
+    <div className="text-white  avenger text-5xl font-bold animate-pulse">
+      {Math.floor(progress)}   Loading...
+    </div>
+  </div>
+)} */}
+
         <section style={{ minHeight: '400vh', padding: '0rem', color: 'white' }} >
+         <FloatingDockDemo/>
           <div className='h-[1400vh] w-full py-40 z-10 relative'>
             <div className='h-10  w-full  mb-10 flex items-center justify-center'>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" className='w-full h-full ' alt="" />

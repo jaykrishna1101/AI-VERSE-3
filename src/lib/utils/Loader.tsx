@@ -1,12 +1,18 @@
+// components/Loader.jsx
 import { Html, useProgress } from '@react-three/drei';
+import React, { useEffect } from 'react';
 
-export default function Loader() {
+export default function Loader({ onProgress }) {
   const { progress } = useProgress();
 
+  useEffect(() => {
+    onProgress(progress);
+  }, [progress, onProgress]);
+
   return (
-    <Html fullscreen>
-      <div className="fixed inset-0 flex items-center justify-center bg-red-400 text-black text-2xl font-bold z-[999]">
-        Loading {progress.toFixed(0)}%
+    <Html center>
+      <div className="text-white text-4xl font-bold bg-[#EE232C] px-10 py-6 rounded-xl shadow-lg animate-pulse">
+        {Math.floor(progress)}%
       </div>
     </Html>
   );
