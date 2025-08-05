@@ -53,12 +53,23 @@ function CoreCommittee() {
     'Hall Management Co-Head: Mr. Neelay Jadhav',
     'Sponsorship Co-Head: Mr. Arth Bhagat',
     'Database Co-Head: Ms. Sakshi Krishnani',
-    'Optimum Co-Head: Mr. Ayush Dhole',
+    'Optimum Co-Head: Mr. Ayush Dhole & Mr. Sujal Jangde',
     'Design Co-Head: Mr. Yash Nandanawar & Mr. Rachit Singh',
     'Technosavy & Dhyass Co-Head: Ms. Shailaja Patle',
     'Finance Co-Head: Mr. Hrutik Gujarkar',
     'Literature Co-Head: Ms. Sushmita Khachane',
+  ];
 
+  const semiCoreCompufestCommitteeMembers = [
+    'Technical Co-Head: Mr. Kritish Bokde',
+    'Publicity Co-Head: Mr. Vedant Umate',
+    'Event Management Co-Head: Mr. Aman Kanoje & Mr. Sakshat Keote',
+    'Hall Management Co-Head: Mr. Varsha Kolekar',
+    'Cultural Co-Head: Ms. Ekta Chandak',
+    'Database Co-Head: Mr. Tanmay Patil',
+    'Optimum Co-Head: Mr. Sujal Jangde & Ms. Sanskruti Barnase',
+    'Literary Co-Head: Ms. Gauri Joge',
+    'Design Co-Head: Mr. Nandini Pawar',
   ];
 
   return (
@@ -85,7 +96,7 @@ function CoreCommittee() {
               <span>Core</span> Avengers
             </h1>
             <div className=" absolute top-0 right-0 w-60 h-32 -rotate-3 bg-red-200 rounded-xl">
-
+                    <img src="" alt="" className="h-full w-full object-cover" />
             </div>
 
             <div className=" absolute top-80 left-0 w-60 h-32 rotate-3 bg-red-200 rounded-xl">
@@ -147,6 +158,15 @@ function CoreCommittee() {
             </h1>
 
             {semiCoreCommitteeMembers.map((val ,index)=>(
+               <p key={index} className="mb-2 inter">{val}</p>
+             ))}
+
+
+             <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+              <span>Compufest Semi Core</span> Avengers
+            </h1>
+
+            {semiCoreCompufestCommitteeMembers.map((val ,index)=>(
                <p key={index} className="mb-2 inter">{val}</p>
              ))}
 
