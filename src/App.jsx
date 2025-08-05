@@ -2,7 +2,7 @@
 import React, { useEffect, useLayoutEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment } from '@react-three/drei';
-import Model from './components/model';
+import Model from './components/Model';
 import SetBackground from './components/BG'
 import { useFrame, useThree } from '@react-three/fiber';
 import { useRef, useState } from 'react';
