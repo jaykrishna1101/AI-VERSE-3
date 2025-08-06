@@ -4,7 +4,7 @@ import { useGLTF, useProgress, Html } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
 
 const ResponsiveModel = forwardRef((props, ref) => {
-  const { scene } = useGLTF('/model/scene.gltf'); // path should be correct relative to `public`
+  const { scene } = useGLTF('/model/model.glb'); // path should be correct relative to `public`
   const { viewport } = useThree();
 
   // Dynamic scale based on viewport width
