@@ -42,7 +42,8 @@ export function FloatingDockDemo() {
       title: "Team",
       icon: (
        <IconAddressBook className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    )
+    ),
+     href: "/team",
     },
     
     {
@@ -63,7 +64,7 @@ export function FloatingDockDemo() {
    
   ];
   return (
-    <div className="flex fixed  -mt-3 z-50  h-full justify-center items-end  w-full">
+    <div className="flex fixed insert-0 -mt-3 z-50  h-full justify-center items-end  w-full">
       <FloatingDock
         // only for demo, remove for production
         mobileClassName="translate-y-20"
