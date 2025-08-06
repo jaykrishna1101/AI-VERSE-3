@@ -1,41 +1,79 @@
+import { time } from 'motion';
 import React from 'react';
 
 const timelineEvents = [
     {
-        date: "22/08/2025",
-        title: "Ultron Challenge",
-        description: "The ultimate test of your coding abilities. Can you build something before Ultron awakens?",
+        date: "22/08/2025 to 23/08/2025",
+        title: "CODERUSH",
+        time: '24 Hours',
+        description: "24 Hours. 50 Teams, Build real-world tech that solves real problems - from scratch to showcase.",
     },
     {
         date: "22/08/2025",
-        title: "Vision Image-Net",
-        description: "Join us for a hackathon where you'll build AI models to recognize and classify images, just like Vision.",
-    },
-    {
-        date: "22/08/2025",
-        title: "Prompt-A-Thon",
-        description: "Join us for a hackathon where you'll create websites/application using AI tools.",
-    },
-    {
-        date: "22/08/2025",
-        title: "Versus Coding",
-        description: "Compete against the best coders in a timed challenge. Can you outsmart your opponents?",
+        title: "Tech Quiz",
+        time: '8:00 AM - 9:00 AM',
+        description: "Solo tech quiz loaded with brainy bites from ML, IoT & Cyber Security.",
     },
     {
         date: "22/08/2025",
         title: "Scripted Secret",
-        description: "Uncover hidden secrets and vulnerabilities in a simulated environment. Can you find the flag?",
+        time: '11:00 AM - 1:00 PM',
+        description: "Crack clues, race through riddles, and hunt down the final secret.",
     },
     {
         date: "22/08/2025",
-        title: "Fastest Coding First",
-        description: "Compete against the best coders in a timeed challenge. Can you outsmart your opponents?",
+        title: "Prompt-A-Thon",
+        time: '12:00 PM - 2:00 PM',
+        description: "Use prompts to bend AI to your will. Build creative outputs with just your words.",
+    },
+    {
+        date: "22/08/2025",
+        title: "Arm Wrestling",
+        time: 'TBD',
+        description: "Strength meets grit. Step up, lock hands, and dominate.",
+    },
+    {
+        date: "22/08/2025",
+        title: "Box Cricket",
+        time: 'TBD',
+        description: "Quick-fire cricket matches full of thrill, tactics, and team play.",
     },
     {
         date: "22/08/2025",
         title: "Expert Session",
-        description: "Join industry experts as they share their knowledge and insights in this interactive workshop.",
-    }
+        time: 'TBD',
+        description: "Real tech stories, real insights - learn from those who've done it.",
+    },
+    {
+        date: "23/08/2025",
+        title: "Vision Image-Net",
+        time: '10:00 AM - 12:00 PM',
+        description: "Decode images using AI - detect, analyze, and predict like a pro.",
+    },
+    {
+        date: "23/08/2025",
+        title: "Fastest Coding First",
+        time: '10:00 AM - 12:00 PM',
+        description: "A surprise UI task - code it fast, polish it faster.",
+    },
+    {
+        date: "23/08/2025",
+        title: "Versus Coding",
+        time: '2:30 PM - 5:00 PM',
+        description: "Face-off coding battles where speed and precision crown  the champ.",
+    },
+    {
+        date: "24/08/2025 and 25/08/2025",
+        title: "BGMI: BattleZone",
+        time: '8:00 AM Onwards',
+        description: "Squad up and survive the chaos. Only the sharpest make it to the end.",
+    },
+    {
+        date: "25/08/2025",
+        title: "Chess",
+        time: '7:00 PM Onwards',
+        description: "Outthink and outmaneuver your opponent in this ultimate mind game.",
+    },
 ];
 
 const TimelineItem = ({ event, isLeft }) => {
@@ -52,6 +90,7 @@ const TimelineItem = ({ event, isLeft }) => {
                 <div className="bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-red-500/20 transition-shadow duration-300">
                     <p className="text-sm font-mono text-gray-400 mb-1">{event.date}</p>
                     <h3 className="avenger text-xl tracking-widest text-white">{event.title}</h3>
+                    <p className="text-xs font-mono text-red-400 mb-2">{event.time}</p>
                     <p className="text-sm mt-2 font-mono text-gray-300">{event.description}</p>
                 </div>
             </div>
