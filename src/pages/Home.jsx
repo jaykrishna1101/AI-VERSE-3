@@ -81,12 +81,12 @@ export default function App() {
 
   const cameraPositions = [
     { scroll: 0, position: [30, 100, -110] },
-    { scroll: 20, position: [30, 8, -100] },
-    { scroll: 30, position: [-60, 8, -100] },
-    { scroll: 40, position: [-80, 58, -50] },
-    { scroll: 60, position: [-100, 60, 100] },
+    { scroll: 15, position: [30, 8, -100] },
+    { scroll: 25, position: [-60, 8, -100] },
+    { scroll: 35, position: [-80, 58, -50] },
+    { scroll: 55, position: [-100, 60, 100] },
 
-    { scroll: 150, position: [140, 10, 130] },
+    { scroll: 160, position: [140, 10, 130] },
 
   ];
 
@@ -121,7 +121,6 @@ export default function App() {
 
 
         <section style={{ minHeight: '400vh', padding: '0rem', color: 'white' }} >
-          
           <FloatingDockDemo scrollto={scrollTo} />
           <MusicPlayer />
           <LandingHome />

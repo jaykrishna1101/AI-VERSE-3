@@ -309,7 +309,7 @@ function Team() {
       'image': './committee/kritish_bokde.png'
     },
     {
-      'name': 'Mr. Muchkundrade Thote',
+      'name': 'Mr. Muchkundraje Thote',
       'role': 'Cultural Co-Head',
       'image': './committee/mk.png'
     },
