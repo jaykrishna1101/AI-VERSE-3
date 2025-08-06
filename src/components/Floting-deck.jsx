@@ -13,12 +13,16 @@ import { useRef, useState } from "react";
 export const FloatingDock = ({
   items,
   desktopClassName,
-  mobileClassName
+  mobileClassName,
+ scrollto={scrollto}
+
+  
 }) => {
+
   return (
     <>
       <div>
-      <FloatingDockDesktop items={items} className={desktopClassName} />
+      <FloatingDockDesktop items={items} scrollto={scrollto} className={desktopClassName} />
       </div>
         
       <FloatingDockMobile items={items} className={mobileClassName} />
@@ -75,7 +79,9 @@ export const FloatingDock = ({
 
 const FloatingDockDesktop = ({
   items,
-  className
+  className,
+  scrollto
+    
 }) => {
   let mouseX = useMotionValue(Infinity);
   return (
@@ -86,9 +92,21 @@ const FloatingDockDesktop = ({
         "mx-auto hidden z-50 scale-95 h-16 items-end gap-4 rounded-2xl bg-gray-50 px-4 pb-3 md:flex dark:bg-neutral-900",
         className
       )}>
-      {items.map((item) => (
-        <IconContainer mouseX={mouseX} key={item.title} {...item} />
-      ))}
+    {items.map((item) => (
+  <IconContainer
+    mouseX={mouseX}
+    key={item.title}
+    {...item}
+    onClick={() => {
+      if (item.id) {
+        const el = document.getElementById(item.id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }}
+  />
+))}
     </motion.div>
   );
 };
@@ -97,7 +115,9 @@ function IconContainer({
   mouseX,
   title,
   icon,
-  href
+  href,
+  onClick
+
 }) {
   let ref = useRef(null);
 
@@ -138,7 +158,7 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={href}>
+    <a href={href} onClick={onClick}>
       <motion.div
         ref={ref}
         style={{ width, height }}

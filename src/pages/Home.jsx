@@ -28,7 +28,8 @@ function ScrollCamera({ cameraPositions }) {
 
 
   
-useLenis()
+ const scrollTo = useLenis();
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -110,8 +111,8 @@ const [progress, setProgress] = useState(0);
     
 
         <section style={{ minHeight: '400vh', padding: '0rem', color: 'white' }} >
-         <FloatingDockDemo/>
-          <div className='h-[1400vh] w-full py-40 z-10 relative'>
+         <FloatingDockDemo scrollto={scrollTo}/>
+          <div id='home' className='h-[1400vh] w-full py-40 z-10 relative'>
             <div className='h-10  w-full  mb-10 flex items-center justify-center'>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" className='w-full h-full ' alt="" />
                 </div>
@@ -133,7 +134,7 @@ const [progress, setProgress] = useState(0);
           </div>
 
 
-          <div className='h-max w-full'>
+          <div id="events" className='h-max w-full'>
             {/* <div className='h-screen w-full  bg-[#518cca]'> */}
 
             <Event />

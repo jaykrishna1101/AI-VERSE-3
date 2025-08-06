@@ -15,13 +15,19 @@ import {
 } from "@tabler/icons-react";
 
 export function FloatingDockDemo() {
+
+    const scrollto = (position) => {
+    window.scrollTo({ top: position, behavior: "smooth" });
+  };
   const links = [
     {
       title: "Home",
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      clickon : 0,
+      id:"home"
+     
     },
 
     {
@@ -29,14 +35,17 @@ export function FloatingDockDemo() {
       icon: (
         <IconCalendarEvent className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+    clickon : 9700,
+      id: "events",
     },
     {
       title: "Timeline",
       icon: (
         <IconTimeline className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+       clickon : 11200,
+      id: "timeline",
+    
     },
     {
       title: "Team",
@@ -51,7 +60,7 @@ export function FloatingDockDemo() {
         icon: (
             <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
-        href: "#",
+        
     },
     {
      title: "Credits",
@@ -59,7 +68,10 @@ export function FloatingDockDemo() {
           <IconBaselineDensityMedium className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     
      ),
-     href: "#",
+
+     id:"footer",
+     clickon : 16000,
+   
    },
    
   ];
@@ -68,7 +80,8 @@ export function FloatingDockDemo() {
       <FloatingDock
         // only for demo, remove for production
         mobileClassName="translate-y-20"
-        items={links} />
+        items={links}
+      scrollto={scrollto} />
     </div>
   );
 }

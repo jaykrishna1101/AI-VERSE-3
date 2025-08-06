@@ -7,9 +7,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <div>
-        {/* Navigation */}
         
-
+    
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Home />} />

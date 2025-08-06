@@ -199,7 +199,7 @@ function Event() {
           ))}
         </div>
       </div>
-      <div className='h-full w-full mt-12 p-8 rounded-lg'>
+      <div id='timeline' className='h-full w-full mt-12 p-8 rounded-lg'>
         <EventTimeLine />
       </div>
     </div>
