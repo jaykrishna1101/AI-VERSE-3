@@ -8,12 +8,13 @@ function Event() {
     {
       id: 1,
       category: 'HACKATHON',
-      title: "Hackathon: Ultron's Challenge",
-      subtitle: '8-Hour Hackathon Challenge',
-      description: 'The ultimate test of your coding abilities. Can you build something before Ultron awakens?',
+      title: "CodeRush",
+      subtitle: '24-Hour Hackathon',
+      description: '50 Teams. 24 Hours. Dive into a full-day innovation sprint where ideas turn into impactful tech solutions. Build, debug, and deliver under pressure',
       difficulty: 'MAXIMUM THREAT',
       agents: 'Team of 3-5',
-      reward: '₹20,000',
+      entryFees: '₹1000',
+      reward: '₹30,000',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -34,10 +35,11 @@ function Event() {
       category: 'Hackathon',
       title: 'Vision Image-Net',
       subtitle: 'Showcase your AI & ML expertise',
-      description: "Join us for a hackathon where you'll build AI models to recognize and classify images, just like Vision.",
+      description: "Explore the power of image recognition and AI. Decode visual data to uncover hidden patterns and meaningful insights.",
       difficulty: 'Medium',
       agents: 'Team of 1-3',
-      reward: '₹1,000',
+      reward: '₹5,000',
+      entryFees: '₹500',
       theme: {
         color: '#ffe066',
         gradientFrom: 'from-[#ffe066]',
@@ -55,11 +57,12 @@ function Event() {
       id: 3,
       category: 'Hackathon',
       title: 'Prompt-a-Thon',
-      subtitle: 'Master the Art of Prompt Engineering',
-      description: "Join us for a hackathon where you'll create websites/applications using AI tools.",
+      subtitle: 'Master the Art of Prompt.',
+      description: "Combine your imagination with AI tools to bring ideas to life. Use smart prompting to generate, build, and impress.",
       difficulty: 'Easy',
       agents: 'Individual',
-      reward: '₹3000',
+      reward: '₹1500',
+      entryFees: '₹200',
       theme: {
         color: '#8e44ad',
         gradientFrom: 'from-[#8e44ad]',
@@ -78,10 +81,11 @@ function Event() {
       category: 'Competition',
       title: 'Versus Coding',
       subtitle: 'Battle of the Coders',
-      description: 'Compete against the best coders in a timed challenge. Can you outsmart your opponents?',
+      description: 'A rapid-fire coding contest where participants face off in intense challenges. Quick logic and clean code decide the winner.',
       difficulty: 'Medium',
-      agents: 'Individual',
+      agents: 'Team of 1-3',
       reward: '₹3250',
+      entryFees: '₹200',
       theme: {
         color: '#222',
         gradientFrom: 'from-[#222]',
@@ -100,11 +104,12 @@ function Event() {
       id: 5,
       category: 'Hackathon',
       title: 'Scripted Secrets',
-      subtitle: 'Capture the Flag',
-      description: 'Uncover hidden secrets and vulnerabilities in a simulated environment. Can you find the flag?',
+      subtitle: 'Unravel the Code',
+      description: 'Solve logic puzzles and follow digital trails in this tech-themed treasure hunt. Speed and brainpower will lead you to the prize.',
       difficulty: 'Medium',
       agents: 'Team of 2-5',
-      reward: '₹1500',
+      reward: '₹3000',
+      entryFees: '₹250',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -123,10 +128,11 @@ function Event() {
       category: 'Hackathon',
       title: 'Fastest-Frontend-First',
       subtitle: 'Battle of the Coders',
-      description: 'Compete against the best coders in a timed challenge. Can you outsmart your opponents?',
-      difficulty: 'Easy',
-      agents: 'Individual',
-      reward: '₹1000',
+      description: 'Turn a surprise prompt into a working frontend app - fast. Showcase your design and coding skills under real-time pressure.',
+      difficulty: 'Medium',
+      agents: 'Team of 2-3',
+      reward: '₹1500',
+      entryFees: '₹100',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -147,9 +153,10 @@ function Event() {
       category: 'Workshop',
       title: 'Expert Session',
       subtitle: 'Learn from the Best',
-      description: 'Join industry experts as they share their knowledge and insights in this interactive workshop.',
+      description: 'Industry Proffessionals share real-world experiences and insights. A chance to learn practical tech skills and get inspired.',
       difficulty: 'Easy',
       agents: 'Individual',
+      entryFees: 'TBD',
       reward: 'Certificate of Participation',
       theme: {
         color: '#e23636',
@@ -166,13 +173,106 @@ function Event() {
     },
     {
       id: 8,
-      category: 'Hackathon',
-      title: 'Startup Hackathon',
-      subtitle: 'Build the Next Big Thing',
-      description: "Join us for a hackathon where you'll create innovative solutions to real-world problems.",
-      difficulty: 'Difficult',
-      agents: 'Team of 2-4',
-      reward: '₹5000',
+      category: 'Competition',
+      title: 'Tech Quiz',
+      subtitle: 'Test Your Knowledge',
+      description: "Answer sharp questions across trending tech domains. Complete solo and let your tech knowledge shine under time pressure.",
+      difficulty: 'Medium',
+      agents: 'Individual',
+      reward: '₹1000',
+      entryFees: '₹500',
+      theme: {
+        color: '#e23636',
+        gradientFrom: 'from-[#e23636]',
+        gradientTo: 'to-[#222]',
+        borderColor: 'border-[#e23636]',
+      },
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
+          <rect x="10" y="4" width="4" height="16" fill="#e23636" />
+          <polygon points="10,4 12,2 14,4" fill="#222" />
+        </svg>
+      )
+    },
+    {
+      id: 9,
+      category: 'Competition',
+      title: 'Chess',
+      subtitle: 'Strategic Showdown',
+      description: "Put your strategic thinking to the test in a classic game of skill and foresight. Outsmart your opponent with every move.",
+      difficulty: 'Medium',
+      agents: 'Individual',
+      reward: '₹1000',
+      entryFees: '₹50',
+      theme: {
+        color: '#e23636',
+        gradientFrom: 'from-[#e23636]',
+        gradientTo: 'to-[#222]',
+        borderColor: 'border-[#e23636]',
+      },
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
+          <rect x="10" y="4" width="4" height="16" fill="#e23636" />
+          <polygon points="10,4 12,2 14,4" fill="#222" />
+        </svg>
+      )
+    },
+    {
+      id: 10,
+      category: 'Competition',
+      title: 'Arm Wrestling',
+      subtitle: 'Test your Strength',
+      description: "A pure display of strength and determination. Compete one-on-one and prove your physical dominance in seconds.",
+      difficulty: 'Medium',
+      agents: 'Individual',
+      reward: '₹1500',
+      entryFees: '₹100',
+      theme: {
+        color: '#e23636',
+        gradientFrom: 'from-[#e23636]',
+        gradientTo: 'to-[#222]',
+        borderColor: 'border-[#e23636]',
+      },
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
+          <rect x="10" y="4" width="4" height="16" fill="#e23636" />
+          <polygon points="10,4 12,2 14,4" fill="#222" />
+        </svg>
+      )
+    },
+    {
+      id: 11,
+      category: 'Competition',
+      title: 'Box Cricket',
+      subtitle: 'Turf Battle',
+      description: "Short-format cricket matches packed with excitment and energy. It's all about quick plays and sharper instincts.",
+      difficulty: 'Medium',
+      agents: 'Team of 11',
+      reward: '₹3000',
+      entryFees: '₹500',
+      theme: {
+        color: '#e23636',
+        gradientFrom: 'from-[#e23636]',
+        gradientTo: 'to-[#222]',
+        borderColor: 'border-[#e23636]',
+      },
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
+          <rect x="10" y="4" width="4" height="16" fill="#e23636" />
+          <polygon points="10,4 12,2 14,4" fill="#222" />
+        </svg>
+      )
+    },
+    {
+      id: 12,
+      category: 'Competition',
+      title: 'BGMI: BattleZone',
+      subtitle: 'Ultimate Survival',
+      description: "Drop into action with your squad in an intense survival game. Only teamwork and smart plays will lead you to victory",
+      difficulty: 'Easy',
+      agents: 'Team of 4',
+      reward: '₹1500',
+      entryFees: '₹200',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
