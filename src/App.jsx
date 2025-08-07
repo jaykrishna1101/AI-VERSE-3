@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link,Navigate } from 'react-router-dom';
 import Home from "./pages/Home"
 import Team from "./pages/Team"
 
@@ -11,7 +11,7 @@ export default function App() {
     
         {/* Routes */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/team"/>} />
           <Route path="/team" element={<Team />} />
          
         </Routes>
