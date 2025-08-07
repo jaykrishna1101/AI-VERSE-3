@@ -52,7 +52,7 @@ function Team() {
       'image': './committee/harshali_dahariya.png'
     },
     {
-      'name': 'Mr. Pritam Chaudhary',
+      'name': 'Mr. Pritam Chaudhari',
       'role': 'Publicity Head',
       'image': './committee/pritam_chaudhary.png'
     },
@@ -67,7 +67,7 @@ function Team() {
       'image': './committee/piyush_bhoyar.png'
     },
     {
-      'name': 'Mr. Prathamesh Ghormade',
+      'name': 'Mr. Prathmesh Ghormade',
       'role': 'EM & HM Head',
       'image': './committee/prathamesh_ghormade.png'
     },
@@ -213,6 +213,11 @@ function Team() {
       'image': './committee/ayush_dhole.png'
     },
     {
+      'name': 'Mr. Sujal Jangde',
+      'role': 'Optimum Co-Head',
+      'image': './committee/sujal_jangde.png'
+    },
+    {
       'name': 'Ms. Sushmita Khachane',
       'role': 'Literary Co-Head',
       'image': './committee/sushmita.png'
@@ -238,7 +243,7 @@ function Team() {
     {
       'name': 'Mr. Kritish Bokde',
       'role': 'Technical Co-Head',
-      'image': './committee/kritish.png'
+      'image': './committee/kritish_bokde.png'
     },
     {
       'name': 'Mr. Vedant Umate',
