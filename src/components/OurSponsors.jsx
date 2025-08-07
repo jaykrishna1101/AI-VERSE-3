@@ -11,6 +11,7 @@ function OurSponsors() {
         { id: 6, name: "Apple", logo: "logo_apple.svg" },
         { id: 7, name: "Apple", logo: "logo_apple.svg" },
         { id: 8, name: "Apple", logo: "logo_apple.svg" },
+        { id: 9, name: "Grras", logo: "grras.png" },
     ];
 
     return (
