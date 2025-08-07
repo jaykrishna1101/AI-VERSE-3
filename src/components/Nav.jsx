@@ -61,7 +61,7 @@ export function FloatingDockDemo() {
         icon: (
             <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
         ),
-        
+        href: 'https://www.instagram.com/compufest_ycce2k25?igsh=MWxyaG5tZ29hMWtvaw=='
     },
     {
      title: "Credits",
