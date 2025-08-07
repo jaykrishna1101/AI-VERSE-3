@@ -23,6 +23,8 @@ import { FloatingDockDemo } from '../components/Nav';
 import LandingHome from '../components/landing';
 import MusicPlayer from '../components/music';
 import MoblieNav from '../components/moblie-nav';
+import { IconMenu } from '@tabler/icons-react';
+import { div } from 'motion/react-client';
 
 
 function ScrollCamera({ cameraPositions }) {
@@ -80,6 +82,13 @@ export default function App() {
   const [progress, setProgress] = useState(0);
 
 
+  const [isOpen, setIsOpen] = useState(true);
+
+  useEffect(()=>{
+    console.log(`${progress}`)
+  })
+
+
 
   const cameraPositions = [
     { scroll: 0, position: [30, 100, -110] },
@@ -121,11 +130,33 @@ export default function App() {
 
       <div className="scroll-content relative overflow-hidden">
 
- 
         <section style={{ minHeight: '400vh', padding: '0rem', color: 'white' }} >
-         
-     <MoblieNav/>
+        
+     
+ {/* {progress < 100 && (
+  <div className="fixed w-full bg-[#E8101B] h-[0vh] top-0 z-[999] flex items-center justify-center">
+    <p className="text-white text-6xl font-bold animate-pulse avenger ">{Math.floor(progress)}  Loading</p>
+  </div>
+)} */}
+
+          
+        
+
+
           <FloatingDockDemo scrollto={scrollTo} />
+       <div
+        className={`fixed top-0 left-0 w-full transition-transform duration-500 ease-in-out z-30
+          ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}
+      >
+        <MoblieNav isOpen={isOpen} setIsOpen={setIsOpen} />
+      </div>
+
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="  block md:hidden fixed right-17 z-50 top-4 outline-none shadow-2xl backdrop-blur-xl bg-white/50 border border-white/40 rounded-2xl p-[7px]"
+      >
+        <IconMenu />
+      </button>
           <MusicPlayer />
           <LandingHome />
 

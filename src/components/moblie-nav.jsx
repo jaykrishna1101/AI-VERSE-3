@@ -1,33 +1,56 @@
-import { IconCross, IconX } from '@tabler/icons-react'
-import React from 'react'
+import { IconX } from '@tabler/icons-react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function MoblieNav() {
-    return (
-        <div className='block md:hidden fixed  z-96 w-full h-[28rem] bg-neutral-900 '>
-            <div className='w-full h-20 flex items-center justify-between px-3  pr-17'>
-                <div className='h-15 w-15 bg-amber-500 rounded-full'>
-                    <img src="/final_logo.png" alt="" />
-                </div>
-                <div className=' outline-none shadow-2xl -mt-[6px]  backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl backdrop:white-3 p-[7px]'>
-                    <IconX />
-                </div>
+function MobileNav({isOpen ,setIsOpen}) {
 
-            </div>
-                <h1  className='text-xl text-center'>Menu</h1>
-            <div className='avenger tracking-wider h-30 w-full flex items-center justify-center flex-col mt-25 gap-2 '>
-                <div className='text-2xl'>Home</div>
-            
-                <div className='text-2xl'>Event</div>
-                <div className='text-2xl'>Timeline</div>
-                <div className='text-2xl'>Team</div>
-                <div className='text-2xl'>Instagram</div>
-                <div className='text-2xl'>Credits</div>
+ const scrollto = (id) => {
+  const element = document.getElementById(id);
+  setIsOpen(true)
+  if (element) {
+    const offset = 200; // Approx height of your mobile nav
+    const y = element.offsetTop - offset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+};
 
 
+  return (
 
-            </div>
+    <div className={`block md:hidden fixed z-50 w-full h-[28rem] transition-all bg-neutral-900 ${isOpen ? "-translate-y-full" : "-translate-y-0" }  `}>
+      <div className='w-full h-20 flex items-center justify-between px-3 pr-16'>
+        <div className='h-16 w-16 bg-amber-500 rounded-full'>
+          <img src="/final_logo.png" alt="Logo" />
         </div>
-    )
+      </div>
+
+      <h1 className='avenger text-lg text-center bg-red-600 p-2'>Menu</h1>
+
+      <div className='avenger tracking-wider w-full flex flex-col items-center mt-5 gap-2'>
+        <button className='text-2xl mb-2 w-full text-center' onClick={() => scrollto("home")}>Home</button>
+        <button className='text-2xl mb-2 w-full text-center' onClick={() => scrollto("event_moblie")}>Event</button>
+        <button className='text-2xl mb-2 w-full text-center' onClick={() => scrollto("timeline")}>Timeline</button>
+
+        <Link to="/team" className='text-2xl mb-2 w-full text-center'>
+          Team
+        </Link>
+
+        <a
+          href="https://www.instagram.com/compufest_ycce2k25?igsh=MWxyaG5tZ29hMWtvaw=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className='text-2xl mb-2 w-full text-center'
+        >
+          Instagram
+        </a>
+
+        <button className='text-2xl mb-2 w-full text-center' onClick={() => scrollto("footer")}>
+          Credits
+        </button>
+      </div>
+    </div>
+  );
 }
 
-export default MoblieNav
+export default MobileNav;

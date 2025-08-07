@@ -12,10 +12,11 @@ function CoreCommittee() {
   const coreCommitteeMembers = [
     'CTSC President: Mr. Om Santoshwar',
     'CTSC Working President: Ms. Gauri Nagpure',
-    'CTSC Vice President & Compufest Head: Mr. Lalit Mendhule',
+    'CTSC Vice President : Mr. Lalit Mendhule',
     'ACM Chairperson: Mr. Soham Bakane',
     'IEEE Chairperson: Mr. Priyanshu Behere',
-    'Cultural Head: Ms. Samiksha Sawant & Mr. Umang Gotmare',
+    'Cultural Head: Ms. Samiksha Sawant',
+    'Cultural Head: Mr. Umang Gotmare',
     'Finance Head & Treasurer: Mr. Shrirang Nadarkhani',
     'Database Head: Ms. Paridhi Nawalkar',
     'Design Head: Ms. Navya Kashimkar',
@@ -23,7 +24,7 @@ function CoreCommittee() {
     'Publicity Head: Mr. Pritam Chaudhary', ,
     'Sponsorship Head: Mr. Raj Dhoble',
     'Optimum Head: Mr. Piyush Bhoyar',
-    'Event Management & Hall Management Head: Mr. Prathamesh Ghormade',
+    'Event & Hall Management Head: Mr. Prathamesh Ghormade',
     'Technosavy & Dhyass Head: Mr. Smit Pidurkar',
     'Students Representative: Ms. Sejal Lambat',
   ];
@@ -31,11 +32,12 @@ function CoreCommittee() {
   const computfestCommitteeMembers = [
     'Compufest Head: Mr. Lalit Mendhule',
     'Technical Head: Mr. Gaurav Naik',
-    'Cultural Head: Ms. Samiksha Sawant & Mr. Umang Gotmare',
+    'Cultural Head: Ms. Samiksha Sawant',
+    'Cultural Head: Mr. Umang Gotmare',
     'Decoration Head: Ms. Sejal Lambat',
     'Sports Head: Mr. Parth Deshpande',
     'Optimum Head & Social Media Head: Mr. Tushar Bodhe',
-    'Event Management & Hall Management Head: Mr. Prathamesh Ghormade',
+    'Event & Hall Management Head: Mr. Prathamesh Ghormade',
     'Design Head: Mr. Ayush Borkar'
   ];
 
@@ -173,7 +175,7 @@ function CoreCommittee() {
             </div>
 
             {coreCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2  inter md:text-[16px] text-sm">{val}</p>
             ))}
 
             <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">

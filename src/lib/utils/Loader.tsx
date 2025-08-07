@@ -7,6 +7,7 @@ export default function Loader({ onProgress }) {
 
   useEffect(() => {
     onProgress(progress);
+   
   }, [progress, onProgress]);
 
   return (

@@ -1,6 +1,6 @@
 // MusicPlayer.jsx
 import React, { useEffect, useRef, useState } from 'react';
-import music from "../assets/background-music.mp3"
+import music from "../assets/background-music-1.mp3"
 import { Icon2fa, IconFilter2Pause, IconPlayerPause, IconPlayerPlay } from '@tabler/icons-react';
 
 function MusicPlayer() {

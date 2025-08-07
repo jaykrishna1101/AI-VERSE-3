@@ -48,8 +48,8 @@ function LandingHome() {
             <span className='whitespace-nowrap rounded-r-xl rounded-l-xl bg-[#E8101B] text-white px-10'> compufest ?</span>
           </h1>
         </div>
-        <div className='h-80 w-[30rem]  top-[43%] right-10 py-10 absolute   '>
-          <h1 className=' text-4xl text-white  avenger leading-12 '>
+        <div className='h-80 w-[32rem]  top-[43%] right-10 py-10 absolute   '>
+          <h1 className=' text-4xl text-white tracking-wide  avenger leading-12 '>
             Compufest is YCCE's Computer Technology Department annual tech event with competitions, workshops, coding, and gaming, fostering innovation and collaboration.
           </h1>
         </div>
