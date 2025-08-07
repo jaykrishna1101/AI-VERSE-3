@@ -37,9 +37,9 @@ function Event() {
       subtitle: 'Showcase your AI & ML expertise',
       description: "Explore the power of image recognition and AI. Decode visual data to uncover hidden patterns and meaningful insights.",
       difficulty: 'Medium',
-      agents: 'Team of 1-3',
-      reward: '₹5,000',
-      entryFees: '₹500',
+      agents: 'Team of 2',
+      reward: '₹2,200',
+      entryFees: '₹150',
       theme: {
         color: '#ffe066',
         gradientFrom: 'from-[#ffe066]',
@@ -61,8 +61,8 @@ function Event() {
       description: "Combine your imagination with AI tools to bring ideas to life. Use smart prompting to generate, build, and impress.",
       difficulty: 'Easy',
       agents: 'Individual',
-      reward: '₹1500',
-      entryFees: '₹200',
+      reward: '₹1100',
+      entryFees: '₹50',
       theme: {
         color: '#8e44ad',
         gradientFrom: 'from-[#8e44ad]',
@@ -83,9 +83,9 @@ function Event() {
       subtitle: 'Battle of the Coders',
       description: 'A rapid-fire coding contest where participants face off in intense challenges. Quick logic and clean code decide the winner.',
       difficulty: 'Medium',
-      agents: 'Team of 1-3',
-      reward: '₹3250',
-      entryFees: '₹200',
+      agents: 'Team of 2',
+      reward: '₹2000',
+      entryFees: '₹150',
       theme: {
         color: '#222',
         gradientFrom: 'from-[#222]',
@@ -108,8 +108,8 @@ function Event() {
       description: 'Solve logic puzzles and follow digital trails in this tech-themed treasure hunt. Speed and brainpower will lead you to the prize.',
       difficulty: 'Medium',
       agents: 'Team of 2-5',
-      reward: '₹3000',
-      entryFees: '₹250',
+      reward: '₹2,000',
+      entryFees: '₹200',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -130,9 +130,9 @@ function Event() {
       subtitle: 'Battle of the Coders',
       description: 'Turn a surprise prompt into a working frontend app - fast. Showcase your design and coding skills under real-time pressure.',
       difficulty: 'Medium',
-      agents: 'Team of 2-3',
+      agents: 'Individual',
       reward: '₹1500',
-      entryFees: '₹100',
+      entryFees: '₹75',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -150,8 +150,8 @@ function Event() {
     },
     {
       id: 7,
-      category: 'Workshop',
-      title: 'Expert Session',
+      category: 'Quiz',
+      title: 'Tech Quiz',
       subtitle: 'Learn from the Best',
       description: 'Industry Proffessionals share real-world experiences and insights. A chance to learn practical tech skills and get inspired.',
       difficulty: 'Easy',
@@ -174,29 +174,6 @@ function Event() {
     {
       id: 8,
       category: 'Competition',
-      title: 'Tech Quiz',
-      subtitle: 'Test Your Knowledge',
-      description: "Answer sharp questions across trending tech domains. Complete solo and let your tech knowledge shine under time pressure.",
-      difficulty: 'Medium',
-      agents: 'Individual',
-      reward: '₹1000',
-      entryFees: '₹500',
-      theme: {
-        color: '#e23636',
-        gradientFrom: 'from-[#e23636]',
-        gradientTo: 'to-[#222]',
-        borderColor: 'border-[#e23636]',
-      },
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
-          <rect x="10" y="4" width="4" height="16" fill="#e23636" />
-          <polygon points="10,4 12,2 14,4" fill="#222" />
-        </svg>
-      )
-    },
-    {
-      id: 9,
-      category: 'Competition',
       title: 'Chess',
       subtitle: 'Strategic Showdown',
       description: "Put your strategic thinking to the test in a classic game of skill and foresight. Outsmart your opponent with every move.",
@@ -218,7 +195,7 @@ function Event() {
       )
     },
     {
-      id: 10,
+      id: 9,
       category: 'Competition',
       title: 'Arm Wrestling',
       subtitle: 'Test your Strength',
@@ -241,7 +218,7 @@ function Event() {
       )
     },
     {
-      id: 11,
+      id: 10,
       category: 'Competition',
       title: 'Box Cricket',
       subtitle: 'Turf Battle',
@@ -264,7 +241,7 @@ function Event() {
       )
     },
     {
-      id: 12,
+      id: 11,
       category: 'Competition',
       title: 'BGMI: BattleZone',
       subtitle: 'Ultimate Survival',
