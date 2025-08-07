@@ -160,7 +160,7 @@ function Team() {
     {
       'name': 'Mr. Swayam Thakur',
       'role': 'ACM Web Master',
-      'image': './committee/swayam_thakur.png'
+      'image': './committee/swayam_thakur.jpg'
     },
     {
       'name': 'Mr. Pratik Rai',
@@ -258,7 +258,7 @@ function Team() {
     {
       'name': 'Mr. Sakshat Keote',
       'role': 'EM Co-Head',
-      'image': './committee/sakshat_keote'
+      'image': './committee/sakshat_keote.png'
     },
     {
       'name': 'Ms. Varsha Kolekar',
