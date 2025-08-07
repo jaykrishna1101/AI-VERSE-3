@@ -291,7 +291,7 @@ function Team() {
       'image': './committee/gauri_joge.png'
     },
     {
-      'name': 'Ms. Nidhi Pawar',
+      'name': 'Ms. Nandini Pawar',
       'role': 'Design Co-Head',
       'image': './committee/nidhi_pawar.png'
     },
