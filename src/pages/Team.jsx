@@ -338,15 +338,16 @@ function Team() {
       <div className=' absolute min-h-screen w-full flex items-center justify-start gap-3 flex-col  z-[99] p-10 '>
         <h1 className='text-center avenger text-white text-5xl '>Team Compufest</h1>
         <div className='  w-80 bg-[#DE0E12] p-3'>
-          <h1 className='text-center avenger text-white text-3xl  '>Core Avenegers</h1>
+          <h1 className='text-center avenger text-white text-3xl  '>Core Avengers</h1>
         </div>
         <div className='min-h-screen w-full flex gap-3 flex-wrap  justify-center '>
           {coreCommittee.map((member, index) => (
             <div className='h-96 w-80 rounded-2xl bg-zinc-800 flex items-center justify-center flex-col gap-2 opacity-90 overflow-hidden '>
               <span className='text-6xl spider text-white'>  </span>
               <h1 className='text-2xl text-white spider whitespace-nowrap'> {member.role}</h1>
-              <div className='h-40 w-40 rounded-full overflow-hidden border-2'>
-                <img alt='' src={member.image} className='h-full w-full object-cover'></img>
+              <div className='relative h-40 w-40 rounded-full overflow-hidden border-2'>
+                <div className='absolute w-40 h-40 bg-gray-700 animate-pulse z-10 animation-[pulse_0.4s_ease-in-out_infinite] '></div>
+                <img alt='' src={member.image} loading='lazy' className='relative h-full w-full object-cover z-50'></img>
               </div>
               <h3 className='spider text-2xl text-white tracking-widest'>{member.name}</h3>
             </div>
@@ -355,7 +356,7 @@ function Team() {
         <div className='h-10' >
         </div>
         <div className='  w-80 bg-[#DE0E12] p-3'>
-          <h1 className='text-center avenger text-white text-3xl  '>Compufest Core Avenegers</h1>
+          <h1 className='text-center avenger text-white text-3xl  '>Compufest Core Avengers</h1>
         </div>
         <div className='min-h-screen w-full flex gap-3 flex-wrap  justify-center '>
           {compufestCoreCommittee.map((member, index) => (
@@ -372,7 +373,7 @@ function Team() {
         <div className='h-10' >
         </div>
         <div className='  w-80 bg-[#DE0E12] p-3'>
-          <h1 className='text-center avenger text-white text-3xl  '>Semi-Core Avenegers</h1>
+          <h1 className='text-center avenger text-white text-3xl  '>Semi-Core Avengers</h1>
         </div>
         <div className='min-h-screen w-full flex gap-3 flex-wrap  justify-center '>
           {semiCoreCommittee.map((member, index) => (
@@ -389,7 +390,7 @@ function Team() {
         <div className='h-10' >
         </div>
         <div className='  w-80 bg-[#DE0E12] p-3'>
-          <h1 className='text-center avenger text-white text-3xl  '>Compufest Semi-Core Avenegers</h1>
+          <h1 className='text-center avenger text-white text-3xl  '>Compufest Semi-Core Avengers</h1>
         </div>
         <div className='min-h-screen w-full flex gap-3 flex-wrap  justify-center '>
           {compufestSemiCoreCommittee.map((member, index) => (
