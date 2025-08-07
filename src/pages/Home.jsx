@@ -22,6 +22,8 @@ import { useLenis } from '../lib/utils/lenis';
 import { FloatingDockDemo } from '../components/Nav';
 import LandingHome from '../components/landing';
 import MusicPlayer from '../components/music';
+import MoblieNav from '../components/moblie-nav';
+
 
 function ScrollCamera({ cameraPositions }) {
   const { camera } = useThree();
@@ -119,8 +121,10 @@ export default function App() {
 
       <div className="scroll-content relative overflow-hidden">
 
-
+ 
         <section style={{ minHeight: '400vh', padding: '0rem', color: 'white' }} >
+         
+     <MoblieNav/>
           <FloatingDockDemo scrollto={scrollTo} />
           <MusicPlayer />
           <LandingHome />

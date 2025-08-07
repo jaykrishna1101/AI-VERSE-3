@@ -23,9 +23,9 @@ export const FloatingDock = ({
     <>
       <div>
       <FloatingDockDesktop items={items} scrollto={scrollto} className={desktopClassName} />
+      <FloatingDockMobile items={items} className={mobileClassName} />
       </div>
         
-      <FloatingDockMobile items={items} className={mobileClassName} />
     </>
   );
 };
