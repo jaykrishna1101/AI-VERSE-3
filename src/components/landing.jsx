@@ -65,8 +65,6 @@ const letter = {
          </div>
    </div>
 
-
-
           </div>
 
 

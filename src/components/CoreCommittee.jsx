@@ -79,17 +79,17 @@ function CoreCommittee() {
         Compufest Committee
       </h1>
 
-      <div ref={scrollRef} className="w-[65rem] h-[35rem] overflow-hidden  flex items-center -mt-3 justify-center relative">
+      <div ref={scrollRef} className="w-[65rem] h-[80vh] overflow-hidden  flex items-center -mt-3 justify-center relative">
         <motion.div
 
           initial={{ y: "70%" }}
           animate={{ y: "-66%" }}
           transition={{
-            duration: 50,
+            duration: 40,
             ease: "linear",
             repeat: Infinity, // Remove this if you want it only once
           }}
-          className="w-[65rem] min-h-[35rem]  "
+          className="w-[65rem] "
         >
           {/* Put your content inside this box */}
           <div className="p-4 text-center text-white relative rounded-xl">
@@ -116,6 +116,8 @@ function CoreCommittee() {
               <img src="spider-man-sticker.png" alt="" />
             </div>
 
+
+
             <motion.div
               initial={{ rotate: 10 }}
               animate={{ rotate: -10 }}
@@ -140,6 +142,35 @@ function CoreCommittee() {
               <img src="/captain.png" alt="" />
             </div>
 
+  <div className=" absolute top-280 scale-150 left-10 w-40 h-40 rotate-3 rounded-xl">
+              <img src="/hulk.png" alt="" />
+            </div>
+
+
+  <div className=" absolute top-320 right-10 w-40 h-40 rotate-3 rounded-xl">
+              <img src="/black-panther.png" alt="" />
+            </div>
+
+
+             <div className=" absolute top-360 left-0 w-60 h-32 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
+              <img src="" alt="" />
+            </div>
+
+             <div className=" absolute top-390 right-10 w-40 h-40 rotate-3 rounded-xl">
+              <img src="/wanda.png" alt="" />
+            </div>
+
+             <div className=" absolute top-430 scale-100 left-10 w-40 h-40 rotate-3 rounded-xl">
+              <img src="/deedpool-wolv.png" alt="" />
+            </div>
+            
+               <div className=" absolute top-500 scale-140 left-10 w-40 h-40 rotate-3 rounded-xl">
+              <img src="/Dr_strange.png" alt="" />
+            </div>
+
+            <div className=" absolute top-500 right-0 w-48 h-60 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
+              <img src="/draredevil.jpeg" alt="" />
+            </div>
 
             {coreCommitteeMembers.map((val, index) => (
               <p key={index} className="mb-2 inter">{val}</p>

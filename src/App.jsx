@@ -11,7 +11,9 @@ export default function App() {
     
         {/* Routes */}
         <Routes>
-          <Route path="/" element={<Navigate to="/team"/>} />
+       
+          {/* <Route path="/" element={<Navigate to="/team"/>} /> */}
+             <Route path="/" element={<Home/>} />
           <Route path="/team" element={<Team />} />
          
         </Routes>
