@@ -156,9 +156,8 @@ function CoreCommittee() {
               <img src="/black-panther.png" alt="" />
             </div>
 
-
-            <div className=" absolute top-360 left-0 w-60 h-32 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
-              <img src="" alt="" />
+             <div className=" absolute top-360 left-0 w-60 h-32 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
+              <img src="/core.png" alt="" />
             </div>
 
             <div className=" absolute top-390 right-10 w-40 h-40 rotate-3 rounded-xl">

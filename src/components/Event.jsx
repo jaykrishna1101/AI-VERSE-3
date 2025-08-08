@@ -277,7 +277,13 @@ function Event() {
           ))}
         </div>
       </div>
-      <div id='timeline' className='h-full w-full mt-12 p-8 rounded-lg'>
+      <div id='timeline' className='  relative h-full w-full mt-12 p-8 rounded-lg'>
+        <div className=' hidden md:block h-40 w-40 scale-140 absolute right-0 '>
+             <img src="deadpool.png" alt="" />
+        </div>
+           <div className='hidden md:block  h-40 w-40 scale-140 absolute top-300  left-0 '>
+             <img src="spider-face.png" alt="" />
+        </div>
         <EventTimeLine />
       </div>
     </div>

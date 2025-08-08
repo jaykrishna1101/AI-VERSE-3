@@ -203,7 +203,7 @@ function Team() {
       'image': './committee/mk.png'
     },
     {
-      'name': 'Ms. Sakshi Krishnani',
+      'name': 'Ms.Saakshi Krishnani',
       'role': 'Database Co-Head',
       'image': './committee/sakshi_krishnani.png'
     },
