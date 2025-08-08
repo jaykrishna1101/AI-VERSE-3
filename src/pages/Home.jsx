@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 import * as THREE from 'three';
 import Event from '../components/Event';
 import audio from "../assets/background-music.mp3"
-
+import { AnimatePresence, motion } from "framer-motion";
 import CoreCommittee from '../components/CoreCommittee';
 
 
@@ -23,7 +23,7 @@ import { FloatingDockDemo } from '../components/Nav';
 import LandingHome from '../components/landing';
 import MusicPlayer from '../components/music';
 import MoblieNav from '../components/moblie-nav';
-import { IconMenu } from '@tabler/icons-react';
+import { IconMenu, IconX } from '@tabler/icons-react';
 import { div } from 'motion/react-client';
 
 
@@ -78,8 +78,9 @@ function ScrollCamera({ cameraPositions }) {
 export default function App() {
 
 
-  const [loadingDone, setLoadingDone] = useState(false);
-  const [progress, setProgress] = useState(0);
+   const [progress, setProgress] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+  const [suspenseResolved, setSuspenseResolved] = useState(false);
 
 
   const [isOpen, setIsOpen] = useState(true);
@@ -89,6 +90,7 @@ export default function App() {
   })
 
 
+ 
 
   const cameraPositions = [
     { scroll: 0, position: [30, 100, -110] },
@@ -112,10 +114,20 @@ export default function App() {
       {/* <ContinuousMusic /> */}
 
       <div className='  fixed top-0 left-0 w-full h-full  md:h-screen '  >
-        <Canvas shadows dpr={[1, 2]} camera={{ position: [3, 10, -100], fov: 70 }}>
+        <Canvas   onCreated={() => {
+    // Wait 3 seconds before hiding the loader
+    console.log("Created")
+    setTimeout(() => {
+        console.log("model loaded  ")
+      setSuspenseResolved(true);
+    }, 2000);
+  }} shadows dpr={[1, 2]} camera={{ position: [3, 10, -100], fov: 70 }}>
           <ambientLight intensity={0.5} />
           <directionalLight position={[2, 2, 5]} intensity={1} />
-          <Suspense fallback={<Loader onProgress={setProgress} />}>
+          <Suspense fallback={<Loader
+              onProgress={setProgress}
+             
+            />}>
             <Model />
             <SetBackground imageUrl="/bg.png" />
             <Environment
@@ -133,13 +145,25 @@ export default function App() {
         <section style={{ minHeight: '400vh', padding: '0rem', color: 'white' }} >
         
      
- {/* {progress < 100 && (
-  <div className="fixed w-full bg-[#E8101B] h-[0vh] top-0 z-[999] flex items-center justify-center">
-    <p className="text-white text-6xl font-bold animate-pulse avenger ">{Math.floor(progress)}  Loading</p>
-  </div>
-)} */}
+<AnimatePresence>
+  {(progress <= 80 && !suspenseResolved) && (
+    <motion.div
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.6, ease: "easeInOut",delay:2 }}
+      className={`fixed inset-0 bg-[#E8101B] z-[999] flex items-center justify-center ${
+        suspenseResolved ? "opacity-0" : "opacity-100"
+      }`}
+    >
+      <p className="text-white text-6xl font-bold animate-pulse avenger">
+        {progress} <span className="inter"></span> Loading...
+      </p>
+    </motion.div>
+  )}
+</AnimatePresence>
 
-          
+            
         
 
 
@@ -155,7 +179,7 @@ export default function App() {
         onClick={() => setIsOpen(!isOpen)}
         className="  block md:hidden fixed right-17 z-50 top-4 outline-none shadow-2xl backdrop-blur-xl bg-white/50 border border-white/40 rounded-2xl p-[7px]"
       >
-        <IconMenu />
+        {isOpen ? <IconMenu /> : <IconX/> }
       </button>
           <MusicPlayer />
           <LandingHome />

@@ -41,24 +41,24 @@ function LandingHome() {
           ))}
         </motion.h1>
       </div>
-      <div>
-        <div className='h-80 w-[30rem]  top-[40%] left-10 py-10 absolute  '>
+      <div className='  '>
+        <div className='h-80 w-[30rem] scale-75 md:scale-100 -left-20 top-[40%] md:left-10 py-10 absolute  '>
           <h1 className=' text-8xl text-[#e8101b]  avenger  opacity-80 '>
             <span className='bg-[#E8101B] text-white px-10 py-2  rounded-l-xl rounded-r-xl '> What is</span>
             <span className='whitespace-nowrap rounded-r-xl rounded-l-xl bg-[#E8101B] text-white px-10'> compufest ?</span>
           </h1>
         </div>
-        <div className='h-80 w-[32rem]  top-[43%] right-10 py-10 absolute   '>
-          <h1 className=' text-4xl text-white tracking-wide  avenger leading-12 '>
+        <div className='h-80 md:w-[32rem] w-full  top-[43%]  px-5 md:px-0 md:right-10  md:py-10 absolute   '>
+          <h1 className=' text-2xl md:text-4xl text-white md:tracking-wide  avenger md:leading-12 '>
             Compufest is YCCE's Computer Technology Department annual tech event with competitions, workshops, coding, and gaming, fostering innovation and collaboration.
           </h1>
         </div>
       </div>
-      <div className='h-[600px] absolute top-[85%] w-full p-10 '>
-        <div className=' w-[30rem] backdrop-blur-3xl   rounded-2xl  avenger text-3xl p-10 opacity-80' >
+      <div className='h-[600px] absolute top-[85%] w-full md:p-10 '>
+        <div className=' md:w-[30rem] backdrop-blur-3xl   rounded-2xl  avenger text-3xl p-10 opacity-80' >
           The Department of Computer Technology at YCCE, established in 1985, is accredited and recognized for excellence in education and research. With a focus on AI, IoT, ML, and more, it offers industry-relevant programs and advanced research opportunities.
         </div>
-        <div className=' absolute right-0 h-72 w-[30rem] text-[#e8101b]  avenger text-8xl p-10' >
+        <div className=' absolute right-0 h-72 md:w-[30rem] text-[#e8101b]  avenger text-7xl md:text-8xl p-10' >
           Sabse Best <span className='text-white'> compufest ! </span>
         </div>
       </div>

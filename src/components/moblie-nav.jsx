@@ -20,7 +20,7 @@ function MobileNav({isOpen ,setIsOpen}) {
 
     <div className={`block md:hidden fixed z-50 w-full h-[28rem] transition-all bg-neutral-900 ${isOpen ? "-translate-y-full" : "-translate-y-0" }  `}>
       <div className='w-full h-20 flex items-center justify-between px-3 pr-16'>
-        <div className='h-16 w-16 bg-amber-500 rounded-full'>
+        <div className='h-16 w-16 scale-90  rounded-full'>
           <img src="/final_logo.png" alt="Logo" />
         </div>
       </div>
