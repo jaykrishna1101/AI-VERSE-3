@@ -168,11 +168,11 @@ function CoreCommittee() {
               <img src="/deedpool-wolv.png" alt="" />
             </div>
 
-            <div className=" absolute top-500 scale-140 left-10 w-40 h-40 rotate-3 rounded-xl">
+            <div className=" absolute top-540 scale-140 left-10 w-40 h-40 rotate-3 rounded-xl">
               <img src="/Dr_strange.png" alt="" />
             </div>
 
-            <div className=" absolute top-500 right-0 w-48 h-60 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
+            <div className=" absolute top-560 right-0 w-48 h-60 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
               <img src="/draredevil.jpeg" alt="" />
             </div>
 

@@ -39,7 +39,7 @@ function EventCard({ event }) {
       </div>
 
       {/* Card Footer Button */}
-      <button className={`avenger font-extralight mt-8 w-full bg-gradient-to-r ${event.theme.gradientFrom} ${event.theme.gradientTo} text-white font-bold py-3 rounded-lg hover:opacity-90 transition-opacity duration-300`} onClick={() => window.open(event.link, 'Google Form')}>
+      <button className={`avenger font-extralight mt-8 w-full cursor-pointer bg-gradient-to-r ${event.theme.gradientFrom} ${event.theme.gradientTo} text-white font-bold py-3 rounded-lg hover:opacity-90 transition-opacity duration-300`} onClick={() => window.open(event.link, 'Google Form')}>
         <span className="mr-2"> ACCEPT</span> MISSION
       </button>
     </div>

@@ -59,7 +59,10 @@ function LandingHome() {
       </div>
       <div className='h-[600px] absolute top-[85%] w-full md:p-10 '>
         <div className=' md:w-[30rem] backdrop-blur-3xl   rounded-2xl  avenger text-3xl p-10 opacity-80' >
+         <h1 className='mb-2 text-[#e8101b] text-3xl text-center '> About Ycce CT <span className='ml-2'>Department</span> </h1>
+         <h1 className='text-2xl tracking-wide'>
           The Department of Computer Technology at YCCE, established in 1985, is accredited and recognized for excellence in education and research. With a focus on AI, IoT, ML, and more, it offers industry-relevant programs and advanced research opportunities.
+          </h1> 
         </div>
         <div className=' absolute right-0 h-72 md:w-[30rem] text-[#e8101b]  avenger text-7xl md:text-8xl p-10' >
           Sabse Best <span className='text-white'> compufest ! </span>
