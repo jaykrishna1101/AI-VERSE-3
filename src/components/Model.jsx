@@ -9,7 +9,7 @@ const ResponsiveModel = forwardRef((props, ref) => {
 
   // Dynamic scale based on viewport width
   const scale = useMemo(() => {
-    if (viewport.width < 6) return 0.3;
+    if (viewport.width < 6) return 1;
     if (viewport.width < 10) return 0.6;
     return 1;
   }, [viewport.width]);

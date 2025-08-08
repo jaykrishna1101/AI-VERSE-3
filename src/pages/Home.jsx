@@ -120,7 +120,7 @@ export default function App() {
     setTimeout(() => {
         console.log("model loaded  ")
       setSuspenseResolved(true);
-    }, 2000);
+    }, 5000);
   }} shadows dpr={[1, 2]} camera={{ position: [3, 10, -100], fov: 70 }}>
           <ambientLight intensity={0.5} />
           <directionalLight position={[2, 2, 5]} intensity={1} />
