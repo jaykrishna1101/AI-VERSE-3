@@ -21,7 +21,7 @@ function OurSponsors() {
                     gradient={true}
                     gradientColor={"#e23636"}
                     speed={40}
-                    pauseOnHover={true}>
+                    pauseOnHover={false}>
                 
                     {sponsors.map((sponsor) => (
                         <div key={`${sponsor.id}-${sponsor.name}`} className="flex flex-col items-center justify-center mx-12 sm:mx-16 text-center">

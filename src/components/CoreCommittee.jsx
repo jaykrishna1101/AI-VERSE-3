@@ -24,7 +24,7 @@ function CoreCommittee() {
     'Publicity Head: Mr. Pritam Chaudhary', ,
     'Sponsorship Head: Mr. Raj Dhoble',
     'Optimum Head: Mr. Piyush Bhoyar',
-    'Event & Hall Management Head: Mr. Prathamesh Ghormade',
+    'EM & HM Head: Mr. Prathamesh Ghormade',
     'Technosavy & Dhyass Head: Mr. Smit Pidurkar',
     'Students Representative: Ms. Sejal Lambat',
   ];
@@ -36,13 +36,13 @@ function CoreCommittee() {
     'Cultural Head: Mr. Umang Gotmare',
     'Decoration Head: Ms. Sejal Lambat',
     'Sports Head: Mr. Parth Deshpande',
-    'Optimum Head & Social Media Head: Mr. Tushar Bodhe',
-    'Event & Hall Management Head: Mr. Prathamesh Ghormade',
+    'Optimum & Social Media Head: Mr. Tushar Bodhe',
+    'EM & HM Head: Mr. Prathamesh Ghormade',
     'Design Head: Mr. Ayush Borkar'
   ];
 
   const semiCoreCommitteeMembers = [
-    'Joint Secretary: Mrs. Aditya Rehpade',
+    'Joint Secretary: Mr. Aditya Rehpade',
     'ACM Vice Chairperson: Mr. Darshan Bagde',
     'ACM Secratory: Mr. Aditya Roy',
     'ACM Web Master: Mr. Swayam Thakur',
@@ -55,8 +55,9 @@ function CoreCommittee() {
     'Hall Management Co-Head: Mr. Neelay Jadhav',
     'Sponsorship Co-Head: Mr. Arth Bhagat',
     'Database Co-Head: Ms. Sakshi Krishnani',
-    'Optimum Co-Head: Mr. Ayush Dhole & Mr. Sujal Jangde',
-    'Design Co-Head: Mr. Yash Nandanawar & Mr. Rachit Singh',
+    'Optimum Co-Head: Mr. Ayush Dhole',
+    'Optimum Co-Head: Mr. Sujal Jangde',
+    'Design Co-Head: Mr. Yash Nandanawar',
     'Technosavy & Dhyass Co-Head: Ms. Shailaja Patle',
     'Finance Co-Head: Mr. Hrutik Gujarkar',
     'Literature Co-Head: Ms. Sushmita Khachane',
@@ -65,14 +66,16 @@ function CoreCommittee() {
   const semiCoreCompufestCommitteeMembers = [
     'Technical Co-Head: Mr. Kritish Bokde',
     'Publicity Co-Head: Mr. Vedant Umate',
-    'Event Management Co-Head: Mr. Aman Kanoje & Mr. Sakshat Keote',
-    'Hall Management Co-Head: Mr. Varsha Kolekar',
+    'Event Management Co-Head: Mr. Aman Kanoje',
+    'Event Management Co-Head: Mr. Sakshat Keote',
+    'Hall Management Co-Head: Ms. Varsha Kolekar',
     'Cultural Co-Head: Ms. Ekta Chandak',
     'Database Co-Head: Mr. Tanmay Patil',
-    'Optimum Co-Head: Mr. Sujal Jangde & Ms. Sanskruti Barnase',
+    'Optimum Co-Head: Ms. Sanskruti Barnase',
     'Literary Co-Head: Ms. Gauri Joge',
-    'Design Co-Head: Mr. Nandini Pawar',
-    'Sports Co-Head: Mr. Krishna Mishra & Mr. Aniket Mokalkar'
+    'Design Co-Head: Ms. Nandini Pawar',
+    'Sports Co-Head: Mr. Krishna Mishra',
+    'Sports Co-Head: Mr. Aniket Mokalkar'
   ];
 
   return (
@@ -144,29 +147,28 @@ function CoreCommittee() {
               <img src="/captain.png" alt="" />
             </div>
 
-  <div className=" absolute top-280 scale-150 left-10 w-40 h-40 rotate-3 rounded-xl">
+            <div className=" absolute top-280 scale-150 left-10 w-40 h-40 rotate-3 rounded-xl">
               <img src="/hulk.png" alt="" />
             </div>
 
 
-  <div className=" absolute top-320 right-10 w-40 h-40 rotate-3 rounded-xl">
+            <div className=" absolute top-320 right-10 w-40 h-40 rotate-3 rounded-xl">
               <img src="/black-panther.png" alt="" />
             </div>
-
 
              <div className=" absolute top-360 left-0 w-60 h-32 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
               <img src="/core.png" alt="" />
             </div>
 
-             <div className=" absolute top-390 right-10 w-40 h-40 rotate-3 rounded-xl">
+            <div className=" absolute top-390 right-10 w-40 h-40 rotate-3 rounded-xl">
               <img src="/wanda.png" alt="" />
             </div>
 
-             <div className=" absolute top-430 scale-100 left-10 w-40 h-40 rotate-3 rounded-xl">
+            <div className=" absolute top-430 scale-100 left-10 w-40 h-40 rotate-3 rounded-xl">
               <img src="/deedpool-wolv.png" alt="" />
             </div>
-            
-               <div className=" absolute top-500 scale-140 left-10 w-40 h-40 rotate-3 rounded-xl">
+
+            <div className=" absolute top-500 scale-140 left-10 w-40 h-40 rotate-3 rounded-xl">
               <img src="/Dr_strange.png" alt="" />
             </div>
 
