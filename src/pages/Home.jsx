@@ -156,6 +156,7 @@ export default function App() {
         suspenseResolved ? "opacity-0" : "opacity-100"
       }`}
     >
+      
       <p className="text-white text-6xl font-bold animate-pulse avenger">
         {progress} <span className="inter"></span> Loading...
       </p>

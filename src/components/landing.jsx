@@ -1,5 +1,6 @@
 import React from 'react'
-import { motion } from "framer-motion"
+import { delay, motion } from "framer-motion"
+
 
 function LandingHome() {
 
@@ -12,6 +13,7 @@ function LandingHome() {
     show: {
       transition: {
         staggerChildren: 0.05,
+        delay:2
       },
     },
   };
@@ -19,7 +21,8 @@ function LandingHome() {
   // Variants for each letter
   const letter = {
     hidden: { y: 10, opacity: 0 },
-    show: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 500 } },
+    show: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 500,   } }
+
   };
 
   return (

@@ -291,9 +291,27 @@ function Event() {
         <div className=' hidden md:block h-40 w-40 scale-140 absolute right-0 '>
              <img src="deadpool.png" alt="" />
         </div>
-           <div className='hidden md:block  h-40 w-40 scale-140 absolute top-300  left-0 '>
+           <div className='hidden md:block  h-40 w-40 scale-140 absolute top-100  left-10 '>
              <img src="spider-face.png" alt="" />
         </div>
+          <div className='hidden md:block  h-40 w-40 scale-140 absolute top-180 right-10 '>
+             <img src="pointer.png" alt=""/> 
+        </div>
+          <div className='hidden md:block  h-40 w-40 scale-75 absolute top-302 left-70 '>
+             <img src="sp.png" alt=""/> 
+        </div>
+         <div className='hidden md:block  h-40 w-40 scale-140 absolute top-392 right-10 '>
+             <img src="Wolve.png" alt=""/> 
+        </div>
+          <div className='hidden md:block  h-40 w-40 scale-140 absolute top-492 left-10 '>
+             <img src="Danger.png" alt=""/> 
+        </div>
+        <div className='hidden md:block  h-40 w-40 scale-140 absolute top-590 right-40 '>
+             <img src="ironman-snap.png" alt=""/> 
+        </div>
+          <div className='hidden md:block  h-40 w-40 scale-140 absolute top-670 left-30 '>
+             <img src="DW.png" alt=""/> 
+        </div>  
         <EventTimeLine />
       </div>
     </div>
