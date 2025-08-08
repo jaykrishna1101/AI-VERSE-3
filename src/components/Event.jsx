@@ -15,7 +15,7 @@ function Event() {
       agents: 'Team of 3-5',
       entryFees: '₹1000',
       reward: '₹30,000',
-      link: '',
+      link: 'https://unstop.com/hackathons/coderush-24hr-hackathon-yeshwantrao-chavan-college-of-engineering-ycce-nagpur-1533739',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -180,8 +180,8 @@ function Event() {
       description: "Put your strategic thinking to the test in a classic game of skill and foresight. Outsmart your opponent with every move.",
       difficulty: 'Medium',
       agents: 'Individual',
-      reward: '₹1000',
-      entryFees: '₹50',
+      reward: '₹1200',
+      entryFees: '₹60',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',

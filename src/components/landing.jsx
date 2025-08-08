@@ -55,10 +55,10 @@ function LandingHome() {
         </div>
       </div>
       <div className='h-[600px] absolute top-[85%] w-full p-10 '>
-        <div className=' w-[30rem] backdrop-blur-3xl   rounded-2xl  avenger text-3xl p-10 opacity-80' >
+        <div className=' w-[30rem] backdrop-blur-3xl rounded-2xl  avenger text-3xl p-10 opacity-80' >
           The Department of Computer Technology at YCCE, established in 1985, is accredited and recognized for excellence in education and research. With a focus on AI, IoT, ML, and more, it offers industry-relevant programs and advanced research opportunities.
         </div>
-        <div className=' absolute right-0 h-72 w-[30rem] text-[#e8101b]  avenger text-8xl p-10' >
+        <div className=' absolute right-0 h-72 w-[30rem] text-[#e8101b] avenger text-8xl p-10' >
           Sabse Best <span className='text-white'> compufest ! </span>
         </div>
       </div>
