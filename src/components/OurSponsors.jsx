@@ -3,15 +3,10 @@ import Marquee from "react-fast-marquee";
 
 function OurSponsors() {
     const sponsors = [
-        { id: 1, name: "Amazon", logo: "logo_amazon.svg" },
-        { id: 2, name: "Google", logo: "logo_google.svg" },
-        { id: 3, name: "Microsoft", logo: "logo_microsoft.svg" },
-        { id: 4, name: "Apple", logo: "logo_apple.svg" },
-        { id: 5, name: "Apple", logo: "logo_apple.svg" },
-        { id: 6, name: "Apple", logo: "logo_apple.svg" },
-        { id: 7, name: "Apple", logo: "logo_apple.svg" },
-        { id: 8, name: "Apple", logo: "logo_apple.svg" },
-        { id: 9, name: "Grras", logo: "grras.png" },
+        { id: 1, name: "Grras", logo: "grras.png" },
+        { id: 2, name: "Shah Overseas", logo: "shah_overseas.png" },
+        { id: 3, name: "Navbharat Times", logo: "navbharat.png" },
+        { id: 4, name: "TCS", logo: "tcs.png" },
     ];
 
     return (

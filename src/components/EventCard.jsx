@@ -1,4 +1,4 @@
-function EventCard ({ event }) {
+function EventCard({ event }) {
   return (
     <div className={`bg-gray-800 bg-opacity-40 border ${event.theme.borderColor} rounded-lg p-6 flex flex-col justify-between text-gray-300 inset-shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300`}>
       <div>
@@ -16,7 +16,7 @@ function EventCard ({ event }) {
         <h2 className="avenger text-2xl font-extralight text-white mb-1 space-x-10">{event.title}</h2>
         <p className="avenger text-gray-400 font-extralight mb-4">{event.subtitle}</p>
         <p className="text-gray-400 text-sm mb-6 h-20 font-mono">{event.description}</p>
-        
+
         {/* Details Section */}
         <div className="space-y-3 text-sm">
           <div className="flex items-center">
@@ -39,7 +39,7 @@ function EventCard ({ event }) {
       </div>
 
       {/* Card Footer Button */}
-      <button className={`avenger font-extralight mt-8 w-full bg-gradient-to-r ${event.theme.gradientFrom} ${event.theme.gradientTo} text-white font-bold py-3 rounded-lg hover:opacity-90 transition-opacity duration-300`}>
+      <button className={`avenger font-extralight mt-8 w-full bg-gradient-to-r ${event.theme.gradientFrom} ${event.theme.gradientTo} text-white font-bold py-3 rounded-lg hover:opacity-90 transition-opacity duration-300`} onClick={() => window.open(event.link, 'Google Form')}>
         <span className="mr-2"> ACCEPT</span> MISSION
       </button>
     </div>
