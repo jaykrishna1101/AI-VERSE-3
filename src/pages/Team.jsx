@@ -276,11 +276,6 @@ function Team() {
       'image': './committee/tanmay_patil.png'
     },
     {
-      'name': 'Mr. Sujal Jangde',
-      'role': 'Optimum Co-Head',
-      'image': './committee/sujal_jangde.png'
-    },
-    {
       'name': 'Ms. Sanskruti Barnase',
       'role': 'Optimum Co-Head',
       'image': './committee/sanskruti_barnasi.png'

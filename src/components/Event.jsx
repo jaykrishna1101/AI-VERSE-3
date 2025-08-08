@@ -15,6 +15,7 @@ function Event() {
       agents: 'Team of 3-5',
       entryFees: '₹1000',
       reward: '₹30,000',
+      link: '',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
