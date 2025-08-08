@@ -40,6 +40,7 @@ function Event() {
       difficulty: 'Medium',
       agents: 'Team of 2',
       reward: '₹2,200',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSflzf2raDd4g0WstS6R25-E48Q-l-nK0dMbACQGCBmVryiTiw/viewform',
       entryFees: '₹150',
       theme: {
         color: '#ffe066',
@@ -64,6 +65,7 @@ function Event() {
       agents: 'Individual',
       reward: '₹1100',
       entryFees: '₹50',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSdG0B_feV4LT3DxIiiY__EP8s0K9jU2MpN-oIQm_Y7M4Zfj8w/viewform',
       theme: {
         color: '#8e44ad',
         gradientFrom: 'from-[#8e44ad]',
@@ -87,6 +89,7 @@ function Event() {
       agents: 'Team of 2',
       reward: '₹2000',
       entryFees: '₹150',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSet3fwBNAjATQR9svq2R4R9n9TXAaEPkfg5m5VcRYzMySWgJA/viewform',
       theme: {
         color: '#222',
         gradientFrom: 'from-[#222]',
@@ -111,6 +114,7 @@ function Event() {
       agents: 'Team of 2-5',
       reward: '₹2,000',
       entryFees: '₹200',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSdXkLFRICo0CBtIjoEb_rOBFb6MYSIxcSFL6ZEC7XD40JNAVw/viewform',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -133,6 +137,7 @@ function Event() {
       difficulty: 'Medium',
       agents: 'Individual',
       reward: '₹1500',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSceAcBRItCFPCSckXw2HhtIzM0GoF3PgSBdJeMEvaA1v97knQ/viewform',
       entryFees: '₹75',
       theme: {
         color: '#e23636',
@@ -157,8 +162,9 @@ function Event() {
       description: 'Industry Proffessionals share real-world experiences and insights. A chance to learn practical tech skills and get inspired.',
       difficulty: 'Easy',
       agents: 'Individual',
-      entryFees: 'TBD',
-      reward: 'Certificate of Participation',
+      entryFees: '50',
+      reward: 'TBD',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSfyerxtwS0DEPKpIbr75QbRGilaPJszMzGBa9hWtaHYfXQqLg/viewform',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -181,6 +187,7 @@ function Event() {
       difficulty: 'Medium',
       agents: 'Individual',
       reward: '₹1200',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSdtA_Cgxb0LGo0YgVHk1zgSzwxsxm4p4n5OflneNvYZsuqIdA/viewform?usp=header',
       entryFees: '₹60',
       theme: {
         color: '#e23636',
@@ -203,8 +210,9 @@ function Event() {
       description: "A pure display of strength and determination. Compete one-on-one and prove your physical dominance in seconds.",
       difficulty: 'Medium',
       agents: 'Individual',
-      reward: '₹1500',
-      entryFees: '₹100',
+      reward: '₹4000',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSeyQOwuOGuBav-5fOxLeYipN3hOSO2UCxFuAgeWaipipwQHng/viewform',
+      entryFees: '₹150',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -226,8 +234,9 @@ function Event() {
       description: "Short-format cricket matches packed with excitment and energy. It's all about quick plays and sharper instincts.",
       difficulty: 'Medium',
       agents: 'Team of 11',
-      reward: '₹3000',
-      entryFees: '₹500',
+      reward: '₹5000',
+      entryFees: '₹550',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSecuIxchFqkhCnecQjq16kZCQHfEWG8CBf--Lt1iCdhuPdnpg/viewform',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -249,7 +258,8 @@ function Event() {
       description: "Drop into action with your squad in an intense survival game. Only teamwork and smart plays will lead you to victory",
       difficulty: 'Easy',
       agents: 'Team of 4',
-      reward: '₹1500',
+      reward: '₹2500',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLScYq607cKm82d2-_YFRBZtyfckEVgkBrTN7iTabDtbOVIRebA/viewform',
       entryFees: '₹200',
       theme: {
         color: '#e23636',
