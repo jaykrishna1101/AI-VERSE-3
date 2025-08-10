@@ -1,50 +1,62 @@
-import React from 'react'
-import { delay, motion } from "framer-motion"
+import React, { useEffect, useState } from 'react';
+import { motion } from "framer-motion";
 
+function LandingHome({ suspenseResolved }) {
+  const [playAnimation, setPlayAnimation] = useState(false);
 
-function LandingHome() {
-
+  useEffect(() => {
+    if (suspenseResolved) {
+      const timer = setTimeout(() => {
+        setPlayAnimation(true);
+      }, 1600); // matches loader exit (delay 1 + duration 0.6)
+      return () => clearTimeout(timer);
+    }
+  }, [suspenseResolved]);
 
   const text = "Compufest 2K25";
 
-  // Variants for the container to stagger children
   const container = {
     hidden: {},
     show: {
       transition: {
-        staggerChildren: 0.05,
-        delay:2
+        staggerChildren: 0.05
       },
     },
   };
 
-  // Variants for each letter
   const letter = {
     hidden: { y: 10, opacity: 0 },
-    show: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 500,   } }
-
+    show: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 500 } }
   };
 
   return (
     <div id='home' className='h-[1400vh] w-full py-40 z-10 relative'>
-      <div className='h-10  w-full  mb-10 flex items-center justify-center'>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" className='w-full h-full ' alt="" />
+      <div className='h-10 w-full mb-10 flex items-center justify-center'>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg"
+          className='w-full h-full'
+          alt=""
+        />
       </div>
-      <div className='bebas-neue-regular p-1  z-10 w-full text-6xl md:text-[150px] flex items-center justify-center  shadow-2xl  bg-[#EE232C] text-white  '>
-        <motion.h1
-          className="avenger px-4 md:leading-60 leading-40 whitespace-nowrap"
-          variants={container}
-          initial="hidden"
-          animate="show"
-        >
-          {text.split("").map((char, index) => (
-            <motion.span key={index} variants={letter} className="inline-block">
-              {char === " " ? "\u00A0" : char}
-            </motion.span>
-          ))}
-        </motion.h1>
-      </div>
-      <div className='  '>
+
+      <div className='bebas-neue-regular p-1 h-40 md:h-64 z-10 w-full text-6xl md:text-[150px] flex items-center justify-center shadow-2xl bg-[#EE232C] text-white'>
+        {playAnimation && (
+          <motion.h1
+            className="avenger font-extralight px-4 md:leading-60 leading-40 whitespace-nowrap"
+            variants={container}
+            initial="hidden"
+            animate="show"
+          >
+            {text.split("").map((char, index) => (
+              <motion.span key={index} variants={letter} className="inline-block font-extralight">
+                {char === " " ? "\u00A0" : char}
+              </motion.span>
+            ))}
+          </motion.h1>
+        )}
+
+
+          <div className='  '>
         <div className='h-80 w-[30rem] scale-75 md:scale-100 -left-20 top-[40%] md:left-10 py-10 absolute  '>
           <h1 className=' text-8xl text-[#e8101b]  avenger  opacity-80 '>
             <span className='bg-[#E8101B] text-white px-10 py-2  rounded-l-xl rounded-r-xl '> What is</span>
@@ -68,8 +80,9 @@ function LandingHome() {
           Sabse Best <span className='text-white'> compufest ! </span>
         </div>
       </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default LandingHome
+export default LandingHome;

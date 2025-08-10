@@ -137,7 +137,7 @@ function Team() {
     {
       'name': 'Mr. Ayush Borkar',
       'role': 'Design Head',
-      'image': './committee/ayush_borkar.png'
+      'image': './committee/ayush_borker.png'
     }
   ];
 

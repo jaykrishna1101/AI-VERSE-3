@@ -1,19 +1,21 @@
 // components/Model.jsx
-import React, { forwardRef, useEffect, useMemo } from 'react';
-import { useGLTF, useProgress, Html } from '@react-three/drei';
-import { useThree } from '@react-three/fiber';
+import React, { forwardRef, useEffect, useMemo, useRef } from 'react';
+import { useGLTF } from '@react-three/drei';
+import { useThree, useFrame } from '@react-three/fiber';
 
-const ResponsiveModel = forwardRef((props, ref) => {
-  const { scene } = useGLTF('/model/model.glb'); // path should be correct relative to `public`
+const ResponsiveModel = forwardRef(( { setSuspenseResolved, ...props } , ref) => {
+  const { scene } = useGLTF('/model/model.glb');
   const { viewport } = useThree();
+  const renderedOnce = useRef(false);
 
-  // Dynamic scale based on viewport width
+  // Dynamic scale
   const scale = useMemo(() => {
-    if (viewport.width < 6) return 1;
+    if (viewport.width < 6) return 0.02;
     if (viewport.width < 10) return 0.6;
     return 1;
   }, [viewport.width]);
 
+  // Shadows setup
   useEffect(() => {
     scene.traverse((child) => {
       if (child.isMesh) {
@@ -22,6 +24,15 @@ const ResponsiveModel = forwardRef((props, ref) => {
       }
     });
   }, [scene]);
+
+  // Detect first render on browser
+  useFrame(() => {
+    if (!renderedOnce.current) {
+      console.log('Model fully rendered in browser');
+      setSuspenseResolved(true);
+      renderedOnce.current = true;
+    }
+  });
 
   return <primitive ref={ref} object={scene} scale={scale} {...props} />;
 });
