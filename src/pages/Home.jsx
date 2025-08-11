@@ -81,6 +81,7 @@ export default function App() {
    const [progress, setProgress] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [suspenseResolved, setSuspenseResolved] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
 
   const [isOpen, setIsOpen] = useState(true);
@@ -122,7 +123,7 @@ export default function App() {
              
             />}>
             <Model setSuspenseResolved={setSuspenseResolved} />
-            <SetBackground imageUrl="/bg.png" />
+            <SetBackground imageUrl="/bg.png" ImageLoaded={setImageLoaded} />
             <Environment
               files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/kiara_1_dawn_1k.hdr"
 
@@ -139,7 +140,7 @@ export default function App() {
         
      
 <AnimatePresence>
-  {!suspenseResolved && (
+  {!suspenseResolved && !imageLoaded && (
     <motion.div
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
