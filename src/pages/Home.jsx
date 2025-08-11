@@ -114,21 +114,14 @@ export default function App() {
       {/* <ContinuousMusic /> */}
 
       <div className='  fixed top-0 left-0 w-full h-full  md:h-screen '  >
-        <Canvas   onCreated={() => {
-    // Wait 3 seconds before hiding the loader
-    console.log("Created")
-    setTimeout(() => {
-        console.log("model loaded  ")
-      setSuspenseResolved(true);
-    }, 5000);
-  }} shadows dpr={[1, 2]} camera={{ position: [3, 10, -100], fov: 70 }}>
+        <Canvas shadows dpr={[1, 2]} camera={{ position: [3, 10, -100], fov: 70 }}>
           <ambientLight intensity={0.5} />
           <directionalLight position={[2, 2, 5]} intensity={1} />
           <Suspense fallback={<Loader
               onProgress={setProgress}
              
             />}>
-            <Model />
+            <Model setSuspenseResolved={setSuspenseResolved} />
             <SetBackground imageUrl="/bg.png" />
             <Environment
               files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/kiara_1_dawn_1k.hdr"
@@ -146,12 +139,12 @@ export default function App() {
         
      
 <AnimatePresence>
-  {(progress <= 80 && !suspenseResolved) && (
+  {!suspenseResolved && (
     <motion.div
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.6, ease: "easeInOut",delay:2 }}
+      transition={{ duration: 0.6, ease: "easeInOut",delay:1 }}
       className={`fixed inset-0 bg-[#E8101B] z-[999] flex items-center justify-center ${
         suspenseResolved ? "opacity-0" : "opacity-100"
       }`}
@@ -183,7 +176,7 @@ export default function App() {
         {isOpen ? <IconMenu /> : <IconX/> }
       </button>
           <MusicPlayer />
-          <LandingHome />
+          <LandingHome suspenseResolved={suspenseResolved} />
 
 
           <div id="events" className='h-max w-full'>
