@@ -146,7 +146,7 @@ export default function App() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6, ease: "easeInOut",delay:1 }}
-      className={`fixed inset-0 bg-[#E8101B] z-[999] flex items-center justify-center ${
+      className={`fixed inset-0 bg-[#E8101B] z-[999] flex items-center flex-col gap-2 justify-center ${
         suspenseResolved ? "opacity-0" : "opacity-100"
       }`}
     >
@@ -154,6 +154,10 @@ export default function App() {
       <p className="text-white text-6xl font-bold animate-pulse avenger">
         {progress} <span className="inter"></span> Loading...
       </p>
+      <div className='h-2 w-60 bg-neutral-800 overflow-hidden'>
+       <div className={`bg-white   h-full transition-all duration-500  `} style={{ width: `${progress}%` }}>  
+       </div>
+      </div>
     </motion.div>
   )}
 </AnimatePresence>

@@ -25,8 +25,8 @@ function OurSponsors() {
                 
                     {sponsors.map((sponsor) => (
 
-                        <div key={`${sponsor.id}-${sponsor.name}`} className={`flex flex-col items-center justify-center mx-12 sm:mx-16 text-center ${sponsor.id == 3 ? " rounded-xl " : ""}`}>
-                            <img src={sponsor.logo} alt={sponsor.name} className={`h-16 ${sponsor.id == 3 ? "mt-10 bg-white rounded p-2  " : ""} `} />
+                        <div key={`${sponsor.id}-${sponsor.name}`} className={`flex flex-col items-center justify-center mx-12 sm:mx-16 text-center  ${sponsor.id == 3 ? " rounded-xl " : ""}`}>
+                            <img src={sponsor.logo} alt={sponsor.name} className={`h-16 scale-120 mt-10 ${sponsor.id == 1   ? "" : " bg-white rounded p-2 "} `} />
                             <p className="mt-4 text-white text-lg font-semibold">
                                 {sponsor.name}
                             </p>
