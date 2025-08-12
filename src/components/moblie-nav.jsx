@@ -29,7 +29,7 @@ function MobileNav({isOpen ,setIsOpen}) {
 
       <div className='avenger tracking-wider w-full flex flex-col items-center mt-5 gap-2'>
         <button className='text-2xl mb-2 w-full text-center' onClick={() => scrollto("home")}>Home</button>
-        <button className='text-2xl mb-2 w-full text-center' onClick={() => scrollto("event_moblie")}>Event</button>
+        <button className='text-2xl mb-2 w-full text-center' onClick={() => scrollto("event_moblie")}>Events</button>
         <button className='text-2xl mb-2 w-full text-center' onClick={() => scrollto("timeline")}>Timeline</button>
 
         <Link to="/team" className='text-2xl mb-2 w-full text-center'>
