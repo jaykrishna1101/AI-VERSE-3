@@ -13,7 +13,7 @@ function Event() {
       description: '50 Teams. 24 Hours. Dive into a full-day innovation sprint where ideas turn into impactful tech solutions. Build, debug, and deliver under pressure',
       difficulty: 'MAXIMUM THREAT',
       agents: 'Team of 3-5',
-      entryFees: '₹1000',
+      entryFees: '₹500',
       reward: '₹30,000',
       link: 'https://unstop.com/hackathons/coderush-24hr-hackathon-yeshwantrao-chavan-college-of-engineering-ycce-nagpur-1533739',
       theme: {
@@ -161,9 +161,9 @@ function Event() {
       subtitle: 'Learn from the Best',
       description: 'Industry Proffessionals share real-world experiences and insights. A chance to learn practical tech skills and get inspired.',
       difficulty: 'Easy',
-      agents: 'Individual',
-      entryFees: '50',
-      reward: 'TBD',
+      agents: 'Team of 2-3',
+      entryFees: '₹150',
+      reward: '₹1500',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfyerxtwS0DEPKpIbr75QbRGilaPJszMzGBa9hWtaHYfXQqLg/viewform',
       theme: {
         color: '#e23636',
@@ -175,30 +175,6 @@ function Event() {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
           <circle cx="12" cy="12" r="9" stroke="#e23636" strokeWidth="2" fill="none" />
           <path d="M12 3v18M3 12h18M6 6l12 12M6 18l12-12" stroke="#e23636" strokeWidth="1" />
-        </svg>
-      )
-    },
-    {
-      id: 8,
-      category: 'Competition',
-      title: 'Chess',
-      subtitle: 'Strategic Showdown',
-      description: "Put your strategic thinking to the test in a classic game of skill and foresight. Outsmart your opponent with every move.",
-      difficulty: 'Medium',
-      agents: 'Individual',
-      reward: '₹1200',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSdtA_Cgxb0LGo0YgVHk1zgSzwxsxm4p4n5OflneNvYZsuqIdA/viewform?usp=header',
-      entryFees: '₹60',
-      theme: {
-        color: '#e23636',
-        gradientFrom: 'from-[#e23636]',
-        gradientTo: 'to-[#222]',
-        borderColor: 'border-[#e23636]',
-      },
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
-          <rect x="10" y="4" width="4" height="16" fill="#e23636" />
-          <polygon points="10,4 12,2 14,4" fill="#222" />
         </svg>
       )
     },
@@ -273,6 +249,29 @@ function Event() {
           <polygon points="10,4 12,2 14,4" fill="#222" />
         </svg>
       )
+    },   {
+      id: 12,
+      category: 'Competition',
+      title: 'Expert Session',
+      subtitle: 'Learn from the Best',
+      description: "Industry Proffessionals share real-world experiences and insights. A chance to learn practical tech skills and get inspired.",
+      difficulty: 'Easy',
+      agents: 'Individual',
+      reward: 'Trill & Motivation',
+      link: '',
+      entryFees: 'Free',
+      theme: {
+        color: '#e23636',
+        gradientFrom: 'from-[#e23636]',
+        gradientTo: 'to-[#222]',
+        borderColor: 'border-[#e23636]',
+      },
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
+          <rect x="10" y="4" width="4" height="16" fill="#e23636" />
+          <polygon points="10,4 12,2 14,4" fill="#222" />
+        </svg>
+      )
     }
   ];
 
@@ -300,16 +299,16 @@ function Event() {
           <div className='hidden md:block  h-40 w-40 scale-75 absolute top-302 left-70 '>
              <img src="sp.png" alt=""/> 
         </div>
-         <div className='hidden md:block  h-40 w-40 scale-140 absolute top-392 right-10 '>
+         <div className='hidden md:block  h-40 w-40 scale-140 absolute top-352 right-10 '>
              <img src="Wolve.png" alt=""/> 
         </div>
-          <div className='hidden md:block  h-40 w-40 scale-140 absolute top-492 left-10 '>
+          <div className='hidden md:block  h-40 w-40 scale-140 absolute top-452 left-10 '>
              <img src="Danger.png" alt=""/> 
         </div>
-        <div className='hidden md:block  h-40 w-40 scale-140 absolute top-590 right-40 '>
+        <div className='hidden md:block  h-40 w-40 scale-140 absolute top-490 right-40 '>
              <img src="ironman-snap.png" alt=""/> 
         </div>
-          <div className='hidden md:block  h-40 w-40 scale-140 absolute top-670 left-30 '>
+          <div className='hidden md:block  h-40 w-40 scale-140 absolute top-570 left-30 '>
              <img src="DW.png" alt=""/> 
         </div>  
         <EventTimeLine />
