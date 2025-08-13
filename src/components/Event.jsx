@@ -39,7 +39,7 @@ function Event() {
       description: "Explore the power of image recognition and AI. Decode visual data to uncover hidden patterns and meaningful insights.",
       difficulty: 'Medium',
       agents: 'Team of 2',
-      reward: '₹2,200',
+      reward: '₹2,500',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSflzf2raDd4g0WstS6R25-E48Q-l-nK0dMbACQGCBmVryiTiw/viewform',
       entryFees: '₹150',
       theme: {
@@ -63,7 +63,7 @@ function Event() {
       description: "Combine your imagination with AI tools to bring ideas to life. Use smart prompting to generate, build, and impress.",
       difficulty: 'Easy',
       agents: 'Individual',
-      reward: '₹1100',
+      reward: '₹1500',
       entryFees: '₹50',
       link: 'https://forms.gle/T8jmWTdrJQQdUnaB9',
       theme: {
@@ -112,7 +112,7 @@ function Event() {
       description: 'Solve logic puzzles and follow digital trails in this tech-themed treasure hunt. Speed and brainpower will lead you to the prize.',
       difficulty: 'Medium',
       agents: 'Team of 2-5',
-      reward: '₹2,000',
+      reward: '₹2,500',
       entryFees: '₹200',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSdXkLFRICo0CBtIjoEb_rOBFb6MYSIxcSFL6ZEC7XD40JNAVw/viewform',
       theme: {
