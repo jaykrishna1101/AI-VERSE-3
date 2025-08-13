@@ -25,6 +25,10 @@ function EventCard({ event }) {
           </div>
           <div className="flex items-center">
             <span className="w-6 mr-2 text-gray-500">🗓️</span>
+            <p><strong>Mode:</strong> <span className={`font-bold text-${event.theme.color}`}>{event.id == 11 ?"Online": "Offline"   }</span></p>
+          </div>
+          <div className="flex items-center">
+            <span className="w-6 mr-2 text-gray-500">🗓️</span>
             <p><strong>Difficulty:</strong> <span className={`font-bold text-${event.theme.color}`}>{event.difficulty}</span></p>
           </div>
           <div className="flex items-center">

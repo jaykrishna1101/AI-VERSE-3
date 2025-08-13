@@ -65,7 +65,7 @@ function Event() {
       agents: 'Individual',
       reward: '₹1100',
       entryFees: '₹50',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSdG0B_feV4LT3DxIiiY__EP8s0K9jU2MpN-oIQm_Y7M4Zfj8w/viewform',
+      link: 'https://forms.gle/T8jmWTdrJQQdUnaB9',
       theme: {
         color: '#8e44ad',
         gradientFrom: 'from-[#8e44ad]',
@@ -163,7 +163,7 @@ function Event() {
       difficulty: 'Easy',
       agents: 'Team of 2-3',
       entryFees: '₹150',
-      reward: '₹1200',
+      reward: '₹1500',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfyerxtwS0DEPKpIbr75QbRGilaPJszMzGBa9hWtaHYfXQqLg/viewform',
       theme: {
         color: '#e23636',
@@ -209,7 +209,7 @@ function Event() {
       subtitle: 'Turf Battle',
       description: "Short-format cricket matches packed with excitment and energy. It's all about quick plays and sharper instincts.",
       difficulty: 'Medium',
-      agents: 'Team of 11',
+      agents: '6 players per team + 2 substitutes',
       reward: '₹5000',
       entryFees: '₹550',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSecuIxchFqkhCnecQjq16kZCQHfEWG8CBf--Lt1iCdhuPdnpg/viewform',

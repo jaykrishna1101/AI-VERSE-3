@@ -46,7 +46,7 @@ const timelineEvents = [
         description: "Quick-fire cricket matches full of thrill, tactics, and team play.",
     },
     {
-        date: "25/08/2025",
+        date: "24/08/2025",
         title: "Expert Session",
         time: 'TBD',
         description: "Real tech stories, real insights - learn from those who've done it.",
@@ -59,7 +59,7 @@ const timelineEvents = [
     },
     {
         date: "22/08/2025",
-        title: "Fastest Forntend First",
+        title: "Fastest Frontend First",
         time: '1:00 PM - 4:00 PM',
         description: "A surprise UI task - code it fast, polish it faster.",
     },
