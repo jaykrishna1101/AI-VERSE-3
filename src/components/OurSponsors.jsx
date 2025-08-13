@@ -7,12 +7,13 @@ function OurSponsors() {
         { id: 2, name: "Shah Overseas", logo: "shah_overseas.png" },
         { id: 3, name: "Navbharat Times", logo: "navbharat.png" },
         { id: 4, name: "TCS", logo: "tcs.png" },
+        { id: 5, name: "Nagpur Today", logo: "nagpur_today.png" },
     ];
 
     return (
         <div className="h-auto w-full font-sans p-4 sm:p-8 bg-[#e23636] opacity-90">
             <h1 className="avenger text-3xl font-extralight text-center mb-12 text-white tracking-wider">
-                <span>Our</span> Sponsors
+                <span>Our</span> Sponsors <span>&</span> Media Partners
             </h1>
 
             {/* Full width Marquee */}
