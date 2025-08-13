@@ -36,13 +36,13 @@ const timelineEvents = [
     {
         date: "23/08/2025",
         title: "Arm Wrestling",
-        time: '9:00 AM - 5:00 PM',
+        time: '9:00 AM - 4:00 PM',
         description: "Strength meets grit. Step up, lock hands, and dominate.",
     },
     {
         date: "22/08/2025",
         title: "Box Cricket",
-        time: 'TBD',
+        time: '8:00 AM - 5:00 PM',
         description: "Quick-fire cricket matches full of thrill, tactics, and team play.",
     },
     {
