@@ -163,7 +163,7 @@ function Event() {
       difficulty: 'Easy',
       agents: 'Team of 2-3',
       entryFees: '₹150',
-      reward: '₹1500',
+      reward: '₹1200',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfyerxtwS0DEPKpIbr75QbRGilaPJszMzGBa9hWtaHYfXQqLg/viewform',
       theme: {
         color: '#e23636',
@@ -257,7 +257,7 @@ function Event() {
       description: "Industry Proffessionals share real-world experiences and insights. A chance to learn practical tech skills and get inspired.",
       difficulty: 'Easy',
       agents: 'Individual',
-      reward: 'Trill & Motivation',
+      reward: 'Thrill & Motivation',
       link: '',
       entryFees: 'Free',
       theme: {
