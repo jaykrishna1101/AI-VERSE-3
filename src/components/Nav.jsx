@@ -78,10 +78,10 @@ export function FloatingDockDemo() {
   ];
   return (
     
-    <div className="flex fixed insert-0 -mt-3 z-50 bottom-3   h-auto justify-center items-end  w-full">
+    <div className="flex fixed insert-0 -mt-3 z-50 bottom-3   h-auto justify-center items-end  text-white  w-full">
       <FloatingDock
         // only for demo, remove for production
-        mobileClassName="translate-y-20"
+        mobileClassName="translate-y-20 text-white"
         items={links}
       scrollto={scrollto} />
     </div>

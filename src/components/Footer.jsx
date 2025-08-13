@@ -10,16 +10,14 @@ function Footer() {
                 <h1 className="avenger tracking-wide">Compufest 2k25</h1>
             </div>
 
-            <h1 className="text-center">
+            <h1 className="text-center px-5">
                 This Website is Design and Develop by Our Avenger  
                 <a href="https://github.com/MUCHKUNDRAJE" target="_blank">
                     <span className="hover:underline avenger  tracking-wider "> Cultural Head: Muchkundraje Thote</span>
                 </a>,  
                 <a href="https://github.com/KritishBokde91" target="_blank">
                     <span className="hover:underline avenger tracking-wider">Technical Co-Head: Kritish Bokade</span>
-                </a>  
-                and  
-                <a href="https://github.com/gauravnaik" target="_blank">
+                </a> and  <a href="https://github.com/gauravnaik" target="_blank">
                     <span className="hover:underline avenger tracking-wider">Technical Head: Gaurav Naik</span>
                 </a>
             </h1>
