@@ -7,7 +7,7 @@ function OurSponsors() {
         { id: 2, name: "Shah Overseas", logo: "shah_overseas.png" },
         { id: 3, name: "Navbharat Times", logo: "navbharat.png" },
         { id: 4, name: "TCS", logo: "tcs.png" },
-        { id: 5, name: "Nagpur Today", logo: "nagpur_today.png" },
+        // { id: 5, name: "Nagpur Today", logo: "nagpur_today.png" },
     ];
 
     return (
