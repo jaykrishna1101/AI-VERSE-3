@@ -34,9 +34,9 @@ const timelineEvents = [
         description: "Use prompts to bend AI to your will. Build creative outputs with just your words.",
     },
     {
-        date: "22/08/2025",
+        date: "23/08/2025",
         title: "Arm Wrestling",
-        time: 'TBD',
+        time: '9:00 AM - 5:00 PM',
         description: "Strength meets grit. Step up, lock hands, and dominate.",
     },
     {
