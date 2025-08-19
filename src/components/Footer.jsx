@@ -1,11 +1,25 @@
-
+import { useEffect, useState } from "react";
+import { cloneUniformsGroups } from "three/src/renderers/shaders/UniformsUtils.js";
+import Easter from "./ester";
 
 function Footer() {
+     const [ester , setEster] = useState(0);
+      
+    useEffect(()=>{
+        
+        {Easter == 7 &&
+            <Easter/>
+        }
+         
+    })
+
     return (
+        <>
+         {ester === 7 && <Easter />}
         <div id="footer" className='inter   h-80 w-full tracking-tight bg-red-500 opacity-90  gap-10 flex items-center justify-center flex-col'>
-            <div className="flex items-center justify-center flex-col">
-                <div className="h-15 rounded-full w-15 bg-blue-400   ">
-                    <img src="./final_logo.png" alt="" /> 
+            <div onClick={()=>setEster(prev => prev+1 )} className="cursor-pointer  flex items-center justify-center flex-col">
+                <div    className="h-15 rounded-full w-15 bg-blue-400   ">
+                    <img  src="./final_logo.png" alt="" /> 
                 </div>
                 <h1 className="avenger tracking-wide">Compufest 2k25</h1>
             </div>
@@ -22,6 +36,7 @@ function Footer() {
                 </a>
             </h1>
         </div>
+        </>
     );
 }
 
