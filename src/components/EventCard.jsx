@@ -23,9 +23,16 @@ function EventCard({ event }) {
             <span className="w-6 mr-2 text-gray-500">🗓️</span>
             <p><strong>Entry Fees:</strong> <span className={`font-bold text-${event.theme.color}`}>{event.entryFees}</span></p>
           </div>
+          {
+            event.id ==12 && 
+                  <div className="flex items-center">
+            <span className="w-6 mr-2 text-gray-500">🤖</span>
+            <p><strong>Topic: Beyond Chatbots</strong></p>
+          </div>
+          }
           <div className="flex items-center">
             <span className="w-6 mr-2 text-gray-500">🗓️</span>
-            <p><strong>Mode:</strong> <span className={`font-bold text-${event.theme.color}`}>{event.id == 11 ||event.id == 3  ?"Online": "Offline"   }</span></p>
+            <p><strong>Mode:</strong> <span className={`font-bold text-${event.theme.color}`}>{event.id == 11|| event.id == 12 ?"Online": "Offline"   }</span></p>
           </div>
           <div className="flex items-center">
             <span className="w-6 mr-2 text-gray-500">🗓️</span>
@@ -35,6 +42,7 @@ function EventCard({ event }) {
             <span className="w-6 mr-2 text-gray-500">👥</span>
             <p><strong>Agents:</strong> {event.agents}</p>
           </div>
+          
           <div className="flex items-center">
             <span className="w-6 mr-2 text-gray-500">🏆</span>
             <p><strong>Reward:</strong> {event.reward}</p>
