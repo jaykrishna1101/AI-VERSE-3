@@ -61,6 +61,7 @@ function CoreCommittee() {
     'Technosavy & Dhyass Co-Head: Ms. Shailaja Patle',
     'Finance Co-Head: Mr. Hrutik Gujarkar',
     'Literature Co-Head: Ms. Sushmita Khachane',
+    'Executive: Mr. Rachit Singh',
   ];
 
   const semiCoreCompufestCommitteeMembers = [
@@ -75,7 +76,7 @@ function CoreCommittee() {
     'Literary Co-Head: Ms. Gauri Joge',
     'Design Co-Head: Ms. Nandini Pawar',
     'Sports Co-Head: Mr. Krishna Mishra',
-    'Sports Co-Head: Mr. Aniket Mokalkar'
+    'Sports Co-Head: Mr. Aniket Mokalkar',
   ];
 
   return (
