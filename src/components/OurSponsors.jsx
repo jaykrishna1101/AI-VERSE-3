@@ -8,6 +8,7 @@ function OurSponsors() {
         { id: 3, name: "Navbharat Times", logo: "navbharat.png" },
         { id: 4, name: "TCS", logo: "tcs.png" },
         { id: 5, name: "Nagpur Today", logo: "nagpur_today.png" },
+         { id: 1, name: "T.I.M.E", logo: "time.jpg" },
     ];
 
     return (
@@ -27,7 +28,7 @@ function OurSponsors() {
                     {sponsors.map((sponsor) => (
 
                         <div key={`${sponsor.id}-${sponsor.name}`} className={`flex flex-col items-center justify-center mx-12 sm:mx-16 text-center  ${sponsor.id == 3 ? " rounded-xl " : ""}`}>
-                            <img src={sponsor.logo} alt={sponsor.name} className={`h-16 scale-120 mt-10 ${sponsor.id == 1   ? "" : " bg-white rounded p-2 "} `} />
+                            <img src={sponsor.logo} alt={sponsor.name} className={`h-16 scale-120 mt-10 ${sponsor.id == 1   ? "rounded " : " bg-white rounded p-2 "} `} />
                             <p className="mt-4 text-white text-lg font-semibold">
                                 {sponsor.name}
                             </p>

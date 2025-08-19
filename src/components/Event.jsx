@@ -258,7 +258,7 @@ function Event() {
       difficulty: 'Easy',
       agents: 'Individual',
       reward: 'Thrill & Motivation',
-      link: '',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSfHv4C9WQ2RhgC9vqI-SSrcOGu9zZ7cFgG7kavV-jLnbwtgQA/viewform',
       entryFees: 'Free',
       theme: {
         color: '#e23636',

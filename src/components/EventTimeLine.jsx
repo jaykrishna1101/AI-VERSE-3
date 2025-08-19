@@ -46,9 +46,9 @@ const timelineEvents = [
         description: "Quick-fire cricket matches full of thrill, tactics, and team play.",
     },
     {
-        date: "24/08/2025",
+        date: "23/08/2025",
         title: "Expert Session",
-        time: 'TBD',
+        time: '4:00 PM onwards',
         description: "Real tech stories, real insights - learn from those who've done it.",
     },
     {
