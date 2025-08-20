@@ -1,9 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import { div } from 'motion/react-client';
+import gsap from "gsap"
+import { useNavigate } from 'react-router-dom';
 
 function Easter({ suspenseResolved }) {
-  
+   
+   const navigator = useNavigate ();
+  const getLarge = () =>{
+     gsap.to("#largeA",{
+      scale:100,
+      duration:2,
+      ease:"expo.inOut"
+     })
+     setInterval(()=>{
+
+       navigator("/easter3504")
+     },2000)
+  }
 
   return (
           <motion.div
@@ -14,12 +28,12 @@ function Easter({ suspenseResolved }) {
                  Peek into the Multiverse
                 </h1>
 
-                  <h1 className='text-center mt-16 text-9xl '>
+                  <h1 id='largeA' className='text-center mt-16 text-9xl '>
                A
                  </h1>
                 <div className='w-full flex items-center justify-center mt-10'>
                     
-                <button className='avenger tracking-wider px-3 hover:p-3 hover:text-white hover:bg-black hover:scale-105 transition-all hover:text-2xl py-1 bg-white text-black rounded '>Enter the Multiverse </button>
+                <button onClick={getLarge} className='avenger tracking-wider px-3 hover:p-3 hover:text-white hover:bg-black hover:scale-105 transition-all hover:text-2xl py-1 bg-white text-black rounded '>Enter the Multiverse </button>
                    <i class="ri-arrow-right-long-line"></i>
                     </div>    
 
