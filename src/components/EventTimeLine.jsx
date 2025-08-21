@@ -60,7 +60,7 @@ const timelineEvents = [
     {
         date: "22/08/2025",
         title: "Fastest Frontend First",
-        time: '1:00 PM - 4:00 PM',
+        time: '11:00 AM - 1:00 PM',
         description: "A surprise UI task - code it fast, polish it faster.",
     },
     {
