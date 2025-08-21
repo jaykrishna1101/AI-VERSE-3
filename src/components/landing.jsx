@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 
 function LandingHome({ suspenseResolved }) {
   const [playAnimation, setPlayAnimation] = useState(false);
+  const [showScrollHint, setShowScrollHint] = useState(true);
+
 
   useEffect(() => {
     if (suspenseResolved) {
@@ -12,6 +14,20 @@ function LandingHome({ suspenseResolved }) {
       return () => clearTimeout(timer);
     }
   }, [suspenseResolved]);
+
+  useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 10) {
+      setShowScrollHint(false);
+    } else {
+      setShowScrollHint(true);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
 
   const text = "Compufest 2K25";
 
@@ -31,6 +47,14 @@ function LandingHome({ suspenseResolved }) {
 
   return (
     <div id='home' className='h-[1400vh] w-full py-40 z-10 relative'>
+         <motion.div
+  animate={{ opacity: showScrollHint ? 1 : 0 }}
+  transition={{ duration: 0.5 }}
+  className='avenger flex md:hidden fixed   flex-col bottom-2 text-white left-1/2 -translate-x-1/2 text-2xl z-50'
+>
+  Scroll Down
+  <i class="ri-arrow-down-double-fill text-center"></i>
+</motion.div>
       <div className='h-10 w-full mb-10 flex items-center justify-center'>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg"
@@ -56,8 +80,9 @@ function LandingHome({ suspenseResolved }) {
         )}
 
 
-          <div className='  '>
+          <div className=''>
         <div className='h-80 w-[30rem] scale-75 md:scale-100 -left-20 top-[40%] md:left-10 py-10 absolute  '>
+      
           <h1 className=' text-8xl text-[#e8101b]  avenger  opacity-80 '>
             <span className='bg-[#E8101B] text-white px-10 py-2  rounded-l-xl rounded-r-xl '> What is</span>
             <span className='whitespace-nowrap rounded-r-xl rounded-l-xl bg-[#E8101B] text-white px-10'> compufest ?</span>
