@@ -80,9 +80,9 @@ function CoreCommittee() {
   ];
 
   return (
-    <div className="min-h-screen w-full font-sans p-4 sm:p-8 bg-[#4587ca] opacity-90 flex items-center flex-col gap-3 justify-start">
+    <div className="min-h-screen w-full font-sans p-4 sm:p-8 bg-[#17181a] opacity-90 flex items-center flex-col gap-3 justify-start">
       <h1 className="avenger text-3xl font-extralight text-center mb-12 tracking-wide  text-white">
-        Compufest Committee
+        Ai Verse Committee
       </h1>
 
       <div ref={scrollRef} className="w-[65rem] h-[80vh] overflow-hidden  flex items-center -mt-3 justify-center relative">

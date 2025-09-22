@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 
+
 @font-face {
   font-family: "AVENGER";
   src: url('/fonts/AVENGER.woff2') format('woff2');
