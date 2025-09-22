@@ -123,7 +123,7 @@ export default function App() {
              
             />}>
             <Model setSuspenseResolved={setSuspenseResolved} />
-            <SetBackground imageUrl="/bg.png" ImageLoaded={setImageLoaded} />
+            <SetBackground imageUrl="/Gemini_Generated_Image_21vhpg21vhpg21vh.png" ImageLoaded={setImageLoaded} />
             <Environment
               files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/kiara_1_dawn_1k.hdr"
 
@@ -146,7 +146,7 @@ export default function App() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6, ease: "easeInOut",delay:1 }}
-      className={`fixed inset-0 bg-[#E8101B] z-[999] flex items-center flex-col gap-2 justify-center ${
+      className={`fixed inset-0 bg-[#f3c2c5] z-[999] flex items-center flex-col gap-2 justify-center ${
         suspenseResolved ? "opacity-0" : "opacity-100"
       }`}
     >

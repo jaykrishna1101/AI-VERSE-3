@@ -3,17 +3,26 @@ import React, { forwardRef, useEffect, useMemo, useRef } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { useThree, useFrame } from '@react-three/fiber';
 
-const ResponsiveModel = forwardRef(( { setSuspenseResolved, ...props } , ref) => {
-  const { scene } = useGLTF('/model/model.glb');
+const ResponsiveModel = forwardRef((
+  { setSuspenseResolved, ...props },
+  ref
+) => {
+  const { scene } = useGLTF('/model/scuderia_ferrari_f1_sf23_2023.glb');
   const { viewport } = useThree();
   const renderedOnce = useRef(false);
 
-  // Dynamic scale
+  // Dynamic scale - Increased values for better visibility
   const scale = useMemo(() => {
-    if (viewport.width < 6) return 0.02;
-    if (viewport.width < 10) return 0.6;
-    return 1;
+    // Mobile devices (small screens)
+    if (viewport.width < 6) return 1.5;
+    // Tablet size screens
+    if (viewport.width < 10) return 2.0;
+    // Desktop screens
+    return 30.0;
   }, [viewport.width]);
+
+  // Rotation to show front view - rotate 180 degrees around Y axis
+  const rotation = [0, Math.PI, 0];
 
   // Shadows setup
   useEffect(() => {
@@ -34,7 +43,7 @@ const ResponsiveModel = forwardRef(( { setSuspenseResolved, ...props } , ref) =>
     }
   });
 
-  return <primitive ref={ref} object={scene} scale={scale} {...props} />;
+  return <primitive ref={ref} object={scene} scale={scale} rotation={rotation} {...props} />;
 });
 
 export default ResponsiveModel;
