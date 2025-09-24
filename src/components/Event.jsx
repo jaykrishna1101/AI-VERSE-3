@@ -7,15 +7,15 @@ function Event() {
   const eventsData = [
     {
       id: 1,
-      category: 'Compitition',
-      title: "WebBotix",
-      subtitle: 'Compitition',
-      description: '50 Teams. 24 Hours. Dive into a full-day innovation sprint where ideas turn into impactful tech solutions. Build, debug, and deliver under pressure',
+      category: 'Competition',
+      title: "Giga Gen",
+      subtitle: 'Battle of Imagination',
+      description: 'A true battle of imagination and technological fusion. Wield the power of Generative AI to bring your ideas to life and prove your creative vision is unmatched.',
       difficulty: 'MAXIMUM THREAT',
-      agents: 'Solo Duo Squard',
-      entryFees: '₹80 ₹100 ₹120',
-      reward: '₹4,000',
-      link: 'https://unstop.com/hackathons/coderush-24hr-hackathon-yeshwantrao-chavan-college-of-engineering-ycce-nagpur-1533739',
+      agents: 'Solo | Duo | Squad',
+      entryFees: '₹50 | ₹100 | ₹150',
+      reward: '₹8,500',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSfA8axEcgj1YAVhT6vugPTuo7VA4GD9fQpKXpaGTAKo60n-jQ/viewform',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -33,15 +33,15 @@ function Event() {
     },
     {
       id: 2,
-      category: 'Compitition',
-      title: 'Giga Gen',
-      subtitle: 'Showcase your AI & ML expertise',
-      description: "Explore the power of image recognition and AI. Decode visual data to uncover hidden patterns and meaningful insights.",
+      category: 'Competition',
+      title: 'Webbotix',
+      subtitle: 'Frontend with a Twist',
+      description: "A fusion of front-end finesse and conversational AI logic. Integrate an intelligent chatbot into a stunning web interface to prove your mastery over modern development.",
       difficulty: 'Medium',
-      agents: 'Solo Duo Squard',
-      reward: '₹8,500',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSflzf2raDd4g0WstS6R25-E48Q-l-nK0dMbACQGCBmVryiTiw/viewform',
-      entryFees: '₹50 ₹100 ₹150',
+      agents: 'Solo | Duo | Squad',
+      reward: '₹4,500',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSdIBh-28mxjNrcTGdWofZTJEwuXqj51MLrna8_Ntgequ7hoqg/viewform',
+      entryFees: '₹80 | ₹100 | ₹120',
       theme: {
         color: '#ffe066',
         gradientFrom: 'from-[#ffe066]',
@@ -57,15 +57,15 @@ function Event() {
     },
     {
       id: 3,
-      category: 'Compitition',
-      title: 'Game Of Trades',
-      subtitle: 'Master the Art of Prompt.',
-      description: "Combine your imagination with AI tools to bring ideas to life. Use smart prompting to generate, build, and impress.",
-      difficulty: 'Easy',
-      agents: 'Solo Duo Squard',
-      reward: '₹4000',
-      entryFees: '₹60 ₹90 ₹120',
-      link: 'https://forms.gle/T8jmWTdrJQQdUnaB9',
+      category: 'Competition',
+      title: 'ML Neuronets',
+      subtitle: 'Quiz and Code.',
+      description: "A high-stakes clash of intellect and implementation. Conquer a rapid-fire quiz, then out-code your rivals in a practical showdown to claim the title of ML mastermind.",
+      difficulty: 'High',
+      agents: 'Solo | Duo | Squad',
+      reward: '4,500',
+      entryFees: '₹60 | ₹100 | ₹120',
+      link: 'hhttps://docs.google.com/forms/d/e/1FAIpQLSdBINnoYR6xnZutc740OA9buR6BewyF4vVSejhAX1LjXoLZqw/viewform',
       theme: {
         color: '#8e44ad',
         gradientFrom: 'from-[#8e44ad]',
@@ -82,14 +82,14 @@ function Event() {
     {
       id: 4,
       category: 'Competition',
-      title: 'Emperors Conquest',
-      subtitle: 'Battle of the Gamers',
-      description: 'A rapid-fire coding contest where participants face off in intense challenges. Quick logic and clean code decide the winner.',
+      title: 'Emporers Conquest',
+      subtitle: 'Squads Clash for ',
+      description: 'Compete with strategy, skill, and teamwork as top squads clash for glory, dominance, and the crown.',
       difficulty: 'Medium',
-      agents: 'Trio Squard',
+      agents: 'Trio | Squad',
       reward: '₹4,500',
-      entryFees: '₹100 ₹120',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSet3fwBNAjATQR9svq2R4R9n9TXAaEPkfg5m5VcRYzMySWgJA/viewform',
+      entryFees: '₹100 | ₹120',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSdrwZL01EhCISV89vFy-ABn2z7EhxR8HLkl9v3CZZlQa0mWPQ/viewform',
       theme: {
         color: '#222',
         gradientFrom: 'from-[#222]',
@@ -106,15 +106,15 @@ function Event() {
     },
     {
       id: 5,
-      category: 'Hackathon',
-      title: 'ML Neuronets',
-      subtitle: 'Unravel the Code',
-      description: 'Solve logic puzzles and follow digital trails in this tech-themed treasure hunt. Speed and brainpower will lead you to the prize.',
-      difficulty: 'Medium',
-      agents: 'Solo Duo Squard',
-      reward: '₹4,000',
-      entryFees: '₹60 ₹100 ₹120',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSdXkLFRICo0CBtIjoEb_rOBFb6MYSIxcSFL6ZEC7XD40JNAVw/viewform',
+      category: 'Competition',
+      title: 'Game of Trades',
+      subtitle: 'Rule the Market',
+      description: 'Build algorithms, test your skills, and face off in live market simulations to prove you can rule the market.',
+      difficulty: 'Easy',
+      agents: 'Solo | Duo | Squad',
+      reward: '₹4,500',
+      entryFees: '₹60 | ₹90 | ₹120',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSekqPLxOh2ecKafpcfAgUWP4U_O14N18_JASpiirg7JVtaV_Q/viewform?usp=dialog',
       theme: {
         color: '#e23636',
         gradientFrom: 'from-[#e23636]',
@@ -128,152 +128,7 @@ function Event() {
         </svg>
       )
     },
-    // {
-    //   id: 6,
-    //   category: 'Hackathon',
-    //   title: 'Fastest-Frontend-First',
-    //   subtitle: 'Battle of the Coders',
-    //   description: 'Turn a surprise prompt into a working frontend app - fast. Showcase your design and coding skills under real-time pressure.',
-    //   difficulty: 'Medium',
-    //   agents: 'Individual',
-    //   reward: '₹1500',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLSceAcBRItCFPCSckXw2HhtIzM0GoF3PgSBdJeMEvaA1v97knQ/viewform',
-    //   entryFees: '₹75',
-    //   theme: {
-    //     color: '#e23636',
-    //     gradientFrom: 'from-[#e23636]',
-    //     gradientTo: 'to-[#ffe066]',
-    //     borderColor: 'border-[#e23636]',
-    //   },
-    //   icon: (
-    //     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
-    //       <ellipse cx="12" cy="12" rx="7" ry="10" fill="#ffe066" stroke="#e23636" strokeWidth="2" />
-    //       <rect x="9" y="8" width="2" height="2" fill="#222" />
-    //       <rect x="13" y="8" width="2" height="2" fill="#222" />
-    //       <path d="M9 16c1.5 1 4.5 1 6 0" stroke="#e23636" strokeWidth="1.5" />
-    //     </svg>
-    //   )
-    // },
-    // {
-    //   id: 7,
-    //   category: 'Quiz',
-    //   title: 'Tech Quiz',
-    //   subtitle: 'Learn from the Best',
-    //   description: 'Industry Proffessionals share real-world experiences and insights. A chance to learn practical tech skills and get inspired.',
-    //   difficulty: 'Easy',
-    //   agents: 'Team of 2-3',
-    //   entryFees: '₹150',
-    //   reward: '₹1500',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLSfyerxtwS0DEPKpIbr75QbRGilaPJszMzGBa9hWtaHYfXQqLg/viewform',
-    //   theme: {
-    //     color: '#e23636',
-    //     gradientFrom: 'from-[#e23636]',
-    //     gradientTo: 'to-[#8e44ad]',
-    //     borderColor: 'border-[#e23636]',
-    //   },
-    //   icon: (
-    //     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
-    //       <circle cx="12" cy="12" r="9" stroke="#e23636" strokeWidth="2" fill="none" />
-    //       <path d="M12 3v18M3 12h18M6 6l12 12M6 18l12-12" stroke="#e23636" strokeWidth="1" />
-    //     </svg>
-    //   )
-    // },
-    // {
-    //   id: 9,
-    //   category: 'Competition',
-    //   title: 'Arm Wrestling',
-    //   subtitle: 'Test your Strength',
-    //   description: "A pure display of strength and determination. Compete one-on-one and prove your physical dominance in seconds.",
-    //   difficulty: 'Medium',
-    //   agents: 'Individual',
-    //   reward: '₹4000',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLSeyQOwuOGuBav-5fOxLeYipN3hOSO2UCxFuAgeWaipipwQHng/viewform',
-    //   entryFees: '₹150',
-    //   theme: {
-    //     color: '#e23636',
-    //     gradientFrom: 'from-[#e23636]',
-    //     gradientTo: 'to-[#222]',
-    //     borderColor: 'border-[#e23636]',
-    //   },
-    //   icon: (
-    //     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
-    //       <rect x="10" y="4" width="4" height="16" fill="#e23636" />
-    //       <polygon points="10,4 12,2 14,4" fill="#222" />
-    //     </svg>
-    //   )
-    // },
-    // {
-    //   id: 10,
-    //   category: 'Competition',
-    //   title: 'Box Cricket',
-    //   subtitle: 'Turf Battle',
-    //   description: "Short-format cricket matches packed with excitment and energy. It's all about quick plays and sharper instincts.",
-    //   difficulty: 'Medium',
-    //   agents: '6 players per team + 2 substitutes',
-    //   reward: '₹5000',
-    //   entryFees: '₹550',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLSecuIxchFqkhCnecQjq16kZCQHfEWG8CBf--Lt1iCdhuPdnpg/viewform',
-    //   theme: {
-    //     color: '#e23636',
-    //     gradientFrom: 'from-[#e23636]',
-    //     gradientTo: 'to-[#222]',
-    //     borderColor: 'border-[#e23636]',
-    //   },
-    //   icon: (
-    //     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
-    //       <rect x="10" y="4" width="4" height="16" fill="#e23636" />
-    //       <polygon points="10,4 12,2 14,4" fill="#222" />
-    //     </svg>
-    //   )
-    // },
-    // {
-    //   id: 11,
-    //   category: 'Competition',
-    //   title: 'BGMI: BattleZone',
-    //   subtitle: 'Ultimate Survival',
-    //   description: "Drop into action with your squad in an intense survival game. Only teamwork and smart plays will lead you to victory",
-    //   difficulty: 'Easy',
-    //   agents: 'Team of 4',
-    //   reward: '₹2500',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLScYq607cKm82d2-_YFRBZtyfckEVgkBrTN7iTabDtbOVIRebA/viewform',
-    //   entryFees: '₹200',
-    //   theme: {
-    //     color: '#e23636',
-    //     gradientFrom: 'from-[#e23636]',
-    //     gradientTo: 'to-[#222]',
-    //     borderColor: 'border-[#e23636]',
-    //   },
-    //   icon: (
-    //     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
-    //       <rect x="10" y="4" width="4" height="16" fill="#e23636" />
-    //       <polygon points="10,4 12,2 14,4" fill="#222" />
-    //     </svg>
-    //   )
-    // },   {
-    //   id: 12,
-    //   category: 'Competition',
-    //   title: 'Expert Session',
-    //   subtitle: 'Learn from the Best',
-    //   description: "Industry Proffessionals share real-world experiences and insights. A chance to learn practical tech skills and get inspired.",
-    //   difficulty: 'Easy',
-    //   agents: 'Individual',
-    //   reward: 'Thrill & Motivation',
-    //   link: 'https://docs.google.com/forms/d/e/1FAIpQLSfHv4C9WQ2RhgC9vqI-SSrcOGu9zZ7cFgG7kavV-jLnbwtgQA/viewform',
-    //   entryFees: 'Free',
-    //   theme: {
-    //     color: '#e23636',
-    //     gradientFrom: 'from-[#e23636]',
-    //     gradientTo: 'to-[#222]',
-    //     borderColor: 'border-[#e23636]',
-    //   },
-    //   icon: (
-    //     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
-    //       <rect x="10" y="4" width="4" height="16" fill="#e23636" />
-    //       <polygon points="10,4 12,2 14,4" fill="#222" />
-    //     </svg>
-    //   )
-    // }
-  ];
+    ];
 
   return (
     <div className='min-h-screen w-full font-sans p-4 sm:p-8 bg-[#e23636] opacity-90'>
@@ -287,30 +142,18 @@ function Event() {
         </div>
       </div>
       <div id='timeline' className='  relative h-full w-full mt-12 p-8 rounded-lg'>
-        <div className=' hidden md:block h-40 w-40 scale-140 absolute right-0 '>
-             <img src="deadpool.png" alt="" />
+        <div className=' hidden md:block h-40 w-40 scale-200 absolute top-65 right-50 '>
+             <img src="f1bw.png" alt="" />
         </div>
-           <div className='hidden md:block  h-40 w-40 scale-140 absolute top-100  left-10 '>
-             <img src="spider-face.png" alt="" />
+           <div className='hidden md:block  h-40 w-40 scale-220 absolute top-100  left-50 '>
+             <img src="f1s2 (2).png" alt="" />
         </div>
-          <div className='hidden md:block  h-40 w-40 scale-140 absolute top-180 right-10 '>
-             <img src="pointer.png" alt=""/> 
+          <div className='hidden md:block  h-40 w-40 scale-200 absolute top-170 right-40 '>
+             <img src="f1s5 (1).png" alt=""/> 
         </div>
-          <div className='hidden md:block  h-40 w-40 scale-75 absolute top-302 left-70 '>
-             <img src="sp.png" alt=""/> 
+          <div className='hidden md:block  h-40 w-40 scale-140 absolute top-230 left-40 '>
+             <img src="f1d1.png" alt=""/> 
         </div>
-         <div className='hidden md:block  h-40 w-40 scale-140 absolute top-352 right-10 '>
-             <img src="Wolve.png" alt=""/> 
-        </div>
-          <div className='hidden md:block  h-40 w-40 scale-140 absolute top-452 left-10 '>
-             <img src="Danger.png" alt=""/> 
-        </div>
-        <div className='hidden md:block  h-40 w-40 scale-140 absolute top-490 right-40 '>
-             <img src="ironman-snap.png" alt=""/> 
-        </div>
-          <div className='hidden md:block  h-40 w-40 scale-140 absolute top-570 left-30 '>
-             <img src="DW.png" alt=""/> 
-        </div>  
         <EventTimeLine />
       </div>
     </div>

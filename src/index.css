@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: "AVENGER";
-  src: url('/fonts/AVENGER.woff2') format('woff2');
+  src: url('/fonts/branche/BRANCHÉ Demo.ttf') format('woff2');
+  font-weight: 1000;
 }
 
 @font-face {
