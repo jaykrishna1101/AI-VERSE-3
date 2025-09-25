@@ -29,7 +29,7 @@ function LandingHome({ suspenseResolved }) {
 }, []);
 
 
-  const text = "AI verse 3.0";
+  const text = "AI Verse 3.0";
 
   const container = {
     hidden: {},
@@ -73,7 +73,7 @@ function LandingHome({ suspenseResolved }) {
             animate="show"
           >
             {text.split("").map((char, index) => (
-              <motion.span key={index} variants={letter} className="inline-block font-extralight">
+              <motion.span key={index} variants={letter} className="inline-block font-bold">
                 {char === " " ? "\u00A0" : char}
               </motion.span>
             ))}

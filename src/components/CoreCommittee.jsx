@@ -165,7 +165,7 @@ const gameOfTradesCommitteeMembers = [
               <img src="f1s2 (1).png" alt="" className="h-full w-full object-cover" />
             </div>
 
-            <div className=" absolute top-200 left-0 w-60 h-32 -rotate-3 rounded-xl">
+            <div className=" absolute top-200 left-0 w-60 h-32 -rotate-3 overflow-hidden bg-gray-100 rounded-xl">
               <img src="f115.png" alt="" className="h-full w-full object-cover" />
             </div>
 
@@ -213,7 +213,7 @@ const gameOfTradesCommitteeMembers = [
               <img src="f1s5 (1).png" alt="" />
             </div>
 
-            <div className=" absolute top-390 right-10 w-40 h-40 scale-150 rotate-3 rounded-xl">
+            <div className=" absolute top-390 right-10 w-40 h-20 scale-150 overflow-hidden bg-red-200 rotate-3 rounded-xl">
               <img src="f1petronas.webp" alt="" />
             </div>
 
@@ -225,7 +225,7 @@ const gameOfTradesCommitteeMembers = [
               <img src="f1r8 (1).png" alt="" />
             </div>
 
-            <div className=" absolute top-560 right-20 scale-100 -rotate-3 right-10 w-40 h-40 overflow-hidden bg-red-200 rounded-xl">
+            <div className=" absolute top-560 right-20 scale-100 -rotate-3 right-10 w-40 h-40 overflow-hidden bg-gray-100 rounded-xl">
               <img src="f1d4.png" alt="" />
             </div>
 
@@ -234,7 +234,7 @@ const gameOfTradesCommitteeMembers = [
               <img src="f1bw.png" alt="" />
             </div>
 
-            <div className="absolute top-680 right-10 w-44 h-44 -rotate-3 rounded-xl">
+            <div className="absolute top-680 right-10 w-44 h-30 -rotate-3 overflow-hidden bg-black rounded-xl">
               <img src="f1d5.jpg" alt="" />
             </div>
 
@@ -242,51 +242,51 @@ const gameOfTradesCommitteeMembers = [
               <img src="f1l4 (1).png" alt="" />
             </div>
 
-            <div className="absolute top-760 right-10 w-48 h-48 scale-120 rounded-xl">
+            <div className="absolute top-760 right-10 w-48 h-48 scale-120 overflow-hidden rounded-xl">
               <img src="f1s4 (1).png" alt="" />
             </div>
 
-            <div className="absolute top-800 left-10 w-44 h-26 scale-120 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
+            <div className="absolute top-800 left-10 w-44 h-26 scale-120 -rotate-3 overflow-hidden bg-gray-100 rounded-xl">
               <img src="f1d8.png" alt="" />
             </div>
 
-            <div className="absolute top-840 right-10 w-48 h-48 rotate-3 rounded-xl">
+            <div className="absolute top-840 scale-120 right-10 w-48 h-24 rotate-3 overflow-hidden rounded-xl">
               <img src="f1haas.jpeg" alt="" />
             </div>
 
-            <div className="absolute top-880 scale-130 left-10 w-44 h-44 rotate-3 rounded-xl">
+            <div className="absolute top-880 scale-130 left-10 w-44 h-44 rotate-3 overflow-hidden rounded-xl">
               <img src="f1s1 (1).png" alt="" />
             </div>
 
-            <div className="absolute top-920 right-10 w-44 h-30 -rotate-3 scale-130 rounded-xl">
+            <div className="absolute top-920 right-10 w-44 h-30 -rotate-3 scale-130 overflow-hidden rounded-xl">
               <img src="f1s6.png" alt="" />
             </div>
 
-            <div className="absolute top-960 left-10 w-40 h-40 rotate-3 rounded-xl">
+            <div className="absolute top-960 left-10 w-40 h-25 rotate-3 overflow-hidden rounded-xl">
               <img src="f1d6.jpg" alt="" />
             </div>
 
-            <div className="absolute top-1000 scale-150 right-10 w-48 h-48 rotate-3 rounded-xl">
+            <div className="absolute top-1000 scale-150 right-10 w-48 h-48 rotate-3  overflow-hidden rounded-xl">
               <img src="f13 (1).png" alt="" />
             </div>
 
-            <div className="absolute top-1040 scale-120 left-10 w-44 h-44 -rotate-3 rounded-xl">
+            <div className="absolute top-1040 scale-120 left-10 w-44 h-20 -rotate-3 overflow-hidden rounded-xl">
               <img src="f1mcl38.jpeg" alt="" />
             </div>
 
-            <div className="absolute top-1080 right-10 w-48 h-48 rotate-3 rounded-xl">
+            <div className="absolute top-1080 right-10 w-48 h-48 rotate-3 overflow-hidden rounded-xl">
               <img src="f1c1 (1).png" alt="" />
             </div>
 
-            <div className="absolute top-1120 left-10 w-44 h-44 rotate-3 rounded-xl">
+            <div className="absolute top-1120 left-10 w-44 h-44 rotate-3 overflow-hidden rounded-xl">
               <img src="f1s3.png" alt="" />
             </div>
 
-            <div className="absolute top-1160 scale-120 right-10 w-44 h-44 -rotate-3 rounded-xl">
+            <div className="absolute top-1160 scale-120 right-10 w-44 h-20 overflow-hidden -rotate-3 rounded-xl">
               <img src="f1yuki.jpg" alt="" />
             </div>
 
-            <div className="absolute top-1200 scale-120 left-10 w-40 h-40 rotate-3 rounded-xl">
+            <div className="absolute  top-1200 scale-120 left-10 w-40 h-20 rotate-3 overflow-hidden rounded-xl">
               <img src="f1d7.jpg" alt="" />
             </div>
 

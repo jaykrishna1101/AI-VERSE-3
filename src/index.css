@@ -4,9 +4,15 @@
 
 @font-face {
   font-family: "AVENGER";
-  src: url('/fonts/branche/BRANCHÉ Demo.ttf') format('woff2');
-  font-weight: 1000;
+  src: url('/fonts/branche/BRANCHÉ Demo.ttf') format('truetype');
+  font-weight: normal; /* or 700 */
+  font-style: normal;
 }
+h1 {
+  font-family: "AVENGER", sans-serif;
+  font-weight: normal; /* matches your @font-face */
+}
+
 
 @font-face {
   font-family: "SPIDER";

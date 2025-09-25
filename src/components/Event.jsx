@@ -16,11 +16,13 @@ function Event() {
       entryFees: '₹50 | ₹100 | ₹150',
       reward: '₹8,500',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSfA8axEcgj1YAVhT6vugPTuo7VA4GD9fQpKXpaGTAKo60n-jQ/viewform',
+      posterUrl: '4.png',
       theme: {
-        color: '#e23636',
-        gradientFrom: 'from-[#e23636]',
-        gradientTo: 'to-[#b71c1c]',
-        borderColor: 'border-[#e23636]',
+        color: '[#d3b3ff]',
+        gradientFrom: 'from-[#f0e6ff]',
+        gradientTo: 'to-[#d3b3ff]',
+        borderColor: 'border-[#d3b3ff]',
+        tcolor: 'text-[#4a235a]'
       },
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
@@ -42,11 +44,13 @@ function Event() {
       reward: '₹4,500',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSdIBh-28mxjNrcTGdWofZTJEwuXqj51MLrna8_Ntgequ7hoqg/viewform',
       entryFees: '₹80 | ₹100 | ₹120',
+      posterUrl: '3.png',
       theme: {
-        color: '#ffe066',
-        gradientFrom: 'from-[#ffe066]',
-        gradientTo: 'to-[#e23636]',
-        borderColor: 'border-[#ffe066]',
+        color: '[#2155e4]',
+        gradientFrom: 'from-[#e0f2fe]',
+        gradientTo: 'to-[#2155e4]',
+        borderColor: 'border-[#2155e4]',
+        tcolor: 'text-[#0c3764]'
       },
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#ffe066]" viewBox="0 0 24 24" fill="none">
@@ -66,11 +70,13 @@ function Event() {
       reward: '4,500',
       entryFees: '₹60 | ₹100 | ₹120',
       link: 'hhttps://docs.google.com/forms/d/e/1FAIpQLSdBINnoYR6xnZutc740OA9buR6BewyF4vVSejhAX1LjXoLZqw/viewform',
+      posterUrl: '7.png',
       theme: {
-        color: '#8e44ad',
+        color: '[#8e44ad]',
         gradientFrom: 'from-[#8e44ad]',
-        gradientTo: 'to-[#e23636]',
+        gradientTo: 'to-[#3498db]',
         borderColor: 'border-[#8e44ad]',
+        tcolor: 'text-[#361919]'
       },
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#8e44ad]" viewBox="0 0 24 24" fill="none">
@@ -90,11 +96,13 @@ function Event() {
       reward: '₹4,500',
       entryFees: '₹100 | ₹120',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSdrwZL01EhCISV89vFy-ABn2z7EhxR8HLkl9v3CZZlQa0mWPQ/viewform',
+      posterUrl: '6.png',
       theme: {
-        color: '#222',
-        gradientFrom: 'from-[#222]',
-        gradientTo: 'to-[#e23636]',
-        borderColor: 'border-[#222]',
+        color: '[#fde68a]',
+        gradientFrom: 'from-[#fffbeb]',
+        gradientTo: 'to-[#fde68a]',
+        borderColor: 'border-[#fde68a]',
+        tcolor: 'text-[#b45309]'
       },
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
@@ -115,11 +123,13 @@ function Event() {
       reward: '₹4,500',
       entryFees: '₹60 | ₹90 | ₹120',
       link: 'https://docs.google.com/forms/d/e/1FAIpQLSekqPLxOh2ecKafpcfAgUWP4U_O14N18_JASpiirg7JVtaV_Q/viewform?usp=dialog',
+      posterUrl: '5.png',
       theme: {
-        color: '#e23636',
-        gradientFrom: 'from-[#e23636]',
-        gradientTo: 'to-[#222]',
-        borderColor: 'border-[#e23636]',
+        color: '[#7dd3fc]',
+        gradientFrom: 'from-[#e0f2fe]',
+        gradientTo: 'to-[#7dd3fc]',
+        borderColor: 'border-[#7dd3fc]',
+        tcolor: 'text-[#0c4a6e]'
       },
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#e23636]" viewBox="0 0 24 24" fill="none">
@@ -131,9 +141,9 @@ function Event() {
     ];
 
   return (
-    <div className='min-h-screen w-full font-sans p-4 sm:p-8 bg-[#e23636] opacity-90'>
+    <div className='min-h-screen w-full font-sans p-4 sm:p-8 bg-[#fca311] opacity-90'>
       <div id="event_moblie"  className="max-w-7xl mx-auto">
-        <h1 className="avenger tracking-wide text-4xl md:text-5xl font-bold text-center text-white mb-12">Events</h1>
+        <h1 className="avenger text-6xl md:text-6xl font-bold text-center text-white mb-12">Events</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {eventsData.map(event => (
@@ -142,7 +152,7 @@ function Event() {
         </div>
       </div>
       <div id='timeline' className='  relative h-full w-full mt-12 p-8 rounded-lg'>
-        <div className=' hidden md:block h-40 w-40 scale-200 absolute top-65 right-50 '>
+        <div className=' hidden md:block h-18 w-40 scale-200 absolute overflow-hidden bg-gray-100 rounded-xl top-65 right-50 '>
              <img src="f1bw.png" alt="" />
         </div>
            <div className='hidden md:block  h-40 w-40 scale-220 absolute top-100  left-50 '>
