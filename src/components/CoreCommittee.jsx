@@ -9,80 +9,134 @@ function CoreCommittee() {
   const scrollRef = useRef(null);
   const isInView = useInView(scrollRef, { once: true, margin: "-100px" });
 
-  const coreCommitteeMembers = [
-    'CTSC President: Mr. Om Santoshwar',
-    'CTSC Working President: Ms. Gauri Nagpure',
-    'CTSC Vice President : Mr. Lalit Mendhule',
-    'ACM Chairperson: Mr. Soham Bakane',
-    'IEEE Chairperson: Mr. Priyanshu Behere',
-    'Cultural Head: Ms. Samiksha Sawant',
-    'Cultural Head: Mr. Umang Gotmare',
-    'Finance Head & Treasurer: Mr. Shrirang Nadarkhani',
-    'Database Head: Ms. Paridhi Nawalkar',
-    'Design Head: Ms. Navya Kashimkar',
-    'Literary Head: Ms. Harshali Dahariya',
-    'Publicity Head: Mr. Pritam Chaudhary', ,
-    'Sponsorship Head: Mr. Raj Dhoble',
-    'Optimum Head: Mr. Piyush Bhoyar',
-    'EM & HM Head: Mr. Prathamesh Ghormade',
-    'Technosavy & Dhyass Head: Mr. Smit Pidurkar',
-    'Students Representative: Ms. Sejal Lambat',
-  ];
+const coreCommitteeMembers = [
+  'Coordinator: Mr. Aryan Rangari',
+  'Co-Coordinator: Mr. Om Gawande',
+  'Treasurer: Mr. Mihir Dhanore',
+  'Event Manager: Ms. Vedanti Chaudhari',
+  'Core Member: Ms. Riya Pannase',
+  'Core Member: Mr. Kaushik Khodke',
+];
 
-  const computfestCommitteeMembers = [
-    'Compufest Head: Mr. Lalit Mendhule',
-    'Technical Head: Mr. Gaurav Naik',
-    'Cultural Head: Ms. Samiksha Sawant',
-    'Cultural Head: Mr. Umang Gotmare',
-    'Decoration Head: Ms. Sejal Lambat',
-    'Sports Head: Mr. Parth Deshpande',
-    'Optimum & Social Media Head: Mr. Tushar Bodhe',
-    'EM & HM Head: Mr. Prathamesh Ghormade',
-    'Design Head: Mr. Ayush Borkar'
-  ];
+const requirementCommitteeMembers = [
+  'Head: Mr. Vidhan Bhagat',
+  'Co-Head: Mr. Om Deshmukh',
+  'Member: Mr. Harsh Meshram',
+  'Member: Mr. Aryan Patle',
+  'Member: Mr. Sujal Ukunde',
+  'Member: Ms. Harshita Balpande',
+  'Member: Ms. Shraddha Ninawe',
+];
 
-  const semiCoreCommitteeMembers = [
-    'Joint Secretary: Mr. Aditya Rehpade',
-    'ACM Vice Chairperson: Mr. Darshan Bagde',
-    'ACM Secratory: Mr. Aditya Roy',
-    'ACM Web Master: Mr. Swayam Thakur',
-    'IEEE Vice Chairperson: Mr. Pratik Rai',
-    'IEEE Secretary: Mr. Archit Gulhane',
-    'IEEE Web Master: Mr. Sujit Bopche',
-    'Cultural Co-Head: Mr. Muchkundraje Thote',
-    'Publicity Co-Head: Mr. Yashraj Talegaonkar',
-    'Event Management Co-Head: Mr. Paras Shingote',
-    'Hall Management Co-Head: Mr. Neelay Jadhav',
-    'Sponsorship Co-Head: Mr. Arth Bhagat',
-    'Database Co-Head: Ms. Sakshi Krishnani',
-    'Optimum Co-Head: Mr. Ayush Dhole',
-    'Optimum Co-Head: Mr. Sujal Jangde',
-    'Design Co-Head: Mr. Yash Nandanawar',
-    'Technosavy & Dhyass Co-Head: Ms. Shailaja Patle',
-    'Finance Co-Head: Mr. Hrutik Gujarkar',
-    'Literature Co-Head: Ms. Sushmita Khachane',
-    'Executive: Mr. Rachit Singh',
-  ];
+const technicalCommitteeMembers = [
+  'Head: Mr. Pranay Shirulkar',
+  'Co-Head: Mr. Eklawya Chauhan',
+  'Member: Mr. Jaykrishna Khond',
+  'Member: Mr. Soham Narvelkar',
+];
 
-  const semiCoreCompufestCommitteeMembers = [
-    'Technical Co-Head: Mr. Kritish Bokde',
-    'Publicity Co-Head: Mr. Vedant Umate',
-    'Event Management Co-Head: Mr. Aman Kanoje',
-    'Event Management Co-Head: Mr. Sakshat Keote',
-    'Hall Management Co-Head: Ms. Varsha Kolekar',
-    'Cultural Co-Head: Ms. Ekta Chandak',
-    'Database Co-Head: Mr. Tanmay Patil',
-    'Optimum Co-Head: Ms. Sanskruti Barnase',
-    'Literary Co-Head: Ms. Gauri Joge',
-    'Design Co-Head: Ms. Nandini Pawar',
-    'Sports Co-Head: Mr. Krishna Mishra',
-    'Sports Co-Head: Mr. Aniket Mokalkar',
-  ];
+const mediaCommitteeMembers = [
+  'Head: Mr. Rishi Tapase',
+  'Co-Head: Mr. Satwik Kamavisdar',
+  'Member: Mr. Chetan Sontakke',
+  'Member: Ms. Manasvi Dhongle',
+];
+
+const documentationCommitteeMembers = [
+  'Head: Ms. Maithilee Bansod',
+  'Co-Head: Mr. Soham Deshmukh',
+  'Member: Mr. Devanshu Balpande',
+  'Member: Mr. Tanishq Ambatkar',
+];
+
+const decorationCommitteeMembers = [
+  'Head: Ms. Gracy Salakha',
+  'Co-Head: Ms. Himani Chamele',
+  'Member: Ms. Aarya Purohit',
+  'Member: Ms. Anisha Dhote',
+  'Member: Ms. Minakshi Turkar',
+  'Member: Ms. Ruchita Khante',
+  'Member: Ms. Vrunda Bhramhe',
+  'Member: Ms. Sejal Titarmare',
+];
+
+const registrationCommitteeMembers = [
+  'Head: Ms. Sayali Kohale',
+  'Co-Head: Mr. Yash More',
+  'Member: Ms. Nidhi Bharati',
+  'Member: Mr. Yash Wavdhane',
+];
+
+const promotionCommitteeMembers = [
+  'Head: Mr. Ansh Malviya',
+  'Co-Head: Ms. Janhavi Chandekar',
+  'Member: Ms. Chinamyee Ballal',
+  'Member: Mr. Siddhant Rangari',
+  'Member: Mr. Nishant Tiwari',
+];
+
+const gigaGenCommitteeMembers = [
+  'Coordinator: Mr. Kartik Barnala',
+  'Co-Coordinator: Ms. Swara Padole',
+  'Co-Coordinator: Mr. Prasun Shamkule',
+  'Member: Mr. Mayank Charde',
+  'Member: Ms. Hardika Kathlewar',
+  'Member: Mr. Karan Bhandarkar',
+  'Member: Ms. Navinya Urkude',
+  'Member: Mr. Aryan Patle',
+  'Member: Ms. Shruti Gaikwad',
+  'Member: Ms. Arthali Mohod',
+];
+
+const webbotixCommitteeMembers = [
+  'Coordinator: Ms. Palak Khonde',
+  'Co-Coordinator: Mr. Tejas Kumbhare',
+  'Co-Coordinator: Mr. Armaan Manwatkar',
+  'Documentation: Mr. Athrava Dhande',
+  'Decoration: Mr. Jayesh Kumbhare',
+  'Media: Mr. Shreyash Tiwari',
+  'Registration: Mr. Uzaif Mirza',
+  'Promotion: Mr. Supreet Borikar',
+];
+
+const mlNeuroNetsCommitteeMembers = [
+  'Coordinator: Ms. Riddhi Sontakke',
+  'Co-Coordinator: Ms. Prajakta Sambare',
+  'Documentation: Mr. Somesh Ninawe',
+  'Decoration: Ms. Tanisha Akhre',
+  'Media: Ms. Bhumika Barai',
+  'Promotion: Mr. Harshad Wadaskar',
+  'Registration: Ms. Nayana Dhote',
+  'Member: Ms. Vaishnavi Jadhav',
+];
+
+const emperorsConquestCommitteeMembers = [
+  'Coordinator: Mr. Ayush Nair',
+  'Co-Coordinator: Mr. Parth Khairkar',
+  'Documentation: Mr. Dipanshu Shende',
+  'Decoration: Mr. Devansh Peshne',
+  'Media: Ms. Dhruvi Ghodasara',
+  'Promotion: Mr. Prince Raja',
+  'Registration: Mr. Prathamesh Bhujade',
+  'Requirement: Mr. Yug Meshram',
+];
+
+const gameOfTradesCommitteeMembers = [
+  'Coordinator: Mr. Aditya Menon',
+  'Co-Coordinator: Ms. Mayuri Khumbare',
+  'Registration: Mr. Tanay Makde',
+  'Decoration: Mr. Malleshwar Reddy',
+  'Documentation: Mr. Jayesh Bhadange',
+  'Promotion: Ms. Besty Kallukaran',
+  'Media: Ms. Ekta Wanjari',
+  'Member: Mr. Rohan Barkuntwar',
+];
+
 
   return (
-    <div className="min-h-screen w-full font-sans p-4 sm:p-8 bg-[#17181a] opacity-90 flex items-center flex-col gap-3 justify-start">
+    <div className="min-h-screen w-full font-sans p-4 sm:p-8 bg-[#4587ca] opacity-90 flex items-center flex-col gap-3 justify-start">
       <h1 className="avenger text-3xl font-extralight text-center mb-12 tracking-wide  text-white">
-        Ai Verse Committee
+        AI Verse 3.0 Committee
       </h1>
 
       <div ref={scrollRef} className="w-[65rem] h-[80vh] overflow-hidden  flex items-center -mt-3 justify-center relative">
@@ -99,27 +153,25 @@ function CoreCommittee() {
         >
           {/* Put your content inside this box */}
           <div className="p-4 text-center text-white relative rounded-xl">
-            <h1 className="avenger text-2xl font-extralight text-center mb-1 text-white">
-              <span>Core</span> Avengers
-            </h1>
-            <div className=" absolute top-0 right-0 w-60 h-32 -rotate-3  overflow-hidden rounded-xl">
-              <img src="/IMG_5092.JPG" alt="" className="h-full w-full object-cover" />
+            
+            <div className=" absolute top-10 right-10 w-60 h-60 -rotate-3  overflow-hidden rounded-xl">
+              <img src="f114.png" alt="" className="h-full w-full object-cover" />
             </div>
 
-            <div className=" absolute top-80 left-0 w-60 h-32 rotate-3 overflow-hidden bg-red-200 rounded-xl">
-              <img src="/IMG_5093.JPG" alt="" className="h-full w-full object-cover" />
+            <div className=" absolute top-80 scale-65 left-0 w-60 h-32 rotate-3 rounded-xl">
+              <img src="f112 (1).png" alt="" className="h-full w-full object-cover" />
             </div>
             <div className=" absolute top-160 right-0 w-60 h-32 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
-              <img src="/IMG_5104.JPG" alt="" className="h-full w-full object-cover" />
+              <img src="f1s2 (1).png" alt="" className="h-full w-full object-cover" />
             </div>
 
-            <div className=" absolute top-200 left-0 w-60 h-32 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
-              <img src="/IMG_5118.JPG" alt="" className="h-full w-full object-cover" />
+            <div className=" absolute top-200 left-0 w-60 h-32 -rotate-3 rounded-xl">
+              <img src="f115.png" alt="" className="h-full w-full object-cover" />
             </div>
 
 
-            <div className=" absolute top-15 left-0 w-40 h-40 rotate-3 rounded-xl">
-              <img src="spider-man-sticker.png" alt="" />
+            <div className=" absolute top-15 left-0 w-40 h-40 scale-150 rotate-3 rounded-xl">
+              <img src="f1d3.png" alt="" />
             </div>
 
 
@@ -135,85 +187,226 @@ function CoreCommittee() {
               }}
               className="absolute top-80 right-0 w-40 h-40 rounded-xl"
             >
-              <img src="gautlent.png" alt="" />
+              <img src="f19.png" alt="" />
             </motion.div>
 
 
-            <div className=" absolute top-140 left-0 w-40 h-40 rotate-3 rounded-xl">
-              <img src="iron_man.png" alt="" />
+            <div className=" absolute top-140 scale-120 left-10 w-40 h-25 rotate-3 overflow-hidden bg-orange-200 rounded-xl">
+              <img src="f113.png" alt="" />
             </div>
 
 
-            <div className=" absolute top-240 right-10 w-40 h-40 rotate-3 rounded-xl">
-              <img src="/captain.png" alt="" />
+            <div className=" absolute top-240 right-10 scale-150 w-40 h-40 rotate-3 rounded-xl">
+              <img src="f1r11 (1).png" alt="" />
             </div>
 
-            <div className=" absolute top-280 scale-150 left-10 w-40 h-40 rotate-3 rounded-xl">
-              <img src="/hulk.png" alt="" />
+            <div className=" absolute top-280 scale-110 left-10 w-40 h-40 rotate-3 rounded-xl">
+              <img src="f1d2.png" alt="" />
             </div>
 
 
-            <div className=" absolute top-320 right-10 w-40 h-40 rotate-3 rounded-xl">
-              <img src="/black-panther.png" alt="" />
+            <div className=" absolute top-320 scale-200 right-20 w-40 h-40 rotate-3 rounded-xl">
+              <img src="f1oracle.png" alt="" />
             </div>
 
-             <div className=" absolute top-360 left-0 w-60 h-32 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
-              <img src="/core.png" alt="" />
+             <div className=" absolute top-360 left-10 w-38 h-32 scale-150 -rotate-3 rounded-xl">
+              <img src="f1s5 (1).png" alt="" />
             </div>
 
-            <div className=" absolute top-390 right-10 w-40 h-40 rotate-3 rounded-xl">
-              <img src="/wanda.png" alt="" />
+            <div className=" absolute top-390 right-10 w-40 h-40 scale-150 rotate-3 rounded-xl">
+              <img src="f1petronas.webp" alt="" />
             </div>
 
-            <div className=" absolute top-430 scale-100 left-10 w-40 h-40 rotate-3 rounded-xl">
-              <img src="/deedpool-wolv.png" alt="" />
+            <div className=" absolute top-430 scale-150 left-10 w-40 h-40 rotate-3 rounded-xl">
+              <img src="f1.png" alt="" />
             </div>
 
-            <div className=" absolute top-540 scale-140 left-10 w-40 h-40 rotate-3 rounded-xl">
-              <img src="/Dr_strange.png" alt="" />
+            <div className=" absolute top-540 scale-200 left-10 w-40 h-40 rotate-3 rounded-xl">
+              <img src="f1r8 (1).png" alt="" />
             </div>
 
-            <div className=" absolute top-560 right-0 w-48 h-60 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
-              <img src="/draredevil.jpeg" alt="" />
+            <div className=" absolute top-560 right-20 scale-100 -rotate-3 right-10 w-40 h-40 overflow-hidden bg-red-200 rounded-xl">
+              <img src="f1d4.png" alt="" />
             </div>
+
+            {/* Extra stickers for lower teams */}
+            <div className="absolute top-640 scale-120 left-10 w-44 h-20 rotate-3 overflow-hidden bg-red-200 rounded-xl">
+              <img src="f1bw.png" alt="" />
+            </div>
+
+            <div className="absolute top-680 right-10 w-44 h-44 -rotate-3 rounded-xl">
+              <img src="f1d5.jpg" alt="" />
+            </div>
+
+            <div className="absolute top-720 left-10 scale-120 w-40 h-20 rotate-3 overflow-hidden bg-red-200 rounded-xl">
+              <img src="f1l4 (1).png" alt="" />
+            </div>
+
+            <div className="absolute top-760 right-10 w-48 h-48 scale-120 rounded-xl">
+              <img src="f1s4 (1).png" alt="" />
+            </div>
+
+            <div className="absolute top-800 left-10 w-44 h-26 scale-120 -rotate-3 overflow-hidden bg-red-200 rounded-xl">
+              <img src="f1d8.png" alt="" />
+            </div>
+
+            <div className="absolute top-840 right-10 w-48 h-48 rotate-3 rounded-xl">
+              <img src="f1haas.jpeg" alt="" />
+            </div>
+
+            <div className="absolute top-880 scale-130 left-10 w-44 h-44 rotate-3 rounded-xl">
+              <img src="f1s1 (1).png" alt="" />
+            </div>
+
+            <div className="absolute top-920 right-10 w-44 h-30 -rotate-3 scale-130 rounded-xl">
+              <img src="f1s6.png" alt="" />
+            </div>
+
+            <div className="absolute top-960 left-10 w-40 h-40 rotate-3 rounded-xl">
+              <img src="f1d6.jpg" alt="" />
+            </div>
+
+            <div className="absolute top-1000 scale-150 right-10 w-48 h-48 rotate-3 rounded-xl">
+              <img src="f13 (1).png" alt="" />
+            </div>
+
+            <div className="absolute top-1040 scale-120 left-10 w-44 h-44 -rotate-3 rounded-xl">
+              <img src="f1mcl38.jpeg" alt="" />
+            </div>
+
+            <div className="absolute top-1080 right-10 w-48 h-48 rotate-3 rounded-xl">
+              <img src="f1c1 (1).png" alt="" />
+            </div>
+
+            <div className="absolute top-1120 left-10 w-44 h-44 rotate-3 rounded-xl">
+              <img src="f1s3.png" alt="" />
+            </div>
+
+            <div className="absolute top-1160 scale-120 right-10 w-44 h-44 -rotate-3 rounded-xl">
+              <img src="f1yuki.jpg" alt="" />
+            </div>
+
+            <div className="absolute top-1200 scale-120 left-10 w-40 h-40 rotate-3 rounded-xl">
+              <img src="f1d7.jpg" alt="" />
+            </div>
+
+            <div className="absolute top-1240 right-0 w-48 h-31 rotate-3 overflow-hidden bg-red-200 rounded-xl">
+              <img src="f115.png" alt="" />
+            </div>
+
+
+            <h1 className="avenger text-2xl font-extralight text-center mb-1 text-white">
+              <span>Core</span> Team
+            </h1>
 
             {coreCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2  inter md:text-[16px] text-sm">{val}</p>
+              <p key={index} className="mb-2 inter md:text-[16px] text-sm">{val}</p>
             ))}
 
             <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
-              <span>Compufest</span> Avengers
+              <span>Requirement</span> Team
             </h1>
 
-            {computfestCommitteeMembers.map((val, index) => (
+            {requirementCommitteeMembers.map((val, index) => (
               <p key={index} className="mb-2 inter">{val}</p>
             ))}
-
 
             <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
-              <span>Semi Core</span> Avengers
+              <span>Technical</span> Team
             </h1>
 
-            {semiCoreCommitteeMembers.map((val, index) => (
+            {technicalCommitteeMembers.map((val, index) => (
               <p key={index} className="mb-2 inter">{val}</p>
             ))}
-
 
             <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
-              <span>Compufest Semi Core</span> Avengers
+              <span>Media</span> Team
             </h1>
 
-            {semiCoreCompufestCommitteeMembers.map((val, index) => (
+            {mediaCommitteeMembers.map((val, index) => (
               <p key={index} className="mb-2 inter">{val}</p>
             ))}
+
+            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+              <span>Documentation</span> Team
+            </h1>
+
+            {documentationCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
+
+            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+              <span>Decoration</span> Team
+            </h1>
+
+            {decorationCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
+
+            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+              <span>Registration</span> Team
+            </h1>
+
+            {registrationCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
+
+            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+              <span>Promotion</span> Team
+            </h1>
+
+            {promotionCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
+
+            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+              <span>GigaGen</span> Avengers
+            </h1>
+
+            {gigaGenCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
+
+            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+              <span>WebBotix</span> Avengers
+            </h1>
+
+            {webbotixCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
+
+            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+              <span>ML NeuroNets</span> Avengers
+            </h1>
+
+            {mlNeuroNetsCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
+
+            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+              <span>Emperor’s Conquest</span> Avengers
+            </h1>
+
+            {emperorsConquestCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
+
+            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+              <span>Game of Trades</span> Avengers
+            </h1>
+
+            {gameOfTradesCommitteeMembers.map((val, index) => (
+              <p key={index} className="mb-2 inter">{val}</p>
+            ))}
+
 
             <h1 className="avenger mt-4 text-2xl">
               --- The END ---
             </h1>
             <div className="w-full h-40 flex items-center justify-center">
 
-              <div className=" w-50 h-50  mt-5 rounded-xl">
-                <img src="marvel-logo.png" alt="" />
+              <div className=" w-35 h-35  mt-5 rounded-xl">
+                <img src="f1logo.jpg" alt="" />
               </div>
             </div>
           </div>

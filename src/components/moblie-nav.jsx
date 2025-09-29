@@ -37,7 +37,7 @@ function MobileNav({isOpen ,setIsOpen}) {
         </Link>
 
         <a
-          href="https://www.instagram.com/compufest_ycce2k25?igsh=MWxyaG5tZ29hMWtvaw=="
+          href="https://www.instagram.com/aiverse_svpcet"
           target="_blank"
           rel="noopener noreferrer"
           className='text-2xl mb-2 w-full text-center'

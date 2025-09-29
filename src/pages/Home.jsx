@@ -189,9 +189,9 @@ export default function App() {
             <Event />
           </div>
 
-          <div>
+          {/* <div>
             <OurSponsors />
-          </div>
+          </div> */}
 
           <div className='h-[200vh] w-full'>
 
