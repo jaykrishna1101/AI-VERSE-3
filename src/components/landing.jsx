@@ -67,7 +67,7 @@ function LandingHome({ suspenseResolved }) {
       <div className='bebas-neue-regular p-1 h-40 md:h-64 z-10 w-full text-6xl md:text-[150px] flex items-center justify-center shadow-2xl bg-[#0c0c0c] text-white'>
         {playAnimation && (
           <motion.h1
-            className="avenger font-extralight px-4 md:leading-60 leading-40 whitespace-nowrap"
+            className="image-text font-extralight px-4 md:leading-60 leading-40 whitespace-nowrap"
             variants={container}
             initial="hidden"
             animate="show"

@@ -13,10 +13,56 @@ h1 {
   font-weight: normal; /* matches your @font-face */
 }
 
+@font-face {
+  font-family: 'monocoque';
+  src: url('/fonts/monocoque/MONOCOQUE.ttf') format('truetype');
+}
+
 
 @font-face {
   font-family: "SPIDER";
   src: url('/fonts/spider.woff2') format('woff2');
+}
+
+.image-text {
+    /* Set the background image */
+    font-family: 'monocoque';
+    background-image: url('m1.jpg');
+    background-color: rgb(219, 219, 219);
+    /* Control the image's display */
+    background-size: cover;
+    background-position: center;
+    font-style: italic;
+
+    /* Clip the background to the text */
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    background-clip: text;
+
+    /* Make the text transparent */
+    color: transparent;
+    
+    /* --- SOLUTION --- */
+    /* Use drop-shadow instead of text-shadow */
+    filter:
+        drop-shadow(1.0px 1.0px 0 #e23636)
+        drop-shadow(1.5px 1.5px 0 #e23636)
+        drop-shadow(2.0px 2.0px 0 #e23636)
+        drop-shadow(2.5px 2.5px 0 #e23636)
+        drop-shadow(3.0px 3.0px 0 #e23636)
+        /* drop-shadow(2.5px 3.5px 0 #fca311) */
+        /* drop-shadow(4.0px 4.0px 0 #fca311)
+        drop-shadow(4.5px 4.5px 0 #fca311)
+        drop-shadow(5.0px 5.0px 0 #fca311) */
+        /* drop-shadow(6px 6px 0 #fca311) */
+        /* Optional: Add a final, slightly blurred layer for softness */
+        drop-shadow(7.0px 7.0px 5.0px rgba(0, 0, 0, 0.4));
+
+    /* --- END SOLUTION --- */
+    letter-spacing: 10px;
+    /* Optional: Add styling to make the text more prominent */
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
 }
 
 

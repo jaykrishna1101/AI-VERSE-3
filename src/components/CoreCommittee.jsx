@@ -134,8 +134,8 @@ const gameOfTradesCommitteeMembers = [
 
 
   return (
-    <div className="min-h-screen w-full font-sans p-4 sm:p-8 bg-[#4587ca] opacity-90 flex items-center flex-col gap-3 justify-start">
-      <h1 className="avenger text-3xl font-extralight text-center mb-12 tracking-wide  text-white">
+    <div className="min-h-screen w-full font-sans p-4 sm:p-8 bg-gray-100 opacity-90 flex items-center flex-col gap-3 justify-start">
+      <h1 className="avenger text-3xl font-extralight text-center mb-12 tracking-wide  text-black">
         AI Verse 3.0 Committee
       </h1>
 
@@ -295,112 +295,112 @@ const gameOfTradesCommitteeMembers = [
             </div>
 
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-1 text-white">
+            <h1 className="avenger text-2xl font-bold text-center mb-1 text-black">
               <span>Core</span> Team
             </h1>
 
             {coreCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter md:text-[16px] text-sm">{val}</p>
+              <p key={index} className="mb-2 inter md:text-[16px] text-sm text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
               <span>Requirement</span> Team
             </h1>
 
             {requirementCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
               <span>Technical</span> Team
             </h1>
 
             {technicalCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
               <span>Media</span> Team
             </h1>
 
             {mediaCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
               <span>Documentation</span> Team
             </h1>
 
             {documentationCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
               <span>Decoration</span> Team
             </h1>
 
             {decorationCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
               <span>Registration</span> Team
             </h1>
 
             {registrationCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
               <span>Promotion</span> Team
             </h1>
 
             {promotionCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
-              <span>GigaGen</span> Avengers
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
+              <span>GigaGen</span> Team
             </h1>
 
             {gigaGenCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
-              <span>WebBotix</span> Avengers
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
+              <span>WebBotix</span> Team
             </h1>
 
             {webbotixCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
-              <span>ML NeuroNets</span> Avengers
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
+              <span>ML NeuroNets</span> Team
             </h1>
 
             {mlNeuroNetsCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
-              <span>Emperor’s Conquest</span> Avengers
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
+              <span>Emperor’s Conquest</span> Team
             </h1>
 
             {emperorsConquestCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
-            <h1 className="avenger text-2xl font-extralight text-center mb-3 mt-40 text-white">
-              <span>Game of Trades</span> Avengers
+            <h1 className="avenger text-2xl font-bold text-center mb-3 mt-40 text-black">
+              <span>Game of Trades</span> Team
             </h1>
 
             {gameOfTradesCommitteeMembers.map((val, index) => (
-              <p key={index} className="mb-2 inter">{val}</p>
+              <p key={index} className="mb-2 inter text-black">{val}</p>
             ))}
 
 
-            <h1 className="avenger mt-4 text-2xl">
+            <h1 className="avenger mt-4 text-2xl text-black">
               --- The END ---
             </h1>
             <div className="w-full h-40 flex items-center justify-center">

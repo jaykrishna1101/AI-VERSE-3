@@ -141,7 +141,7 @@ function Event() {
     ];
 
   return (
-    <div className='min-h-screen w-full font-sans p-4 sm:p-8 bg-[#fca311] opacity-90'>
+    <div className='min-h-screen w-full font-sans p-4 sm:p-8 bg-[#e23636] opacity-90'>
       <div id="event_moblie"  className="max-w-7xl mx-auto">
         <h1 className="avenger text-6xl md:text-6xl font-bold text-center text-white mb-12">Events</h1>
 
