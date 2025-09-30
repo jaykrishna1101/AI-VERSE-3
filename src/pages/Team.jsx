@@ -2,328 +2,203 @@ import { IconArrowAutofitDown, IconArrowNarrowLeft } from '@tabler/icons-react'
 import { m } from 'motion/react';
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Footer from '../components/Footer';
 
 function Team() {
 
   const coreCommittee = [
     {
-      'name': 'Mr. Om Santoshwar',
-      'role': 'CTSC President',
-      'image': './committee/om_santoshwar.png'
+      'name': 'Mr. Aryan Rangari',
+      'role': 'Coordinator',
+      'image': './committee/aryan_rangari.png'
     },
     {
       'name': 'Ms. Gauri Nagpure',
-      'role': 'CTSC Working President',
-      'image': './committee/gauri_nagpure.png'
+      'role': 'Co-Coordinator ',
+      'image': './committee/om_gawande.png'
     },
     {
       'name': 'Mr. Lalit Mendhule',
       'role': 'CTSC Vice President',
-      'image': './committee/lalit.png'
+      'image': './committee/mihir_dhanore.png'
     },
     {
       'name': 'Mr. Soham Bakane',
       'role': 'ACM Chairperson',
-      'image': './committee/soham_bakane.png'
+      'image': './committee/vedanti_chaudhari.png'
     },
-    {
-      'name': 'Mr. Priyanshu Behere',
-      'role': 'IEEE Chairperson',
-      'image': './committee/priyanshu_behere.png'
-    },
-    {
-      'name': 'Mr. Shrirang Nadarkhani',
-      'role': 'Finance Head & Treasurer',
-      'image': './committee/shrirang_nadarkhane.png'
-    },
-    {
-      'name': 'Ms. Paridhi Nawalkar',
-      'role': 'Database Head',
-      'image': './committee/paridhi_nawalkar.png'
-    },
-    {
-      'name': 'Ms. Navya Kashimkar',
-      'role': 'Design Head',
-      'image': './committee/navya_kashimkar.png'
-    },
-    {
-      'name': 'Ms. Harshali Dahariya',
-      'role': 'Literary Head',
-      'image': './committee/harshali_dahariya.png'
-    },
-    {
-      'name': 'Mr. Pritam Chaudhari',
-      'role': 'Publicity Head',
-      'image': './committee/pritam_chaudhary.png'
-    },
-    {
-      'name': 'Mr. Raj Dhoble',
-      'role': 'Sponsorship Head',
-      'image': './committee/raj_dhoble.png'
-    },
-    {
-      'name': 'Mr. Piyush Bhoyar',
-      'role': 'Optimum Head',
-      'image': './committee/piyush_bhoyar.png'
-    },
-    {
-      'name': 'Mr. Prathmesh Ghormade',
-      'role': 'EM & HM Head',
-      'image': './committee/prathamesh_ghormade.png'
-    },
-    {
-      'name': 'Mr. Smit Pidurkar',
-      'role': 'Technosavvy & Dhyass Head',
-      'image': './committee/smit.jpeg'
-    },
-    {
-      'name': 'Ms. Samiksha Sawant',
-      'role': 'Cultural Head',
-      'image': './committee/samiksha_sawant.png'
-    },
-    {
-      'name': 'Mr. Umang Gotmare',
-      'role': 'Cultural Head',
-      'image': './committee/umang_gotmare.png'
-    },
-    {
-      'name': 'Ms. Sejal Lambat',
-      'role': 'Students Representative',
-      'image': './committee/sejal_lambat.png'
-    }
   ];
 
   const compufestCoreCommittee = [
     {
       'name': 'Mr. Lalit Mendhule',
       'role': 'Compufest Head',
-      'image': './committee/lalit.png'
+      'image': './committee/rishi_tapase.png'
     },
     {
       'name': 'Ms. Samiksha Sawant',
       'role': 'Cultural Head',
-      'image': './committee/samiksha_sawant.png'
+      'image': './committee/satviik_kamavisdar.png'
     },
-    {
-      'name': 'Mr. Umang Gotmare',
-      'role': 'Cultural Head',
-      'image': './committee/umang_gotmare.png'
-    },
-    {
-      'name': 'Ms. Sejal Lambat',
-      'role': 'Decoration Head',
-      'image': './committee/sejal_lambat.png'
-    },
-    {
-      'name': 'Mr. Gaurav Naik',
-      'role': 'Technical Head',
-      'image': './committee/gaurav_naik.png'
-    },
-    {
-      'name': 'Mr. Parth Deshpande',
-      'role': 'Sports Head',
-      'image': './committee/parth_deshpande.png'
-    },
-    {
-      'name': 'Mr. Tushar Bodhe',
-      'role': 'Optimum & Social Media Head',
-      'image': './committee/tushar_bodhe.png'
-    },
-    {
-      'name': 'Mr. Prathamesh Ghormade',
-      'role': 'EM & HM Head',
-      'image': './committee/prathamesh_ghormade.png'
-    },
-    {
-      'name': 'Mr. Ayush Borkar',
-      'role': 'Design Head',
-      'image': './committee/ayush_borker.png'
-    }
   ];
 
   const semiCoreCommittee = [
     {
       'name': 'Mr. Aditya Rehpade',
       'role': 'Joint Secretary',
-      'image': './committee/aditya_rehpade.png'
+      'image': './committee/pranay_shirulkar.png'
     },
     {
       'name': 'Mr. Darshan Bagde',
       'role': 'ACM Vice Chairperson',
-      'image': './committee/darshan_bagde.png'
+      'image': './committee/eklawaya_chauhan.png'
     },
-    {
-      'name': 'Mr. Aditya Roy',
-      'role': 'ACM Secretary',
-      'image': './committee/aditya_roy.png'
-    },
-    {
-      'name': 'Mr. Swayam Thakur',
-      'role': 'ACM Web Master',
-      'image': './committee/swayam_thakur.jpg'
-    },
-    {
-      'name': 'Mr. Pratik Rai',
-      'role': 'IEEE Vice Chairperson',
-      'image': './committee/pratik_rai.png'
-    },
-    {
-      'name': 'Mr. Archit Gulhane',
-      'role': 'IEEE Secretary',
-      'image': './committee/archit_gulhane.png'
-    },
-    {
-      'name': 'Mr. Sujit Bopche',
-      'role': 'IEEE Web Master',
-      'image': './committee/sujit_bopche.png'
-    },
-    {
-      'name': 'Mr. Yashraj Talegaonkar',
-      'role': 'Publicity Co-Head',
-      'image': './committee/yashraj.png'
-    },
-    {
-      'name': 'Mr. Paras Shingote',
-      'role': 'EM Co-Head',
-      'image': './committee/paras_shingote.png'
-    },
-    {
-      'name': 'Mr. Neelay Jadhav',
-      'role': 'HM Co-Head',
-      'image': './committee/neelay_jadhav.png'
-    },
-    {
-      'name': 'Mr. Arth Bhagat',
-      'role': 'Sponsorship Co-Head',
-      'image': './committee/arth_bhagat.png'
-    },
-    {
-      'name': 'Mr. Muchkundraje Thote',
-      'role': 'Cultural Co-Head',
-      'image': './committee/mk.png'
-    },
-    {
-      'name': 'Ms.Saakshi Krishnani',
-      'role': 'Database Co-Head',
-      'image': './committee/sakshi_krishnani.png'
-    },
-    {
-      'name': 'Mr. Ayush Dhole',
-      'role': 'Optimum Co-Head',
-      'image': './committee/ayush_dhole.png'
-    },
-    {
-      'name': 'Mr. Sujal Jangde',
-      'role': 'Optimum Co-Head',
-      'image': './committee/sujal_jangde.png'
-    },
-    {
-      'name': 'Ms. Sushmita Khachane',
-      'role': 'Literary Co-Head',
-      'image': './committee/sushmita.png'
-    },
-    {
-      'name': 'Mr. Yash Nandanwar',
-      'role': 'Design Co-Head',
-      'image': './committee/yash_nandanwar.png'
-    },
-    {
-      'name': 'Ms. Shailaja Patle',
-      'role': 'Technosavvy & Dhyass Co-Head',
-      'image': './committee/shailaja_patle.png'
-    },
-    {
-      'name': 'Mr. Hrutik Gujarkar',
-      'role': 'Finance Co-Head',
-      'image': './committee/hrutik_gujarkar.png'
-    }
   ];
 
   const compufestSemiCoreCommittee = [
     {
       'name': 'Mr. Kritish Bokde',
       'role': 'Technical Co-Head',
-      'image': './committee/kritish_bokde.png'
+      'image': './committee/maithilee_bansod.png'
     },
     {
       'name': 'Mr. Vedant Umate',
       'role': 'Publicity Co-Head',
-      'image': './committee/vedant_umate.png'
+      'image': './committee/soham_deshmukh.png'
     },
-    {
-      'name': 'Mr. Aman Kanoje',
-      'role': 'EM Co-Head',
-      'image': './committee/aman_tanoje.png'
-    },
-    {
-      'name': 'Mr. Sakshat Keote',
-      'role': 'EM Co-Head',
-      'image': './committee/sakshat_keote.png'
-    },
-    {
-      'name': 'Ms. Varsha Kolekar',
-      'role': 'HM Co-Head',
-      'image': './committee/varsha_kolekar.png'
-    },
-    {
-      'name': 'Ms. Ekta Chandak',
-      'role': 'Cultural Co-Head',
-      'image': './committee/ekta_chandak.png'
-    },
-    {
-      'name': 'Mr. Tanmay Patil',
-      'role': 'Database Co-Head',
-      'image': './committee/tanmay_patil.png'
-    },
-    {
-      'name': 'Ms. Sanskruti Barnase',
-      'role': 'Optimum Co-Head',
-      'image': './committee/sanskruti_barnasi.png'
-    },
-    {
-      'name': 'Ms. Gauri Joge',
-      'role': 'Literary Co-Head',
-      'image': './committee/gauri_joge.png'
-    },
-    {
-      'name': 'Ms. Nandini Pawar',
-      'role': 'Design Co-Head',
-      'image': './committee/nidhi_pawar.png'
-    },
-    {
-      'name': 'Krishna Mishra',
-      'role': 'Sports Co-Head',
-      'image': './committee/krishna_mishra.png'
-    },
-    {
-      'name': 'Aniket Mokalkar',
-      'role': 'Sports Co-Head',
-      'image': './committee/aniket_mokalkar.png'
-    }
   ];
 
   const developedBy = [
     {
       'name': 'Mr. Kritish Bokde',
       'role': 'Technical Co-Head',
-      'image': './committee/kritish_bokde.png'
+      'image': './committee/gracy_shalakha.png'
     },
     {
       'name': 'Mr. Muchkundraje Thote',
       'role': 'Cultural Co-Head',
-      'image': './committee/mk.png'
+      'image': './committee/himani_chamele.png'
+    },
+  ];
+
+  const registrationTeam = [
+    {
+      'name': 'Mr. Kritish Bokde',
+      'role': 'Technical Co-Head',
+      'image': './committee/sayali_kohle.png'
+    },
+    {
+      'name': 'Mr. Muchkundraje Thote',
+      'role': 'Cultural Co-Head',
+      'image': './committee/yash_more.png'
+    },
+  ];
+
+  const promotionTeam = [
+    {
+      'name': 'Mr. Kritish Bokde',
+      'role': 'Technical Co-Head',
+      'image': './committee/ansh_malvia.png'
+    },
+    {
+      'name': 'Mr. Muchkundraje Thote',
+      'role': 'Cultural Co-Head',
+      'image': './committee/janhavi_chanderkar.png'
+    },
+  ];
+
+  const requirementTeam = [
+    {
+      'name': 'Mr. Kritish Bokde',
+      'role': 'Technical Co-Head',
+      'image': './committee/vidhan_bhagat.png'
+    },
+    {
+      'name': 'Mr. Muchkundraje Thote',
+      'role': 'Cultural Co-Head',
+      'image': './committee/om_deshmukh.png'
+    },
+  ];
+
+  const gigagenTeam = [
+    {
+      'name': 'Mr. Kritish Bokde',
+      'role': 'Technical Co-Head',
+      'image': './committee/kartikrao_barnala.png'
+    },
+    {
+      'name': 'Mr. Muchkundraje Thote',
+      'role': 'Cultural Co-Head',
+      'image': './committee/swara_padole.png'
     },
     {
       'name': 'Mr. Gaurav Naik',
       'role': 'Technical Head',
-      'image': './committee/gaurav_naik.png'
+      'image': './committee/prasun_shamkule.png'
     }
+  ];
+
+  const webbotixTeam = [
+    {
+      'name': 'Mr. Kritish Bokde',
+      'role': 'Technical Co-Head',
+      'image': './committee/palak_khonde.png'
+    },
+    {
+      'name': 'Mr. Muchkundraje Thote',
+      'role': 'Cultural Co-Head',
+      'image': './committee/tejas_kumbhare.png'
+    },
+    {
+      'name': 'Mr. Gaurav Naik',
+      'role': 'Technical Head',
+      'image': './committee/armaan_manwatkar.png'
+    }
+  ];
+
+  const gotTeam = [
+    {
+      'name': 'Mr. Kritish Bokde',
+      'role': 'Technical Co-Head',
+      'image': './committee/aditya_menon.png'
+    },
+    {
+      'name': 'Mr. Muchkundraje Thote',
+      'role': 'Cultural Co-Head',
+      'image': './committee/mayuri_kumbhare.png'
+    },
+  ];
+
+  const emporersTeam = [
+    {
+      'name': 'Mr. Kritish Bokde',
+      'role': 'Technical Co-Head',
+      'image': './committee/ayush_nair.png'
+    },
+    {
+      'name': 'Mr. Muchkundraje Thote',
+      'role': 'Cultural Co-Head',
+      'image': './committee/parth_khairkar.png'
+    },
+  ];
+
+  const mlTeam = [
+    {
+      'name': 'Mr. Kritish Bokde',
+      'role': 'Technical Co-Head',
+      'image': './committee/riddhi_sontakke.png'
+    },
+    {
+      'name': 'Mr. Muchkundraje Thote',
+      'role': 'Cultural Co-Head',
+      'image': './committee/prajakta_sambare.png'
+    },
   ];
 
   return (
     <>
       <div className='h-screen fixed  w-full '>
-        <img src="./bg.png" alt="" className='h-full w-full ' />
+        <img src="https://c4.wallpaperflare.com/wallpaper/988/430/375/sauber-c36-formula-1-f1-cars-2018-wallpaper-preview.jpg" alt="" className='h-full w-full ' />
       </div>
       <Link to={"/"}>
         <button className=' p-2 bg-white fixed md:top-14 z-[1000] hover:bg-zinc-800  transition-all  hover:text-white left-6 top-5 md:left-20 rounded-2xl  '>
@@ -331,92 +206,188 @@ function Team() {
         </button>
       </Link>
       <div className=' absolute min-h-screen w-full flex items-center justify-start gap-3 flex-col mt-20  z-[99] p-10 '>
-        <h1 className='text-center avenger text-white text-5xl '>Team Compufest</h1>
+        <h1 className='text-center avenger text-white text-5xl '>Team AI verse 3.0</h1>
         <div className='  w-80 bg-[#DE0E12] p-3'>
-          <h1 className='text-center avenger text-white text-3xl  '>Core Avengers</h1>
+          <h1 className='text-center avenger text-white text-3xl  '>Core Team</h1>
         </div>
-        <div className='min-h-screen w-full flex gap-3 flex-wrap  justify-center '>
+        <div className='min-h-[550px] w-full flex gap-3 flex-wrap  justify-center '>
           {coreCommittee.map((member, index) => (
-            <div className='h-96 w-80 rounded-2xl bg-zinc-800 flex items-center justify-center flex-col gap-2 opacity-90 overflow-hidden '>
-              <span className='text-6xl spider text-white'>  </span>
-              <h1 className='text-2xl text-white spider whitespace-nowrap'> {member.role}</h1>
-              <div className='relative h-40 w-40 rounded-full overflow-hidden border-2'>
-                <div className='absolute w-40 h-40 bg-gray-700 animate-pulse z-10 animation-[pulse_0.4s_ease-in-out_infinite] '></div>
+            // <div className='h-96 w-80 rounded-2xl bg-zinc-800 flex items-center justify-center flex-col gap-2 opacity-90 overflow-hidden '>
+            //   <span className='text-6xl spider text-white'>  </span>
+            //   <h1 className='text-2xl text-white spider whitespace-nowrap'> {member.role}</h1>
+              <div className='relative h-120 w-90 rounded-2xl opacity-95 overflow-hidden border-2'>
+                <div className='absolute h-120 w-90 bg-gray-700 animate-pulse z-10 animation-[pulse_0.4s_ease-in-out_infinite] '></div>
                 <img alt='' src={member.image} loading='lazy' className='relative h-full w-full object-cover z-50'></img>
               </div>
-              <h3 className='spider text-2xl text-white tracking-widest'>{member.name}</h3>
-            </div>
+            //   <h3 className='spider text-2xl text-white tracking-widest'>{member.name}</h3>
+            // </div>
           ))}
         </div>
-        <div className='h-10' >
-        </div>
+        {/* <div className='h-10' >
+        </div> */}
         <div className='  w-80 bg-[#DE0E12] p-3'>
-          <h1 className='text-center avenger text-white text-3xl  '>Compufest Core Avengers</h1>
+          <h1 className='text-center avenger text-white text-3xl  '>Media Team</h1>
         </div>
-        <div className='min-h-screen w-full flex gap-3 flex-wrap  justify-center '>
+        <div className='min-h-[500px] w-full flex gap-3 flex-wrap  justify-center '>
           {compufestCoreCommittee.map((member, index) => (
-            <div className='h-96 w-80 rounded-2xl bg-zinc-800 flex items-center justify-center flex-col gap-2 opacity-90 overflow-hidden '>
-              <span className='text-6xl spider text-white'>  </span>
-              <h1 className='text-2xl text-white spider whitespace-nowrap'> {member.role}</h1>
-              <div className='h-40 w-40 rounded-full overflow-hidden border-2'>
+            // <div className='h-96 w-80 rounded-2xl bg-zinc-800 flex items-center justify-center flex-col gap-2 opacity-90 overflow-hidden '>
+            //   <span className='text-6xl spider text-white'>  </span>
+            //   <h1 className='text-2xl text-white spider whitespace-nowrap'> {member.role}</h1>
+              <div className='h-120 w-90 opacity-95 rounded-2xl overflow-hidden border-2'>
                 <img alt='' src={member.image} className='h-full w-full object-cover'></img>
               </div>
-              <h3 className='spider text-2xl text-white tracking-widest'>{member.name}</h3>
-            </div>
+        //       <h3 className='spider text-2xl text-white tracking-widest'>{member.name}</h3>
+        //     </div>
           ))}
         </div>
         <div className='h-10' >
         </div>
         <div className='  w-80 bg-[#DE0E12] p-3'>
-          <h1 className='text-center avenger text-white text-3xl  '>Semi-Core Avengers</h1>
+          <h1 className='text-center avenger text-white text-3xl  '>Technical Team</h1>
         </div>
-        <div className='min-h-screen w-full flex gap-3 flex-wrap  justify-center '>
+        <div className='min-h-[500px] w-full flex gap-3 flex-wrap  justify-center '>
           {semiCoreCommittee.map((member, index) => (
-            <div className='h-96 w-80 rounded-2xl bg-zinc-800 flex items-center justify-center flex-col gap-2 opacity-90 overflow-hidden '>
-              <span className='text-6xl spider text-white'>  </span>
-              <h1 className='text-2xl text-white spider whitespace-nowrap'> {member.role}</h1>
-              <div className='h-40 w-40 rounded-full overflow-hidden border-2'>
+            // <div className='h-96 w-80 rounded-2xl bg-zinc-800 flex items-center justify-center flex-col gap-2 opacity-90 overflow-hidden '>
+            //   <span className='text-6xl spider text-white'>  </span>
+            //   <h1 className='text-2xl text-white spider whitespace-nowrap'> {member.role}</h1>
+              <div className='h-120 w-90 opacity-95 rounded-2xl overflow-hidden border-2'>
                 <img alt='' src={member.image} className='h-full w-full object-cover'></img>
               </div>
-              <h3 className='spider text-2xl text-white tracking-widest'>{member.name}</h3>
-            </div>
+            //   <h3 className='spider text-2xl text-white tracking-widest'>{member.name}</h3>
+            // </div>
           ))}
         </div>
         <div className='h-10' >
         </div>
         <div className='  w-80 bg-[#DE0E12] p-3'>
-          <h1 className='text-center avenger text-white text-3xl  '>Compufest Semi-Core Avengers</h1>
+          <h1 className='text-center avenger text-white text-3xl  '>Documentation Team</h1>
         </div>
-        <div className='min-h-screen w-full flex gap-3 flex-wrap  justify-center '>
+        <div className='min-h-[500px] w-full flex gap-3 flex-wrap  justify-center '>
           {compufestSemiCoreCommittee.map((member, index) => (
-            <div className='h-96 w-80 rounded-2xl bg-zinc-800 flex items-center justify-center flex-col gap-2 opacity-90 overflow-hidden '>
-              <span className='text-6xl spider text-white'>  </span>
-              <h1 className='text-2xl text-white spider whitespace-nowrap'> {member.role}</h1>
-              <div className='h-40 w-40 rounded-full overflow-hidden border-2'>
+            // <div className='h-96 w-80 rounded-2xl bg-zinc-800 flex items-center justify-center flex-col gap-2 opacity-90 overflow-hidden '>
+            //   <span className='text-6xl spider text-white'>  </span>
+            //   <h1 className='text-2xl text-white spider whitespace-nowrap'> {member.role}</h1>
+              <div className='h-120 w-90 rounded-2xl opacity-95 overflow-hidden border-2'>
                 <img alt='' src={member.image} className='h-full w-full object-cover'></img>
               </div>
-              <h3 className='spider text-2xl text-white tracking-widest'>{member.name}</h3>
-            </div>
+            //   {/* <h3 className='spider text-2xl text-white tracking-widest'>{member.name}</h3>
+            // </div> */}
           ))}
         </div>
         <div className='h-10' >
         </div>
         <div className='  w-80 bg-[#DE0E12] p-3'>
-          <h1 className='text-center avenger text-white text-3xl  '>Developed By</h1>
+          <h1 className='text-center avenger text-white text-3xl  '>Decoration Team</h1>
         </div>
-        <div className='h-auto w-full flex gap-3 flex-wrap  justify-center '>
+        <div className='min-h-[500px] w-full flex gap-3 flex-wrap  justify-center '>
           {developedBy.map((member, index) => (
-            <div className='h-96 w-80 rounded-2xl bg-zinc-800 flex items-center justify-center flex-col gap-2 opacity-90 overflow-hidden '>
-              <span className='text-6xl spider text-white'>  </span>
-              <h1 className='text-2xl text-white spider whitespace-nowrap'> {member.role}</h1>
-              <div className='h-40 w-40 rounded-full overflow-hidden border-2'>
+            // <div className='h-96 w-80 rounded-2xl bg-zinc-800 flex items-center justify-center flex-col gap-2 opacity-90 overflow-hidden '>
+            //   <span className='text-6xl spider text-white'>  </span>
+            //   <h1 className='text-2xl text-white spider whitespace-nowrap'> {member.role}</h1>
+              <div className='h-120 w-90 rounded-2xl opacity-95 overflow-hidden border-2'>
                 <img alt='' src={member.image} className='h-full w-full object-cover'></img>
               </div>
-              <h3 className='spider text-2xl text-white tracking-widest'>{member.name}</h3>
-            </div>
+            //   <h3 className='spider text-2xl text-white tracking-widest'>{member.name}</h3>
+            // </div>
           ))}
         </div>
-      </div>
+        <div className='h-10' >
+        </div>
+        <div className='  w-80 bg-[#DE0E12] p-3'>
+          <h1 className='text-center avenger text-white text-3xl  '>Registration Team</h1>
+        </div>
+        <div className='min-h-[500px] w-full flex gap-3 flex-wrap  justify-center '>
+          {registrationTeam.map((member, index) => (
+              <div className='h-120 w-90 opacity-95 rounded-2xl overflow-hidden border-2'>
+                <img alt='' src={member.image} className='h-full w-full object-cover'></img>
+              </div>
+          ))}
+        </div>
+                <div className='h-10' >
+        </div>
+        <div className='  w-80 bg-[#DE0E12] p-3'>
+          <h1 className='text-center avenger text-white text-3xl  '>Promotion Team</h1>
+        </div>
+        <div className='min-h-[500px] w-full flex gap-3 flex-wrap  justify-center '>
+          {promotionTeam.map((member, index) => (
+              <div className='h-120 w-90 opacity-95 rounded-2xl overflow-hidden border-2'>
+                <img alt='' src={member.image} className='h-full w-full object-cover'></img>
+              </div>
+          ))}
+        </div>
+                <div className='h-10' >
+        </div>
+        <div className='  w-80 bg-[#DE0E12] p-3'>
+          <h1 className='text-center avenger text-white text-3xl  '>Requirement Team</h1>
+        </div>
+        <div className='min-h-[500px] w-full flex gap-3 flex-wrap  justify-center '>
+          {requirementTeam.map((member, index) => (
+              <div className='h-120 w-90 opacity-95 rounded-2xl overflow-hidden border-2'>
+                <img alt='' src={member.image} className='h-full w-full object-cover'></img>
+              </div>
+          ))}
+        </div>
+                <div className='h-10' >
+        </div>
+        <div className='  w-80 bg-[#DE0E12] p-3'>
+          <h1 className='text-center avenger text-white text-3xl  '>Giga Gen Team</h1>
+        </div>
+        <div className='min-h-[500px] w-full flex gap-3 flex-wrap  justify-center '>
+          {gigagenTeam.map((member, index) => (
+              <div className='h-120 w-90 opacity-95 rounded-2xl overflow-hidden border-2'>
+                <img alt='' src={member.image} className='h-full w-full object-cover'></img>
+              </div>
+          ))}
+        </div>
+                <div className='h-10' >
+        </div>
+        <div className='  w-80 bg-[#DE0E12] p-3'>
+          <h1 className='text-center avenger text-white text-3xl  '>Webbotix Team</h1>
+        </div>
+        <div className='min-h-[500px] w-full flex gap-3 flex-wrap  justify-center '>
+          {webbotixTeam.map((member, index) => (
+              <div className='h-120 w-90 opacity-95 rounded-2xl overflow-hidden border-2'>
+                <img alt='' src={member.image} className='h-full w-full object-cover'></img>
+              </div>
+          ))}
+        </div>
+                <div className='h-10' >
+        </div>
+        <div className='  w-80 bg-[#DE0E12] p-3'>
+          <h1 className='text-center avenger text-white text-3xl  '>Game of Trades Team</h1>
+        </div>
+        <div className='min-h-[500px] w-full flex gap-3 flex-wrap  justify-center '>
+          {gotTeam.map((member, index) => (
+              <div className='h-120 w-90 opacity-95 rounded-2xl overflow-hidden border-2'>
+                <img alt='' src={member.image} className='h-full w-full object-cover'></img>
+              </div>
+          ))}
+        </div>
+                <div className='h-10' >
+        </div>
+        <div className='  w-80 bg-[#DE0E12] p-3'>
+          <h1 className='text-center avenger text-white text-3xl  '>Emporers Conquest Team</h1>
+        </div>
+        <div className='min-h-[500px] w-full flex gap-3 flex-wrap  justify-center '>
+          {emporersTeam.map((member, index) => (
+              <div className='h-120 w-90 opacity-95 rounded-2xl overflow-hidden border-2'>
+                <img alt='' src={member.image} className='h-full w-full object-cover'></img>
+              </div>
+          ))}
+        </div>
+        <div className='h-10' >
+        </div>
+        <div className='  w-80 bg-[#DE0E12] p-3'>
+          <h1 className='text-center avenger text-white text-3xl  '>ML Neuronets Team</h1>
+        </div>
+        <div className='min-h-[1200px] w-full flex gap-3 flex-wrap  justify-center '>
+          {mlTeam.map((member, index) => (
+              <div className='h-120 w-90 opacity-95 rounded-2xl overflow-hidden border-2'>
+                <img alt='' src={member.image} className='h-full w-full object-cover'></img>
+              </div>
+          ))}
+        </div>
+      </div> 
     </>
   )
 }
