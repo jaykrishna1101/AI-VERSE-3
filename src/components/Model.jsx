@@ -7,7 +7,7 @@ const ResponsiveModel = forwardRef((
   { setSuspenseResolved, ...props },
   ref
 ) => {
-  const { scene } = useGLTF('/model/scuderia_ferrari_f1_sf23_2023.glb');
+  const { scene } = useGLTF('/model/f1_mercedes_w13_concept.glb');
   const { viewport } = useThree();
   const renderedOnce = useRef(false);
 
@@ -18,7 +18,7 @@ const ResponsiveModel = forwardRef((
     // Tablet size screens
     if (viewport.width < 10) return 2.0;
     // Desktop screens
-    return 30.0;
+    return 0.3;
   }, [viewport.width]);
 
   // Rotation to show front view - rotate 180 degrees around Y axis
